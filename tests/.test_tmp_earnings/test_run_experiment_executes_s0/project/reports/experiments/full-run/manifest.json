@@ -1,0 +1,372 @@
+{
+  "code_sha256": {
+    "backtest.py": "55395bf62183277bf9edb14d5d295bb1af44285d79dd239b3899175f512f209e",
+    "descriptors.py": "1551d88159ccf76d78ec10cf70140cd4b675002e089005794fdec12e86dcd3fc",
+    "earnings_events.py": "a0b5f1aeadaf3f7552f1d4f6f10982bf4dfcc41f2f593799c3661862fb598443",
+    "evaluation.py": "2a42de1823cee314067221c704dccd84b332e752e3388f12c80e1cb27fa658ca",
+    "experiment.py": "76116388e820bf494df68bfd08757a05c5fded4e571f272917380f32b2d913fe",
+    "modeling.py": "c9112e3a3bcdfb0b163397820cdeba464bca7ce4c1fed356007ef51d8b257564",
+    "preprocessing.py": "6e9f7279b4ed8bab426c2b214ae12808f936b0fafdfc50588beb46932a7e2070",
+    "splits.py": "856d68cf04a1f6f2421ced2b320e5b1bab187bf8f262febfd1e1a0c39fe8796e",
+    "universe.py": "04b89c716d1a3f5cf9a95c878ac8948bd4cba031544cedd5a296fee4d4898d87",
+    "weekly_dataset.py": "3ec8261927f0213bcef640aa85e836355e7fe68d42a8e2ea0cb7f0df68d780a1"
+  },
+  "development_period_only": true,
+  "experiment_name": "test-development",
+  "experiment_report": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\reports\\experiments\\full-run\\experiment_report.md",
+    "sha256": "75bc4e473189a2f53de1bf8ea9c4c3dfc7c92dbfaab43cb31a7bf1ddd0313d99"
+  },
+  "final_period_evaluated": false,
+  "final_period_prepared_rows": null,
+  "final_period_used_for_model_selection": false,
+  "finished_at_utc": "2026-10-21T03:53:48.434895+00:00",
+  "input_identifiers": {
+    "auxiliary_snapshot": {
+      "api_version": "v2",
+      "declared_sha256_count": 1,
+      "declared_sha256_digest": "bd8aff2bc7e7d9450ce0f4b4acc9982d5fd2abaecaf1700ddce7c8b8e3222661",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\data\\raw\\aux_snapshot\\manifest.json",
+      "manifest_sha256": "4ffaa3472469b13f1bfe6d00e90c7856ed2ef94133ab1d8050b1a3660a3865cc",
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\data\\raw\\aux_snapshot",
+      "provider": "J-Quants",
+      "request": {
+        "end_date": "2026-12-31",
+        "start_date": "2016-01-01"
+      },
+      "snapshot_id": "aux-001",
+      "status": "completed",
+      "totals": {
+        "listed_info_rows": 1
+      }
+    },
+    "calendar": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\data\\raw\\price_snapshot\\trading_calendar.parquet",
+      "sha256": "429a8e08503f7720a071b98265d0aca93e5635ce4f1d3e2aa0f3908dd3618df9"
+    },
+    "delistings": null,
+    "price_snapshot": {
+      "api_version": "v2",
+      "declared_sha256_count": 1,
+      "declared_sha256_digest": "5adb8c3d42601f14dc3c467830d23dcc75ffae17236d02c6bb26c6e31b1c3c8e",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\data\\raw\\price_snapshot\\manifest.json",
+      "manifest_sha256": "0c8af354b50712d6a78bbee4ceda5def2ab9029cfeac2260efd1b4098b9a8cb0",
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\data\\raw\\price_snapshot",
+      "provider": "J-Quants",
+      "request": {
+        "end_date": "2026-12-31",
+        "start_date": "2016-01-01"
+      },
+      "snapshot_id": "price-001",
+      "status": "completed",
+      "totals": {
+        "price_rows": 1
+      }
+    },
+    "topix_raw": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\data\\raw\\aux_snapshot\\topix.parquet",
+      "sha256": "c293359061e16efb858d046ffaf61ecf4ca42d520063862dfe70e9cdb2b6f5ba"
+    }
+  },
+  "outputs": {
+    "artifacts": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\artifacts\\experiments\\full-run",
+    "backtest": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\artifacts\\experiments\\full-run\\backtest",
+    "evaluation": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\artifacts\\experiments\\full-run\\evaluation",
+    "interim": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\data\\interim\\experiments\\full-run",
+    "modeling": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\artifacts\\experiments\\full-run\\modeling",
+    "processed": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\data\\processed\\experiments\\full-run",
+    "reports": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\reports\\experiments\\full-run"
+  },
+  "random_seed": 1729,
+  "randomized_stages": [],
+  "resolved_config": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\reports\\experiments\\full-run\\config.resolved.json",
+    "sha256": "fdec8ef7f632c82d31baa9f8279b492e6f6a0396a2266bbc36979901439cc6fb"
+  },
+  "run_id": "full-run",
+  "schema_id": "stock-prediction-experiment-v1",
+  "source_config": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\configs\\experiment.json",
+    "sha256": "579af94cdd2927f61a02a95aec22cf81d4c408c5012623e3da2d5b621530be67"
+  },
+  "stage_configs": {
+    "backtest": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\configs\\backtest.json",
+      "sha256": "c331a56bf4bbb72615f26dfa666382413126c217c5acc557a3679c53155d2dd9",
+      "values": {
+        "annualization_sessions": 252,
+        "commission_bps": 5.0,
+        "default_lot_size": 100,
+        "eligibility_column": "is_signal_eligible",
+        "exit_price_mode": "evaluation_close",
+        "half_spread_bps": 5.0,
+        "initial_cash_yen": 10000000.0,
+        "liquidity_column": "median_turnover_value_20",
+        "lot_size_column": "lot_size",
+        "max_exit_wait_sessions": 20,
+        "max_participation_rate": 0.01,
+        "model_name": "linear",
+        "slippage_bps": 10.0,
+        "target_column": "target_return",
+        "top_n": 10,
+        "unresolved_delisting_policy": "error"
+      }
+    },
+    "descriptors": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\configs\\descriptors.json",
+      "sha256": "1423e6ddba8353b6054cdef7c460cb7a6ba66a21d0bffbe4c10ef8a10449c50e",
+      "values": {
+        "require_topix": true,
+        "volatility_ddof": 1
+      }
+    },
+    "earnings_events": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\configs\\earnings_events.json",
+      "sha256": "36efedca04ef630ffeb5fb38ca2ad5a0636a1724dede76c7fb78c7fd4102106d",
+      "values": {
+        "cooldown_trading_sessions": 25,
+        "earnings_doc_type_prefixes": [
+          "1QFinancialStatements",
+          "2QFinancialStatements",
+          "3QFinancialStatements",
+          "FYFinancialStatements",
+          "OtherPeriodFinancialStatements"
+        ]
+      }
+    },
+    "evaluation": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\configs\\evaluation.json",
+      "sha256": "e2285543ebc8911f59b3b7853edb9ce0bf16a79b01c751c9fa28e2cbb50cb3b8",
+      "values": {
+        "industry_code_column": "S33",
+        "industry_date_column": "Date",
+        "industry_name_column": "S33Nm",
+        "industry_security_column": "Code",
+        "top_n": 10
+      }
+    },
+    "modeling": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\configs\\modeling.json",
+      "sha256": "d7b067088542bc4fc71149bade039cf54e6590adc4d29739873c9e6e23845b34",
+      "values": {
+        "feature_columns": [
+          "R_5",
+          "R_20",
+          "R_60",
+          "PriceToSMA_20",
+          "SMA_5To20",
+          "Volatility_5To20",
+          "Volatility_20",
+          "RangePosition_20",
+          "VolumeRatio_5To20",
+          "TurnoverRatio_5To20",
+          "RelativeTOPIX_20"
+        ],
+        "momentum_feature": "R_20",
+        "target_column": "target_return",
+        "top_n": 10
+      }
+    },
+    "preprocessing": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\configs\\preprocessing.json",
+      "sha256": "467f937d7f2c9aa439dec2a33eecc90cee37252822190f8842b639d8e462d2ec",
+      "values": {
+        "abnormal_return_threshold": 0.5,
+        "allow_unverified_calendar": false,
+        "end_date": null,
+        "start_date": null
+      }
+    },
+    "splits": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\configs\\splits.json",
+      "sha256": "bb03a13efe5798e3536863d77f04c8edefbd09ab804269be201acf563e5d1c22",
+      "values": {
+        "isolation_end_date": "2026-12-31",
+        "isolation_start_date": "2025-01-01",
+        "purge_trading_sessions": 4
+      }
+    },
+    "universe": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\configs\\universe.json",
+      "sha256": "ca16c8a63b744864da9e618961c3a93dda58f35158c68ba59c2fae2528e79b8a",
+      "values": {
+        "domestic_common_product_category": "011",
+        "liquidity_window_sessions": 20,
+        "max_participation_rate": 0.01,
+        "min_listing_sessions_elapsed": 60,
+        "min_median_turnover_yen": 100000000.0,
+        "min_price_formation_days": 15,
+        "planned_investment_yen": 1000000.0
+      }
+    },
+    "weekly_dataset": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\configs\\weekly_dataset.json",
+      "sha256": "ab86d2cbc00d25099a4a563ccb8f1d6575a66a4b7ffb7de49ca4e50e29fcf467",
+      "values": {
+        "min_trading_sessions_per_week": 4,
+        "require_topix": true,
+        "signal_start_date": "2017-02-06"
+      }
+    }
+  },
+  "stage_order": [
+    "preprocessing",
+    "topix_normalization",
+    "descriptors",
+    "weekly_schedule",
+    "universe",
+    "earnings_events",
+    "weekly_dataset",
+    "splits",
+    "modeling",
+    "evaluation",
+    "backtest"
+  ],
+  "stages": [
+    {
+      "finished_at_utc": "2026-10-21T03:53:48.300337+00:00",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\reports\\experiments\\full-run\\stages\\preprocessing\\manifest.json",
+      "manifest_sha256": "69b0b8ce9f8e6d3c77a3e58cec2cebdcdbe97de30a511d7cb9b6c26de865060a",
+      "name": "preprocessing",
+      "started_at_utc": "2026-10-21T03:53:48.290962+00:00",
+      "status": "complete",
+      "summary": {
+        "output_rows": 2,
+        "status": "complete"
+      }
+    },
+    {
+      "finished_at_utc": "2026-10-21T03:53:48.320068+00:00",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\reports\\experiments\\full-run\\stages\\topix_normalization.json",
+      "manifest_sha256": "2832eede14680f6b56c828b05a66fb5e7511d5c48117db840e332b52e9c750e0",
+      "name": "topix_normalization",
+      "started_at_utc": "2026-10-21T03:53:48.303659+00:00",
+      "status": "complete",
+      "summary": {
+        "status": "complete"
+      }
+    },
+    {
+      "finished_at_utc": "2026-10-21T03:53:48.330069+00:00",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\reports\\experiments\\full-run\\stages\\descriptors\\manifest.json",
+      "manifest_sha256": "69b0b8ce9f8e6d3c77a3e58cec2cebdcdbe97de30a511d7cb9b6c26de865060a",
+      "name": "descriptors",
+      "started_at_utc": "2026-10-21T03:53:48.323069+00:00",
+      "status": "complete",
+      "summary": {
+        "output_rows": 2,
+        "status": "complete"
+      }
+    },
+    {
+      "finished_at_utc": "2026-10-21T03:53:48.343513+00:00",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\reports\\experiments\\full-run\\stages\\weekly_schedule.json",
+      "manifest_sha256": "829493e340737cc607012c7f1f64cc3da5639f77001b53b1f7dabc8a6b0554ea",
+      "name": "weekly_schedule",
+      "started_at_utc": "2026-10-21T03:53:48.335070+00:00",
+      "status": "complete",
+      "summary": {
+        "status": "complete"
+      }
+    },
+    {
+      "finished_at_utc": "2026-10-21T03:53:48.358203+00:00",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\reports\\experiments\\full-run\\stages\\universe\\manifest.json",
+      "manifest_sha256": "69b0b8ce9f8e6d3c77a3e58cec2cebdcdbe97de30a511d7cb9b6c26de865060a",
+      "name": "universe",
+      "started_at_utc": "2026-10-21T03:53:48.352749+00:00",
+      "status": "complete",
+      "summary": {
+        "output_rows": 2,
+        "status": "complete"
+      }
+    },
+    {
+      "finished_at_utc": "2026-10-21T03:53:48.369529+00:00",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\reports\\experiments\\full-run\\stages\\earnings_events\\manifest.json",
+      "manifest_sha256": "69b0b8ce9f8e6d3c77a3e58cec2cebdcdbe97de30a511d7cb9b6c26de865060a",
+      "name": "earnings_events",
+      "started_at_utc": "2026-10-21T03:53:48.362212+00:00",
+      "status": "complete",
+      "summary": {
+        "output_rows": 2,
+        "status": "complete"
+      }
+    },
+    {
+      "finished_at_utc": "2026-10-21T03:53:48.378985+00:00",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\reports\\experiments\\full-run\\stages\\weekly_dataset\\manifest.json",
+      "manifest_sha256": "69b0b8ce9f8e6d3c77a3e58cec2cebdcdbe97de30a511d7cb9b6c26de865060a",
+      "name": "weekly_dataset",
+      "started_at_utc": "2026-10-21T03:53:48.373980+00:00",
+      "status": "complete",
+      "summary": {
+        "output_rows": 2,
+        "status": "complete"
+      }
+    },
+    {
+      "finished_at_utc": "2026-10-21T03:53:48.386984+00:00",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\reports\\experiments\\full-run\\stages\\splits\\manifest.json",
+      "manifest_sha256": "69b0b8ce9f8e6d3c77a3e58cec2cebdcdbe97de30a511d7cb9b6c26de865060a",
+      "name": "splits",
+      "started_at_utc": "2026-10-21T03:53:48.382982+00:00",
+      "status": "complete",
+      "summary": {
+        "output_rows": 2,
+        "status": "complete"
+      }
+    },
+    {
+      "finished_at_utc": "2026-10-21T03:53:48.402134+00:00",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\reports\\experiments\\full-run\\stages\\modeling\\manifest.json",
+      "manifest_sha256": "69b0b8ce9f8e6d3c77a3e58cec2cebdcdbe97de30a511d7cb9b6c26de865060a",
+      "name": "modeling",
+      "started_at_utc": "2026-10-21T03:53:48.390980+00:00",
+      "status": "complete",
+      "summary": {
+        "output_rows": 2,
+        "status": "complete"
+      }
+    },
+    {
+      "finished_at_utc": "2026-10-21T03:53:48.415261+00:00",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\reports\\experiments\\full-run\\stages\\evaluation\\manifest.json",
+      "manifest_sha256": "69b0b8ce9f8e6d3c77a3e58cec2cebdcdbe97de30a511d7cb9b6c26de865060a",
+      "name": "evaluation",
+      "started_at_utc": "2026-10-21T03:53:48.406130+00:00",
+      "status": "complete",
+      "summary": {
+        "output_rows": 2,
+        "status": "complete"
+      }
+    },
+    {
+      "finished_at_utc": "2026-10-21T03:53:48.430900+00:00",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_run_experiment_executes_s0\\project\\reports\\experiments\\full-run\\stages\\backtest\\manifest.json",
+      "manifest_sha256": "69b0b8ce9f8e6d3c77a3e58cec2cebdcdbe97de30a511d7cb9b6c26de865060a",
+      "name": "backtest",
+      "started_at_utc": "2026-10-21T03:53:48.420255+00:00",
+      "status": "complete",
+      "summary": {
+        "output_rows": 2,
+        "status": "complete"
+      }
+    }
+  ],
+  "started_at_utc": "2026-10-21T03:53:48.268449+00:00",
+  "status": "complete",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "pyarrow": "25.0.1",
+    "python": "3.11.9",
+    "requests": "2.34.2",
+    "stock-prediction": "0.1.0"
+  },
+  "warnings": [
+    "This experiment evaluates development-period predictions only; it does not run or unlock the 2025-2026 final period.",
+    "J-Quants acquisition is intentionally outside the experiment run; immutable snapshot manifests identify the inputs.",
+    "No confirmed delisting settlement table is supplied; the backtest will stop if a confirmed event must be settled."
+  ]
+}

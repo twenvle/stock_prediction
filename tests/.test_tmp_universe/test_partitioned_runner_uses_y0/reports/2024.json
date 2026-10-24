@@ -1,0 +1,57 @@
+{
+  "schema_id": "point-in-time-universe-v1",
+  "config": {
+    "domestic_common_product_category": "011",
+    "min_listing_sessions_elapsed": 60,
+    "liquidity_window_sessions": 20,
+    "min_price_formation_days": 15,
+    "min_median_turnover_yen": 100000000.0,
+    "planned_investment_yen": 1000000.0,
+    "max_participation_rate": 0.01
+  },
+  "input_master_rows": 25,
+  "history_master_rows": 60,
+  "input_price_rows": 25,
+  "history_price_rows": 60,
+  "output_rows": 1,
+  "signal_dates": 1,
+  "securities": 1,
+  "date_min": "2024-01-01",
+  "date_max": "2024-01-01",
+  "criterion_true_counts": {
+    "is_domestic_common_stock": 1,
+    "has_min_listing_history": 1,
+    "has_full_liquidity_window": 1,
+    "meets_price_formation_days": 1,
+    "meets_median_turnover": 1,
+    "meets_participation_limit": 1,
+    "signal_price_formed": 1,
+    "is_liquid": 1,
+    "is_eligible": 1
+  },
+  "exclusion_reason_counts": {},
+  "schedule_supplied": true,
+  "executable_rows": 1,
+  "master_rows_without_price": 0,
+  "price_rows_not_in_master": 0,
+  "limitations": [
+    "Daily OHLCV and limit flags provide conservative execution proxies, not order-book fill certainty.",
+    "Supervisory/special-treatment designations are unavailable in the current input schema.",
+    "Future entry/exit observations never contribute to is_eligible.",
+    "The initial master snapshot does not reveal earlier listing history; 60 observed sessions are required."
+  ],
+  "master_input": {
+    "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_universe\\test_partitioned_runner_uses_y0\\listed_info\\2024.parquet",
+    "rows": 25,
+    "bytes": 3915,
+    "sha256": "da6961b20e4598760c4ea469d58398e83c55ba2f44c466faa5775e23a7eb49ad"
+  },
+  "price_input": {
+    "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_universe\\test_partitioned_runner_uses_y0\\prices\\2024.parquet",
+    "rows": 25,
+    "bytes": 6402,
+    "sha256": "0f45a10ac7bf495da38ee508ca7b5cc0b519c4ecb7045999d8d89b9df10f2729"
+  },
+  "output_file": "2024.parquet",
+  "output_sha256": "cafe032dda8002e20c8f233b649e8d799924cdcf862d5cd56b0ed5cb256d861c"
+}

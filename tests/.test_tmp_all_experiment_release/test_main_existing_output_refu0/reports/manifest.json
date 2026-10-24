@@ -1,0 +1,149 @@
+{
+  "schema_id": "cross-sectional-prediction-evaluation-v1",
+  "status": "complete",
+  "started_at_utc": "2026-10-13T11:11:22.566600+00:00",
+  "config": {
+    "top_n": 10,
+    "industry_date_column": "Date",
+    "industry_security_column": "Code",
+    "industry_code_column": "S33",
+    "industry_name_column": "S33Nm"
+  },
+  "prediction_input": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_release\\test_main_existing_output_refu0\\inputs\\predictions.parquet",
+    "rows": 4,
+    "columns": [
+      "fold_id",
+      "validation_year",
+      "signal_date",
+      "code",
+      "model",
+      "target_column",
+      "actual_target",
+      "target_observed",
+      "prediction"
+    ],
+    "sha256": "fdbb73d9bca6c650217632c3bcb6abe36b411174c44e3b76b12fe32134df49c7"
+  },
+  "industry_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_release\\test_main_existing_output_refu0\\inputs\\listed_info",
+  "industry_inputs": [
+    {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_release\\test_main_existing_output_refu0\\inputs\\listed_info\\2020.parquet",
+      "rows": 4,
+      "columns_read": [
+        "Date",
+        "Code",
+        "S33",
+        "S33Nm"
+      ],
+      "sha256": "c2c6afbd77f822f44a4c46309197016e2d51bbdcbcf147388c88f338ec32bcbb"
+    }
+  ],
+  "industry_years_loaded": [
+    2020
+  ],
+  "output_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_release\\test_main_existing_output_refu0\\artifacts",
+  "report_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_release\\test_main_existing_output_refu0\\reports",
+  "completed_outputs": [
+    {
+      "name": "predictions_with_industry",
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_release\\test_main_existing_output_refu0\\artifacts\\predictions_with_industry.parquet",
+      "rows": 4,
+      "sha256": "818de68abce299c99e72c04654a46ae0c5d204d4a4f5e5a615100a4c876cb0a6"
+    },
+    {
+      "name": "daily_metrics",
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_release\\test_main_existing_output_refu0\\artifacts\\daily_metrics.parquet",
+      "rows": 1,
+      "sha256": "38f8700e7d110920ff492ff97f68e31ceb9cc74e8fb8ed261d1b6898edd9c872"
+    },
+    {
+      "name": "summary_metrics",
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_release\\test_main_existing_output_refu0\\artifacts\\summary_metrics.parquet",
+      "rows": 1,
+      "sha256": "f7c947c22921f019e402b5849164c7537e8f405ed03242d32038d4e0329f28ae"
+    },
+    {
+      "name": "yearly_metrics",
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_release\\test_main_existing_output_refu0\\artifacts\\yearly_metrics.parquet",
+      "rows": 1,
+      "sha256": "c49c754713b70e65bd9de71e48052367195d682eca1df621822c5b50915847b6"
+    },
+    {
+      "name": "industry_daily_metrics",
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_release\\test_main_existing_output_refu0\\artifacts\\industry_daily_metrics.parquet",
+      "rows": 2,
+      "sha256": "eefa2caf2249d9400c178d6fcda0fadd4b95261f723d86138ea88e8eb1d0654f"
+    },
+    {
+      "name": "industry_metrics",
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_release\\test_main_existing_output_refu0\\artifacts\\industry_metrics.parquet",
+      "rows": 2,
+      "sha256": "88e37993bdfd7bd82fbceea5184bb092bb4bb7cfbca9ee25522446d4469ee866"
+    },
+    {
+      "name": "industry_yearly_metrics",
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_release\\test_main_existing_output_refu0\\artifacts\\industry_yearly_metrics.parquet",
+      "rows": 2,
+      "sha256": "f54700acf2e692611958c27974d330303a1489d32a1999552b00b903c010f505"
+    }
+  ],
+  "code_sha256": "2a42de1823cee314067221c704dccd84b332e752e3388f12c80e1cb27fa658ca",
+  "versions": {
+    "python": "3.11.9",
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "pyarrow": "25.0.1"
+  },
+  "input": {
+    "prediction_rows": 4,
+    "models": [
+      "linear"
+    ],
+    "targets": [
+      "target_return"
+    ],
+    "folds": 1,
+    "signal_dates": 1,
+    "date_min": "2020-01-06",
+    "date_max": "2020-01-06",
+    "securities": 4,
+    "target_missing_rows": 0,
+    "prediction_missing_rows": 0,
+    "duplicate_prediction_keys": 0
+  },
+  "industry_join": {
+    "classification": {
+      "code_column": "S33",
+      "name_column": "S33Nm"
+    },
+    "join_keys": [
+      "signal_date",
+      "code"
+    ],
+    "forward_filled": false,
+    "candidate_rows": 4,
+    "classified_candidate_rows": 4,
+    "missing_candidate_rows": 0,
+    "candidate_coverage": 1.0
+  },
+  "outputs": {
+    "predictions_with_industry_rows": 4,
+    "daily_metric_rows": 1,
+    "summary_metric_rows": 1,
+    "yearly_metric_rows": 1,
+    "industry_daily_metric_rows": 2,
+    "industry_metric_rows": 2,
+    "industry_yearly_metric_rows": 2
+  },
+  "limitations": [
+    "Metrics are predictive evaluations of close-to-close targets, not executable backtest returns.",
+    "Industry metrics exclude unclassified exact-date candidates and report that loss separately.",
+    "Top/bottom selection is fixed from predictions; missing targets are never replaced by lower-ranked rows.",
+    "Selected-group returns are null unless every selected target is observed; selected coverage is reported.",
+    "Top and bottom groups may overlap when a cross-section has fewer than twice top_n predicted rows.",
+    "No confidence interval treating security rows as independent observations is produced."
+  ],
+  "random_seed": null,
+  "finished_at_utc": "2026-10-13T11:11:22.693061+00:00"
+}

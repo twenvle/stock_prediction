@@ -1,0 +1,49 @@
+{
+  "schema_id": "earnings-exclusions-v3",
+  "config": {
+    "cooldown_trading_sessions": 25,
+    "earnings_doc_type_prefixes": [
+      "1QFinancialStatements",
+      "2QFinancialStatements",
+      "3QFinancialStatements",
+      "FYFinancialStatements",
+      "OtherPeriodFinancialStatements"
+    ]
+  },
+  "candidate_rows": 208,
+  "signal_dates": 52,
+  "securities": 4,
+  "date_min": "2019-01-07",
+  "date_max": "2019-12-30",
+  "earnings_schedule_rows": 0,
+  "schedule_publication_date_min": null,
+  "schedule_publication_date_max": null,
+  "schedule_missing_date_rows": 0,
+  "same_day_schedule_state_groups": 0,
+  "same_day_schedule_state_rows": 0,
+  "same_day_schedule_state_groups_with_missing_date": 0,
+  "financial_result_rows": 0,
+  "actual_earnings_event_rows": 0,
+  "financial_doc_type_counts": {},
+  "scheduled_crossing_rows": 0,
+  "actual_crossing_rows_ex_post": 0,
+  "cooldown_rows": 0,
+  "eligible_without_cooldown_rows": 208,
+  "eligible_rows": 208,
+  "eligible_rows_ex_post": 208,
+  "active_schedule_date_missing_rows": 0,
+  "limitations": [
+    "Scheduled dates have no announcement time, so signal-date events are conservatively included.",
+    "Multiple states on one publication date are retained as a set because their within-day order is unavailable.",
+    "Same-day disclosures at/before the historical TSE close are cooldown day 0; later or missing times are ex-post events.",
+    "Actual holding-period disclosures never affect is_earnings_eligible.",
+    "Input event-history completeness must be established from the immutable source snapshot manifest."
+  ],
+  "candidate_input": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\processed\\experiments\\real-smoke\\universe\\2019.parquet",
+    "rows": 208,
+    "sha256": "11e323fd1573813363830a1a895c515d96bb13de32a95237f4827c283c715e5a"
+  },
+  "output_file": "2019.parquet",
+  "output_sha256": "5cbe1aea1a962fef95d1b63afa2fa7b5d82c28b1f816a77be161c9f89b3d63c8"
+}

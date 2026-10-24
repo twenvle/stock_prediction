@@ -1,0 +1,58 @@
+{
+  "schema_id": "cross-sectional-prediction-evaluation-v1",
+  "status": "interrupted",
+  "started_at_utc": "2026-10-13T10:21:42.592896+00:00",
+  "config": {
+    "top_n": 10,
+    "industry_date_column": "Date",
+    "industry_security_column": "Code",
+    "industry_code_column": "S33",
+    "industry_name_column": "S33Nm"
+  },
+  "prediction_input": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_backtest_final\\test_main_existing_output_refu0\\inputs\\predictions.parquet",
+    "rows": 4,
+    "columns": [
+      "fold_id",
+      "validation_year",
+      "signal_date",
+      "code",
+      "model",
+      "target_column",
+      "actual_target",
+      "target_observed",
+      "prediction"
+    ],
+    "sha256": "fdbb73d9bca6c650217632c3bcb6abe36b411174c44e3b76b12fe32134df49c7"
+  },
+  "industry_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_backtest_final\\test_main_existing_output_refu0\\inputs\\listed_info",
+  "industry_inputs": [
+    {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_backtest_final\\test_main_existing_output_refu0\\inputs\\listed_info\\2020.parquet",
+      "rows": 4,
+      "columns_read": [
+        "Date",
+        "Code",
+        "S33",
+        "S33Nm"
+      ],
+      "sha256": "c2c6afbd77f822f44a4c46309197016e2d51bbdcbcf147388c88f338ec32bcbb"
+    }
+  ],
+  "industry_years_loaded": [
+    2020
+  ],
+  "output_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_backtest_final\\test_main_existing_output_refu0\\interrupted_artifacts",
+  "report_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_backtest_final\\test_main_existing_output_refu0\\interrupted_reports",
+  "completed_outputs": [],
+  "code_sha256": "2a42de1823cee314067221c704dccd84b332e752e3388f12c80e1cb27fa658ca",
+  "versions": {
+    "python": "3.11.9",
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "pyarrow": "25.0.1"
+  },
+  "error_type": "KeyboardInterrupt",
+  "error_message": "",
+  "finished_at_utc": "2026-10-13T10:21:42.611370+00:00"
+}

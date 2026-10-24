@@ -1,0 +1,351 @@
+{
+  "status": "complete",
+  "started_at_utc": "2026-10-19T07:09:05.261182+00:00",
+  "schema_id": "jquants-v2-daily-bars-base-16-with-known-optional-columns",
+  "config": {
+    "start_date": null,
+    "end_date": null,
+    "abnormal_return_threshold": 0.5,
+    "allow_unverified_calendar": false
+  },
+  "inputs": [
+    {
+      "file": "2016.parquet",
+      "sha256": "1e49028adcdc4bf1b068e6bb92745418194720635f24ee5f7695ed1ac28bf87a",
+      "bytes": 100384,
+      "raw_rows": 1044,
+      "date_min": "2016-01-01",
+      "date_max": "2016-12-30",
+      "schema": {
+        "Date": "timestamp[us]",
+        "Code": "large_string",
+        "O": "double",
+        "H": "double",
+        "L": "double",
+        "C": "double",
+        "UL": "large_string",
+        "LL": "large_string",
+        "Vo": "double",
+        "Va": "double",
+        "AdjFactor": "double",
+        "AdjO": "double",
+        "AdjH": "double",
+        "AdjL": "double",
+        "AdjC": "double",
+        "AdjVo": "double"
+      },
+      "api_acquired_at": null,
+      "api_version": null
+    },
+    {
+      "file": "2017.parquet",
+      "sha256": "3c0df91e7f22bc9fa58dc4e3eb7c119cbbaca5c7972641e41ed55e620686195c",
+      "bytes": 99975,
+      "raw_rows": 1040,
+      "date_min": "2017-01-02",
+      "date_max": "2017-12-29",
+      "schema": {
+        "Date": "timestamp[us]",
+        "Code": "large_string",
+        "O": "double",
+        "H": "double",
+        "L": "double",
+        "C": "double",
+        "UL": "large_string",
+        "LL": "large_string",
+        "Vo": "double",
+        "Va": "double",
+        "AdjFactor": "double",
+        "AdjO": "double",
+        "AdjH": "double",
+        "AdjL": "double",
+        "AdjC": "double",
+        "AdjVo": "double"
+      },
+      "api_acquired_at": null,
+      "api_version": null
+    },
+    {
+      "file": "2018.parquet",
+      "sha256": "06ce39fe5dd81b23fd334656193ba9b95b83bb87423e6a0c4221908c072bfca0",
+      "bytes": 100385,
+      "raw_rows": 1044,
+      "date_min": "2018-01-01",
+      "date_max": "2018-12-31",
+      "schema": {
+        "Date": "timestamp[us]",
+        "Code": "large_string",
+        "O": "double",
+        "H": "double",
+        "L": "double",
+        "C": "double",
+        "UL": "large_string",
+        "LL": "large_string",
+        "Vo": "double",
+        "Va": "double",
+        "AdjFactor": "double",
+        "AdjO": "double",
+        "AdjH": "double",
+        "AdjL": "double",
+        "AdjC": "double",
+        "AdjVo": "double"
+      },
+      "api_acquired_at": null,
+      "api_version": null
+    },
+    {
+      "file": "2019.parquet",
+      "sha256": "d32ef930b0d84a2068741d7466d5cf790a60f7ec3e5771b3271e027e04e49360",
+      "bytes": 100385,
+      "raw_rows": 1044,
+      "date_min": "2019-01-01",
+      "date_max": "2019-12-31",
+      "schema": {
+        "Date": "timestamp[us]",
+        "Code": "large_string",
+        "O": "double",
+        "H": "double",
+        "L": "double",
+        "C": "double",
+        "UL": "large_string",
+        "LL": "large_string",
+        "Vo": "double",
+        "Va": "double",
+        "AdjFactor": "double",
+        "AdjO": "double",
+        "AdjH": "double",
+        "AdjL": "double",
+        "AdjC": "double",
+        "AdjVo": "double"
+      },
+      "api_acquired_at": null,
+      "api_version": null
+    },
+    {
+      "file": "2020.parquet",
+      "sha256": "329c81d907b4e4b1682408033574cf60331b5cfa19e239a3c079b6ea6ffec886",
+      "bytes": 100680,
+      "raw_rows": 1048,
+      "date_min": "2020-01-01",
+      "date_max": "2020-12-31",
+      "schema": {
+        "Date": "timestamp[us]",
+        "Code": "large_string",
+        "O": "double",
+        "H": "double",
+        "L": "double",
+        "C": "double",
+        "UL": "large_string",
+        "LL": "large_string",
+        "Vo": "double",
+        "Va": "double",
+        "AdjFactor": "double",
+        "AdjO": "double",
+        "AdjH": "double",
+        "AdjL": "double",
+        "AdjC": "double",
+        "AdjVo": "double"
+      },
+      "api_acquired_at": null,
+      "api_version": null
+    },
+    {
+      "file": "2021.parquet",
+      "sha256": "cefa590508691c0413a1ae16a3011c4c050ceddd2f9090c2f33827c5d9666f50",
+      "bytes": 100386,
+      "raw_rows": 1044,
+      "date_min": "2021-01-01",
+      "date_max": "2021-12-31",
+      "schema": {
+        "Date": "timestamp[us]",
+        "Code": "large_string",
+        "O": "double",
+        "H": "double",
+        "L": "double",
+        "C": "double",
+        "UL": "large_string",
+        "LL": "large_string",
+        "Vo": "double",
+        "Va": "double",
+        "AdjFactor": "double",
+        "AdjO": "double",
+        "AdjH": "double",
+        "AdjL": "double",
+        "AdjC": "double",
+        "AdjVo": "double"
+      },
+      "api_acquired_at": null,
+      "api_version": null
+    },
+    {
+      "file": "2022.parquet",
+      "sha256": "f11e196556fee3f0f05d3bccaf8c05ece2c97928f347895cb11d3d41f1ff0bb2",
+      "bytes": 99975,
+      "raw_rows": 1040,
+      "date_min": "2022-01-03",
+      "date_max": "2022-12-30",
+      "schema": {
+        "Date": "timestamp[us]",
+        "Code": "large_string",
+        "O": "double",
+        "H": "double",
+        "L": "double",
+        "C": "double",
+        "UL": "large_string",
+        "LL": "large_string",
+        "Vo": "double",
+        "Va": "double",
+        "AdjFactor": "double",
+        "AdjO": "double",
+        "AdjH": "double",
+        "AdjL": "double",
+        "AdjC": "double",
+        "AdjVo": "double"
+      },
+      "api_acquired_at": null,
+      "api_version": null
+    },
+    {
+      "file": "2023.parquet",
+      "sha256": "edbf900c81636871fb6f1c1570f363b0faa30e972a61ad8d56eab657efff122e",
+      "bytes": 99976,
+      "raw_rows": 1040,
+      "date_min": "2023-01-02",
+      "date_max": "2023-12-29",
+      "schema": {
+        "Date": "timestamp[us]",
+        "Code": "large_string",
+        "O": "double",
+        "H": "double",
+        "L": "double",
+        "C": "double",
+        "UL": "large_string",
+        "LL": "large_string",
+        "Vo": "double",
+        "Va": "double",
+        "AdjFactor": "double",
+        "AdjO": "double",
+        "AdjH": "double",
+        "AdjL": "double",
+        "AdjC": "double",
+        "AdjVo": "double"
+      },
+      "api_acquired_at": null,
+      "api_version": null
+    },
+    {
+      "file": "2024.parquet",
+      "sha256": "97867bffe132b82cc35f76d46e74ed08241300b161757082fa878ca10986be15",
+      "bytes": 100681,
+      "raw_rows": 1048,
+      "date_min": "2024-01-01",
+      "date_max": "2024-12-31",
+      "schema": {
+        "Date": "timestamp[us]",
+        "Code": "large_string",
+        "O": "double",
+        "H": "double",
+        "L": "double",
+        "C": "double",
+        "UL": "large_string",
+        "LL": "large_string",
+        "Vo": "double",
+        "Va": "double",
+        "AdjFactor": "double",
+        "AdjO": "double",
+        "AdjH": "double",
+        "AdjL": "double",
+        "AdjC": "double",
+        "AdjVo": "double"
+      },
+      "api_acquired_at": null,
+      "api_version": null
+    }
+  ],
+  "ignored_files": [],
+  "calendar": {
+    "file": "trading_calendar.parquet",
+    "sha256": "b56c8c5f4462afa8579f4c93654807535469c962c9600b03e6972da82f6540cb"
+  },
+  "code_sha256": {
+    "preprocessing.py": "6e9f7279b4ed8bab426c2b214ae12808f936b0fafdfc50588beb46932a7e2070",
+    "__init__.py": "ce337f2bb2744475fc1bee10ffb932a2769cc5e0a896ba022b6eeb6a09f88766",
+    "pyproject.toml": "b08b3a14d35e023bf4425a96853c1d3fe54033d6f0498ac785007bb60afb8f9b"
+  },
+  "git_revision": null,
+  "random_seed": null,
+  "versions": {
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "pyarrow": "25.0.1"
+  },
+  "completed_partitions": [
+    {
+      "year": 2016,
+      "output_rows": 1044,
+      "quarantined_rows": 0,
+      "output_sha256": "0eba356906efea96c22aa35d5d2b84b8b975c502fab40fb3ca8f72c0d44f09ef",
+      "quarantine_sha256": "9ac319fca222c6e31cd96b181a472b3073a72768c549e543d5b9442abc538906"
+    },
+    {
+      "year": 2017,
+      "output_rows": 1040,
+      "quarantined_rows": 0,
+      "output_sha256": "79e23e7f901e795fe0d7d6fc44fe500352a85addfc31168429c792aa983750ef",
+      "quarantine_sha256": "9ac319fca222c6e31cd96b181a472b3073a72768c549e543d5b9442abc538906"
+    },
+    {
+      "year": 2018,
+      "output_rows": 1044,
+      "quarantined_rows": 0,
+      "output_sha256": "fc3727bf5aefac0c0abb1da96181a05a884524764bfbb8acc59d732b7d6c5fe5",
+      "quarantine_sha256": "9ac319fca222c6e31cd96b181a472b3073a72768c549e543d5b9442abc538906"
+    },
+    {
+      "year": 2019,
+      "output_rows": 1044,
+      "quarantined_rows": 0,
+      "output_sha256": "f381ab8c8db5f0de0d4673f9d422dfbdb731628771c91ea83337fd42c089b6f9",
+      "quarantine_sha256": "9ac319fca222c6e31cd96b181a472b3073a72768c549e543d5b9442abc538906"
+    },
+    {
+      "year": 2020,
+      "output_rows": 1048,
+      "quarantined_rows": 0,
+      "output_sha256": "9b63956dc662c49b08e6a9a153e2aa376d5e7eb2c2c1e0e7b1e0f5e316fd9c3d",
+      "quarantine_sha256": "9ac319fca222c6e31cd96b181a472b3073a72768c549e543d5b9442abc538906"
+    },
+    {
+      "year": 2021,
+      "output_rows": 1044,
+      "quarantined_rows": 0,
+      "output_sha256": "7f3f69998863b05ff7687e6e7caf574d1f5c45ca92796dc5493c258527132048",
+      "quarantine_sha256": "9ac319fca222c6e31cd96b181a472b3073a72768c549e543d5b9442abc538906"
+    },
+    {
+      "year": 2022,
+      "output_rows": 1040,
+      "quarantined_rows": 0,
+      "output_sha256": "40eb8654ce966e45f7e3c88d413a7b7be00f584de21183f3c9a6e49a5d4db13b",
+      "quarantine_sha256": "9ac319fca222c6e31cd96b181a472b3073a72768c549e543d5b9442abc538906"
+    },
+    {
+      "year": 2023,
+      "output_rows": 1040,
+      "quarantined_rows": 0,
+      "output_sha256": "c33dae950816b3c34a6d11559462cbf13b26972d0679cf903a5135489a245335",
+      "quarantine_sha256": "9ac319fca222c6e31cd96b181a472b3073a72768c549e543d5b9442abc538906"
+    },
+    {
+      "year": 2024,
+      "output_rows": 1048,
+      "quarantined_rows": 0,
+      "output_sha256": "010779fa5811a49f992f00594c725d06cdd496b2b23a6b64852cf37f85a17936",
+      "quarantine_sha256": "9ac319fca222c6e31cd96b181a472b3073a72768c549e543d5b9442abc538906"
+    }
+  ],
+  "output_rows": 9392,
+  "quarantined_rows": 0,
+  "api_metadata_note": "Acquisition timestamps/API version were not supplied; file mtime is not acquisition time.",
+  "finished_at_utc": "2026-10-19T07:09:06.778016+00:00"
+}

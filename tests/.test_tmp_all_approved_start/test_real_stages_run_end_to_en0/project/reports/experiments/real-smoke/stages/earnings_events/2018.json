@@ -1,0 +1,49 @@
+{
+  "schema_id": "earnings-exclusions-v3",
+  "config": {
+    "cooldown_trading_sessions": 25,
+    "earnings_doc_type_prefixes": [
+      "1QFinancialStatements",
+      "2QFinancialStatements",
+      "3QFinancialStatements",
+      "FYFinancialStatements",
+      "OtherPeriodFinancialStatements"
+    ]
+  },
+  "candidate_rows": 212,
+  "signal_dates": 53,
+  "securities": 4,
+  "date_min": "2018-01-01",
+  "date_max": "2018-12-31",
+  "earnings_schedule_rows": 0,
+  "schedule_publication_date_min": null,
+  "schedule_publication_date_max": null,
+  "schedule_missing_date_rows": 0,
+  "same_day_schedule_state_groups": 0,
+  "same_day_schedule_state_rows": 0,
+  "same_day_schedule_state_groups_with_missing_date": 0,
+  "financial_result_rows": 0,
+  "actual_earnings_event_rows": 0,
+  "financial_doc_type_counts": {},
+  "scheduled_crossing_rows": 0,
+  "actual_crossing_rows_ex_post": 0,
+  "cooldown_rows": 0,
+  "eligible_without_cooldown_rows": 212,
+  "eligible_rows": 212,
+  "eligible_rows_ex_post": 212,
+  "active_schedule_date_missing_rows": 0,
+  "limitations": [
+    "Scheduled dates have no announcement time, so signal-date events are conservatively included.",
+    "Multiple states on one publication date are retained as a set because their within-day order is unavailable.",
+    "Same-day disclosures at/before the historical TSE close are cooldown day 0; later or missing times are ex-post events.",
+    "Actual holding-period disclosures never affect is_earnings_eligible.",
+    "Input event-history completeness must be established from the immutable source snapshot manifest."
+  ],
+  "candidate_input": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_approved_start\\test_real_stages_run_end_to_en0\\project\\data\\processed\\experiments\\real-smoke\\universe\\2018.parquet",
+    "rows": 212,
+    "sha256": "79793fdfd173e59ff3e69cb0d4d112b74779f2381832f6de911b0ed6fa911eab"
+  },
+  "output_file": "2018.parquet",
+  "output_sha256": "24d1bfe640258e4ef460ba5a5fc614efc91d11679cc3023b04dae6dcd998ce2b"
+}

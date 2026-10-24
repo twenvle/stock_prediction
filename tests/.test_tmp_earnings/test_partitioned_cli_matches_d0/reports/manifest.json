@@ -1,0 +1,82 @@
+{
+  "status": "complete",
+  "started_at_utc": "2026-10-21T03:53:47.681022+00:00",
+  "schema_id": "earnings-exclusions-v3",
+  "config": {
+    "cooldown_trading_sessions": 25,
+    "earnings_doc_type_prefixes": [
+      "1QFinancialStatements",
+      "2QFinancialStatements",
+      "3QFinancialStatements",
+      "FYFinancialStatements",
+      "OtherPeriodFinancialStatements"
+    ]
+  },
+  "candidates_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_partitioned_cli_matches_d0\\candidates",
+  "earnings_schedule_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_partitioned_cli_matches_d0\\earnings_schedule",
+  "financial_results_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_partitioned_cli_matches_d0\\financial_results",
+  "calendar": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_partitioned_cli_matches_d0\\calendar.parquet",
+    "sha256": "aea9340aacb2cdd20adc1ae4d70385a5e98128110db2daa5a2633ba703f74a82"
+  },
+  "candidate_inputs": {
+    "2024": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_partitioned_cli_matches_d0\\candidates\\2024.parquet",
+      "rows": 1,
+      "sha256": "bffe8951db5f903f1048ae9552f57b9fe12fe6db4d499ac6586da18cefb7a8c1"
+    }
+  },
+  "earnings_schedule_inputs": {
+    "2024": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_partitioned_cli_matches_d0\\earnings_schedule\\2024.parquet",
+      "rows": 1,
+      "sha256": "bb96f3f9c68c1de394028b35dbb5664e57dfdad4dfd19dac4e5b2a27b053ddf2"
+    }
+  },
+  "financial_results_inputs": {
+    "2024": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_partitioned_cli_matches_d0\\financial_results\\2024.parquet",
+      "rows": 1,
+      "sha256": "fac2f61a5e194babe967318f3d19aedddd7e99c2b1b74c90faadc6c71dea22eb"
+    }
+  },
+  "completed_partitions": [
+    {
+      "year": 2024,
+      "output_rows": 1,
+      "eligible_rows": 0,
+      "scheduled_crossing_rows": 1,
+      "cooldown_rows": 1,
+      "actual_crossing_rows_ex_post": 0,
+      "date_min": "2024-01-08",
+      "date_max": "2024-01-08",
+      "output_sha256": "beba3609ea417dd5a91bb350c0f2236a617efe25f11b0b8c7276bcbf2e99d03e"
+    }
+  ],
+  "current_partition": null,
+  "output_rows": 1,
+  "eligible_rows": 0,
+  "scheduled_crossing_rows": 1,
+  "cooldown_rows": 1,
+  "actual_crossing_rows_ex_post": 0,
+  "same_day_schedule_state_groups": 0,
+  "same_day_schedule_state_rows": 0,
+  "same_day_schedule_state_groups_with_missing_date": 0,
+  "code_sha256": {
+    "earnings_events.py": "a0b5f1aeadaf3f7552f1d4f6f10982bf4dfcc41f2f593799c3661862fb598443",
+    "pyproject.toml": "b08b3a14d35e023bf4425a96853c1d3fe54033d6f0498ac785007bb60afb8f9b"
+  },
+  "versions": {
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "pyarrow": "25.0.1"
+  },
+  "random_seed": null,
+  "limitations": [
+    "The CLI reads only event columns across annual event files; candidate files are processed one year at a time.",
+    "Event-history completeness must be checked against the auxiliary-download manifest.",
+    "Multiple schedule states on one publication date are retained as an unordered set.",
+    "Future actual disclosures are ex-post audits and are excluded from is_earnings_eligible."
+  ],
+  "finished_at_utc": "2026-10-21T03:53:47.775828+00:00"
+}

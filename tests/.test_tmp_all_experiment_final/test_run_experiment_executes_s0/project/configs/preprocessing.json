@@ -1,0 +1,6 @@
+{
+  "start_date": null,
+  "end_date": null,
+  "abnormal_return_threshold": 0.5,
+  "allow_unverified_calendar": false
+}

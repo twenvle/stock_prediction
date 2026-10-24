@@ -1,0 +1,820 @@
+{
+  "api_base_url": "https://api.jquants.com/v2",
+  "api_version": "v2",
+  "calendar": {
+    "columns": [
+      "Date",
+      "HolDiv"
+    ],
+    "date_max": "2026-10-07",
+    "date_min": "2016-10-15",
+    "duplicate_keys": 0,
+    "missing_rate": {
+      "Date": 0.0,
+      "HolDiv": 0.0
+    },
+    "path": "trading_calendar.parquet",
+    "rows": 3645,
+    "securities": null,
+    "sha256": "bf84253fddc463e8c0fa966b791d60c64a8a3d54c1c37f82f10ec8318337fb3b",
+    "tse_trading_days": 2436
+  },
+  "calendar_source": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\data\\raw\\jquants_v2_20261008T120437054560Z\\trading_calendar.parquet",
+    "sha256": "8a975b17e1f855cda9e70656898edfb76c99bb9b4b6d3cbdf661d9dc6500352c"
+  },
+  "completed_at_utc": "2026-10-15T15:18:46.653568Z",
+  "credential_persisted": false,
+  "current_partition": {
+    "completed_dates": 0,
+    "dataset": "earnings_schedule",
+    "last_completed_date": null,
+    "requested_dates": 78,
+    "year": 2016
+  },
+  "datasets": {
+    "earnings_schedule": {
+      "completed_dates": 0,
+      "completed_partitions": [],
+      "requested_dates": 3645,
+      "rows": 0,
+      "status": "failed"
+    },
+    "financial_results": {
+      "completed_dates": 0,
+      "completed_partitions": [],
+      "requested_dates": 0,
+      "rows": 0,
+      "status": "pending"
+    },
+    "listed_info": {
+      "completed_dates": 2436,
+      "completed_partitions": [
+        {
+          "code_change_candidates": {
+            "authoritative": false,
+            "path": "code_change_candidates/2016.parquet",
+            "rows": 0,
+            "sha256": "1fa2a6bccb4fb91d40713d30bd9df1d2b67b4748fdb532ed13e5d9e7a2c22f38"
+          },
+          "completed_dates": 52,
+          "master_transitions": {
+            "change_type_counts": {
+              "appeared": 31,
+              "attributes_changed": 123,
+              "disappeared": 18
+            },
+            "path": "master_transitions/2016.parquet",
+            "rows": 172,
+            "sha256": "5d4153864b6437ac2299bbde90ec66eb0b27ed85cfc7d4919a480a97858b9a8f"
+          },
+          "path": "listed_info/2016.parquet",
+          "requested_dates": 52,
+          "sha256": "2e939b6a484135d8d0f341b120d4f03cda7cdb0ab730a3ccd9cf253703e4682e",
+          "stats": {
+            "columns": [
+              "Date",
+              "Code",
+              "CoName",
+              "CoNameEn",
+              "S17",
+              "S17Nm",
+              "S33",
+              "S33Nm",
+              "ScaleCat",
+              "Mkt",
+              "MktNm",
+              "Mrgn",
+              "MrgnNm",
+              "ProdCat"
+            ],
+            "date_max": "2016-12-30",
+            "date_min": "2016-10-17",
+            "duplicate_keys": 0,
+            "missing_rate": {
+              "CoName": 0.0,
+              "CoNameEn": 0.0,
+              "Code": 0.0,
+              "Date": 0.0,
+              "Mkt": 0.0,
+              "MktNm": 0.0,
+              "Mrgn": 0.0,
+              "MrgnNm": 0.0,
+              "ProdCat": 0.0,
+              "S17": 0.0,
+              "S17Nm": 0.0,
+              "S33": 0.0,
+              "S33Nm": 0.0,
+              "ScaleCat": 0.0
+            },
+            "rows": 198627,
+            "securities": 3847
+          },
+          "year": 2016
+        },
+        {
+          "code_change_candidates": {
+            "authoritative": false,
+            "path": "code_change_candidates/2017.parquet",
+            "rows": 0,
+            "sha256": "1fa2a6bccb4fb91d40713d30bd9df1d2b67b4748fdb532ed13e5d9e7a2c22f38"
+          },
+          "completed_dates": 247,
+          "master_transitions": {
+            "change_type_counts": {
+              "appeared": 137,
+              "attributes_changed": 501,
+              "disappeared": 43
+            },
+            "path": "master_transitions/2017.parquet",
+            "rows": 681,
+            "sha256": "cfbb12075cdf34aa6e3bade16c1a517bd66ebdd65af9d989a0153b8249eb438d"
+          },
+          "path": "listed_info/2017.parquet",
+          "requested_dates": 247,
+          "sha256": "0e9949c1ef1aecafba074328bf55e82f8800e49c07f40242005cdd555784433a",
+          "stats": {
+            "columns": [
+              "Date",
+              "Code",
+              "CoName",
+              "CoNameEn",
+              "S17",
+              "S17Nm",
+              "S33",
+              "S33Nm",
+              "ScaleCat",
+              "Mkt",
+              "MktNm",
+              "Mrgn",
+              "MrgnNm",
+              "ProdCat"
+            ],
+            "date_max": "2017-12-29",
+            "date_min": "2017-01-04",
+            "duplicate_keys": 0,
+            "missing_rate": {
+              "CoName": 0.0,
+              "CoNameEn": 0.0,
+              "Code": 0.0,
+              "Date": 0.0,
+              "Mkt": 0.0,
+              "MktNm": 0.0,
+              "Mrgn": 0.0,
+              "MrgnNm": 0.0,
+              "ProdCat": 0.0,
+              "S17": 0.0,
+              "S17Nm": 0.0,
+              "S33": 0.0,
+              "S33Nm": 0.0,
+              "ScaleCat": 0.0
+            },
+            "rows": 953757,
+            "securities": 3966
+          },
+          "year": 2017
+        },
+        {
+          "code_change_candidates": {
+            "authoritative": false,
+            "path": "code_change_candidates/2018.parquet",
+            "rows": 0,
+            "sha256": "1fa2a6bccb4fb91d40713d30bd9df1d2b67b4748fdb532ed13e5d9e7a2c22f38"
+          },
+          "completed_dates": 245,
+          "master_transitions": {
+            "change_type_counts": {
+              "appeared": 129,
+              "attributes_changed": 1111,
+              "disappeared": 81
+            },
+            "path": "master_transitions/2018.parquet",
+            "rows": 1321,
+            "sha256": "dd33493e18d0b5d8416b20036f1100f8e98bb081ba6dfdc253d7f507e7ca0efa"
+          },
+          "path": "listed_info/2018.parquet",
+          "requested_dates": 245,
+          "sha256": "d4fb1b35564f717ae2c09c1d2e04b973279c0d9469751232074f061707055f51",
+          "stats": {
+            "columns": [
+              "Date",
+              "Code",
+              "CoName",
+              "CoNameEn",
+              "S17",
+              "S17Nm",
+              "S33",
+              "S33Nm",
+              "ScaleCat",
+              "Mkt",
+              "MktNm",
+              "Mrgn",
+              "MrgnNm",
+              "ProdCat"
+            ],
+            "date_max": "2018-12-28",
+            "date_min": "2018-01-04",
+            "duplicate_keys": 0,
+            "missing_rate": {
+              "CoName": 0.0,
+              "CoNameEn": 0.0,
+              "Code": 0.0,
+              "Date": 0.0,
+              "Mkt": 0.0,
+              "MktNm": 0.0,
+              "Mrgn": 0.0,
+              "MrgnNm": 0.0,
+              "ProdCat": 0.0,
+              "S17": 0.0,
+              "S17Nm": 0.0,
+              "S33": 0.0,
+              "S33Nm": 0.0,
+              "ScaleCat": 0.0
+            },
+            "rows": 964473,
+            "securities": 4052
+          },
+          "year": 2018
+        },
+        {
+          "code_change_candidates": {
+            "authoritative": false,
+            "path": "code_change_candidates/2019.parquet",
+            "rows": 0,
+            "sha256": "1fa2a6bccb4fb91d40713d30bd9df1d2b67b4748fdb532ed13e5d9e7a2c22f38"
+          },
+          "completed_dates": 241,
+          "master_transitions": {
+            "change_type_counts": {
+              "appeared": 117,
+              "attributes_changed": 573,
+              "disappeared": 69
+            },
+            "path": "master_transitions/2019.parquet",
+            "rows": 759,
+            "sha256": "84726a253236b209ba0a7c5c0a733986bb4c28b55f79ca94706d52bb91eccd22"
+          },
+          "path": "listed_info/2019.parquet",
+          "requested_dates": 241,
+          "sha256": "3737153cefe4b30701e5b2137482a3c559ca6015b877e813ff00b577c74df069",
+          "stats": {
+            "columns": [
+              "Date",
+              "Code",
+              "CoName",
+              "CoNameEn",
+              "S17",
+              "S17Nm",
+              "S33",
+              "S33Nm",
+              "ScaleCat",
+              "Mkt",
+              "MktNm",
+              "Mrgn",
+              "MrgnNm",
+              "ProdCat"
+            ],
+            "date_max": "2019-12-30",
+            "date_min": "2019-01-04",
+            "duplicate_keys": 0,
+            "missing_rate": {
+              "CoName": 0.0,
+              "CoNameEn": 0.0,
+              "Code": 0.0,
+              "Date": 0.0,
+              "Mkt": 0.0,
+              "MktNm": 0.0,
+              "Mrgn": 0.0,
+              "MrgnNm": 0.0,
+              "ProdCat": 0.0,
+              "S17": 0.0,
+              "S17Nm": 0.0,
+              "S33": 0.0,
+              "S33Nm": 0.0,
+              "ScaleCat": 0.0
+            },
+            "rows": 963118,
+            "securities": 4088
+          },
+          "year": 2019
+        },
+        {
+          "code_change_candidates": {
+            "authoritative": false,
+            "path": "code_change_candidates/2020.parquet",
+            "rows": 0,
+            "sha256": "1fa2a6bccb4fb91d40713d30bd9df1d2b67b4748fdb532ed13e5d9e7a2c22f38"
+          },
+          "completed_dates": 243,
+          "master_transitions": {
+            "change_type_counts": {
+              "appeared": 135,
+              "attributes_changed": 596,
+              "disappeared": 66
+            },
+            "path": "master_transitions/2020.parquet",
+            "rows": 797,
+            "sha256": "c56d71f2ce615f4fefaa51200e4a40b0ff9eabee835ff7fa0645da5424c16254"
+          },
+          "path": "listed_info/2020.parquet",
+          "requested_dates": 243,
+          "sha256": "13f7da4d8345d9903977d621b037d12ff6dabd0201cb814d46a8f2686c79f837",
+          "stats": {
+            "columns": [
+              "Date",
+              "Code",
+              "CoName",
+              "CoNameEn",
+              "S17",
+              "S17Nm",
+              "S33",
+              "S33Nm",
+              "ScaleCat",
+              "Mkt",
+              "MktNm",
+              "Mrgn",
+              "MrgnNm",
+              "ProdCat"
+            ],
+            "date_max": "2020-12-30",
+            "date_min": "2020-01-06",
+            "duplicate_keys": 0,
+            "missing_rate": {
+              "CoName": 0.0,
+              "CoNameEn": 0.0,
+              "Code": 0.0,
+              "Date": 0.0,
+              "Mkt": 0.0,
+              "MktNm": 0.0,
+              "Mrgn": 0.0,
+              "MrgnNm": 0.0,
+              "ProdCat": 0.0,
+              "S17": 0.0,
+              "S17Nm": 0.0,
+              "S33": 0.0,
+              "S33Nm": 0.0,
+              "ScaleCat": 0.0
+            },
+            "rows": 981070,
+            "securities": 4154
+          },
+          "year": 2020
+        },
+        {
+          "code_change_candidates": {
+            "authoritative": false,
+            "path": "code_change_candidates/2021.parquet",
+            "rows": 0,
+            "sha256": "1fa2a6bccb4fb91d40713d30bd9df1d2b67b4748fdb532ed13e5d9e7a2c22f38"
+          },
+          "completed_dates": 245,
+          "master_transitions": {
+            "change_type_counts": {
+              "appeared": 188,
+              "attributes_changed": 604,
+              "disappeared": 106
+            },
+            "path": "master_transitions/2021.parquet",
+            "rows": 898,
+            "sha256": "fc6f0427dc989b81f711ca9cef3fd98901c357b010911a82b52788288d638396"
+          },
+          "path": "listed_info/2021.parquet",
+          "requested_dates": 245,
+          "sha256": "9448b4b4969cc1b32463c984854af4275ed5e325d5909327d6bb5bf61698d9f2",
+          "stats": {
+            "columns": [
+              "Date",
+              "Code",
+              "CoName",
+              "CoNameEn",
+              "S17",
+              "S17Nm",
+              "S33",
+              "S33Nm",
+              "ScaleCat",
+              "Mkt",
+              "MktNm",
+              "Mrgn",
+              "MrgnNm",
+              "ProdCat"
+            ],
+            "date_max": "2021-12-30",
+            "date_min": "2021-01-04",
+            "duplicate_keys": 0,
+            "missing_rate": {
+              "CoName": 0.0,
+              "CoNameEn": 0.0,
+              "Code": 0.0,
+              "Date": 0.0,
+              "Mkt": 0.0,
+              "MktNm": 0.0,
+              "Mrgn": 0.0,
+              "MrgnNm": 0.0,
+              "ProdCat": 0.0,
+              "S17": 0.0,
+              "S17Nm": 0.0,
+              "S33": 0.0,
+              "S33Nm": 0.0,
+              "ScaleCat": 0.0
+            },
+            "rows": 1008911,
+            "securities": 4276
+          },
+          "year": 2021
+        },
+        {
+          "code_change_candidates": {
+            "authoritative": false,
+            "path": "code_change_candidates/2022.parquet",
+            "rows": 0,
+            "sha256": "1fa2a6bccb4fb91d40713d30bd9df1d2b67b4748fdb532ed13e5d9e7a2c22f38"
+          },
+          "completed_dates": 244,
+          "master_transitions": {
+            "change_type_counts": {
+              "appeared": 162,
+              "attributes_changed": 4251,
+              "disappeared": 86
+            },
+            "path": "master_transitions/2022.parquet",
+            "rows": 4499,
+            "sha256": "ce90d478d73d47f7f08d1e4ea4d3051848eba5e1d261bfd6d1236d634ea35be1"
+          },
+          "path": "listed_info/2022.parquet",
+          "requested_dates": 244,
+          "sha256": "04d29797703b509ad71ba88c5895613352e62d9920633ea26c848f4b8e860cba",
+          "stats": {
+            "columns": [
+              "Date",
+              "Code",
+              "CoName",
+              "CoNameEn",
+              "S17",
+              "S17Nm",
+              "S33",
+              "S33Nm",
+              "ScaleCat",
+              "Mkt",
+              "MktNm",
+              "Mrgn",
+              "MrgnNm",
+              "ProdCat"
+            ],
+            "date_max": "2022-12-30",
+            "date_min": "2022-01-04",
+            "duplicate_keys": 0,
+            "missing_rate": {
+              "CoName": 0.0,
+              "CoNameEn": 0.0,
+              "Code": 0.0,
+              "Date": 0.0,
+              "Mkt": 0.0,
+              "MktNm": 0.0,
+              "Mrgn": 0.0,
+              "MrgnNm": 0.0,
+              "ProdCat": 0.0,
+              "S17": 0.0,
+              "S17Nm": 0.0,
+              "S33": 0.0,
+              "S33Nm": 0.0,
+              "ScaleCat": 0.0
+            },
+            "rows": 1023708,
+            "securities": 4332
+          },
+          "year": 2022
+        },
+        {
+          "code_change_candidates": {
+            "authoritative": false,
+            "path": "code_change_candidates/2023.parquet",
+            "rows": 0,
+            "sha256": "1fa2a6bccb4fb91d40713d30bd9df1d2b67b4748fdb532ed13e5d9e7a2c22f38"
+          },
+          "completed_dates": 246,
+          "master_transitions": {
+            "change_type_counts": {
+              "appeared": 176,
+              "attributes_changed": 708,
+              "disappeared": 85
+            },
+            "path": "master_transitions/2023.parquet",
+            "rows": 969,
+            "sha256": "a3c763f201c6c0e1bcd4d336617b5c53dd8c0bef369d7deda521bd003a4b2f39"
+          },
+          "path": "listed_info/2023.parquet",
+          "requested_dates": 246,
+          "sha256": "46ccc066b4e36f7dc3331486f366aa02921a6b9145b4d1220c8e66d05eeb2b7b",
+          "stats": {
+            "columns": [
+              "Date",
+              "Code",
+              "CoName",
+              "CoNameEn",
+              "S17",
+              "S17Nm",
+              "S33",
+              "S33Nm",
+              "ScaleCat",
+              "Mkt",
+              "MktNm",
+              "Mrgn",
+              "MrgnNm",
+              "ProdCat"
+            ],
+            "date_max": "2023-12-29",
+            "date_min": "2023-01-04",
+            "duplicate_keys": 0,
+            "missing_rate": {
+              "CoName": 0.0,
+              "CoNameEn": 0.0,
+              "Code": 0.0,
+              "Date": 0.0,
+              "Mkt": 0.0,
+              "MktNm": 0.0,
+              "Mrgn": 0.0,
+              "MrgnNm": 0.0,
+              "ProdCat": 0.0,
+              "S17": 0.0,
+              "S17Nm": 0.0,
+              "S33": 0.0,
+              "S33Nm": 0.0,
+              "ScaleCat": 0.0
+            },
+            "rows": 1052339,
+            "securities": 4422
+          },
+          "year": 2023
+        },
+        {
+          "code_change_candidates": {
+            "authoritative": false,
+            "path": "code_change_candidates/2024.parquet",
+            "rows": 0,
+            "sha256": "1fa2a6bccb4fb91d40713d30bd9df1d2b67b4748fdb532ed13e5d9e7a2c22f38"
+          },
+          "completed_dates": 245,
+          "master_transitions": {
+            "change_type_counts": {
+              "appeared": 187,
+              "attributes_changed": 492,
+              "disappeared": 110
+            },
+            "path": "master_transitions/2024.parquet",
+            "rows": 789,
+            "sha256": "0dd1019c09958cc81822f82a278bcb6b947ce647377b417ee4f4e5a12f40dfbc"
+          },
+          "path": "listed_info/2024.parquet",
+          "requested_dates": 245,
+          "sha256": "bc5c93f5a50534acd147c0f2efeafdfb5e12f3fd5bdccae65949a2bf09a708f7",
+          "stats": {
+            "columns": [
+              "Date",
+              "Code",
+              "CoName",
+              "CoNameEn",
+              "S17",
+              "S17Nm",
+              "S33",
+              "S33Nm",
+              "ScaleCat",
+              "Mkt",
+              "MktNm",
+              "Mrgn",
+              "MrgnNm",
+              "ProdCat"
+            ],
+            "date_max": "2024-12-30",
+            "date_min": "2024-01-04",
+            "duplicate_keys": 0,
+            "missing_rate": {
+              "CoName": 0.0,
+              "CoNameEn": 0.0,
+              "Code": 0.0,
+              "Date": 0.0,
+              "Mkt": 0.0,
+              "MktNm": 0.0,
+              "Mrgn": 0.0,
+              "MrgnNm": 0.0,
+              "ProdCat": 0.0,
+              "S17": 0.0,
+              "S17Nm": 0.0,
+              "S33": 0.0,
+              "S33Nm": 0.0,
+              "ScaleCat": 0.0
+            },
+            "rows": 1070937,
+            "securities": 4522
+          },
+          "year": 2024
+        },
+        {
+          "code_change_candidates": {
+            "authoritative": false,
+            "path": "code_change_candidates/2025.parquet",
+            "rows": 0,
+            "sha256": "1fa2a6bccb4fb91d40713d30bd9df1d2b67b4748fdb532ed13e5d9e7a2c22f38"
+          },
+          "completed_dates": 243,
+          "master_transitions": {
+            "change_type_counts": {
+              "appeared": 167,
+              "attributes_changed": 988,
+              "disappeared": 144
+            },
+            "path": "master_transitions/2025.parquet",
+            "rows": 1299,
+            "sha256": "1f772270f0d0c99e36b3ee5499b813e359225a7aa2f6225b501d29e9a6f5d947"
+          },
+          "path": "listed_info/2025.parquet",
+          "requested_dates": 243,
+          "sha256": "0a55e569604c77d6505f3b30d5b48769cc6602424500a3168f2426d7013ca6f4",
+          "stats": {
+            "columns": [
+              "Date",
+              "Code",
+              "CoName",
+              "CoNameEn",
+              "S17",
+              "S17Nm",
+              "S33",
+              "S33Nm",
+              "ScaleCat",
+              "Mkt",
+              "MktNm",
+              "Mrgn",
+              "MrgnNm",
+              "ProdCat"
+            ],
+            "date_max": "2025-12-30",
+            "date_min": "2025-01-06",
+            "duplicate_keys": 0,
+            "missing_rate": {
+              "CoName": 0.0,
+              "CoNameEn": 0.0,
+              "Code": 0.0,
+              "Date": 0.0,
+              "Mkt": 0.0,
+              "MktNm": 0.0,
+              "Mrgn": 0.0,
+              "MrgnNm": 0.0,
+              "ProdCat": 0.0,
+              "S17": 0.0,
+              "S17Nm": 0.0,
+              "S33": 0.0,
+              "S33Nm": 0.0,
+              "ScaleCat": 0.0
+            },
+            "rows": 1072501,
+            "securities": 4581
+          },
+          "year": 2025
+        },
+        {
+          "code_change_candidates": {
+            "authoritative": false,
+            "path": "code_change_candidates/2026.parquet",
+            "rows": 0,
+            "sha256": "1fa2a6bccb4fb91d40713d30bd9df1d2b67b4748fdb532ed13e5d9e7a2c22f38"
+          },
+          "completed_dates": 185,
+          "master_transitions": {
+            "change_type_counts": {
+              "appeared": 146,
+              "attributes_changed": 345,
+              "disappeared": 141
+            },
+            "path": "master_transitions/2026.parquet",
+            "rows": 632,
+            "sha256": "da33c2bc51f28b431e105984b96952b20183ad5877736d7a7df8a95ca60562a8"
+          },
+          "path": "listed_info/2026.parquet",
+          "requested_dates": 185,
+          "sha256": "d143e7622dd94c10c1d55c24c7f616870fac13a9d401816748226175e88fbfa8",
+          "stats": {
+            "columns": [
+              "Date",
+              "Code",
+              "CoName",
+              "CoNameEn",
+              "S17",
+              "S17Nm",
+              "S33",
+              "S33Nm",
+              "ScaleCat",
+              "Mkt",
+              "MktNm",
+              "Mrgn",
+              "MrgnNm",
+              "ProdCat"
+            ],
+            "date_max": "2026-10-07",
+            "date_min": "2026-01-05",
+            "duplicate_keys": 0,
+            "missing_rate": {
+              "CoName": 0.0,
+              "CoNameEn": 0.0,
+              "Code": 0.0,
+              "Date": 0.0,
+              "Mkt": 0.0,
+              "MktNm": 0.0,
+              "Mrgn": 0.0,
+              "MrgnNm": 0.0,
+              "ProdCat": 0.0,
+              "S17": 0.0,
+              "S17Nm": 0.0,
+              "S33": 0.0,
+              "S33Nm": 0.0,
+              "ScaleCat": 0.0
+            },
+            "rows": 822005,
+            "securities": 4582
+          },
+          "year": 2026
+        }
+      ],
+      "requested_dates": 2436,
+      "rows": 10111446,
+      "status": "completed"
+    },
+    "topix": {
+      "completed_dates": 2436,
+      "completed_partitions": [],
+      "path": "topix.parquet",
+      "requested_dates": 2436,
+      "rows": 2436,
+      "sha256": "77a4d9c1c6cc6391ee1b208b7943167935a4b94d231ce824b7fa7ed1ccfe5cdc",
+      "stats": {
+        "columns": [
+          "Date",
+          "O",
+          "H",
+          "L",
+          "C"
+        ],
+        "date_max": "2026-10-07",
+        "date_min": "2016-10-17",
+        "duplicate_keys": 0,
+        "missing_rate": {
+          "C": 0.0,
+          "Date": 0.0,
+          "H": 0.0,
+          "L": 0.0,
+          "O": 0.0
+        },
+        "rows": 2436,
+        "securities": null
+      },
+      "status": "completed"
+    }
+  },
+  "endpoints": {
+    "earnings_schedule": "/fins/earnings-date",
+    "financial_results": "/fins/summary",
+    "listed_info": "/equities/master",
+    "topix": "/indices/bars/daily/topix"
+  },
+  "error_message": "J-Quants API returned HTTP 400: Your subscription covers the following dates: 2016-10-16 ~ . If you want more data, please check other plans:https://jpx-jquants.com/#dataset",
+  "error_type": "ApiResponseError",
+  "manifest_schema_version": 1,
+  "master_transition_limitations": {
+    "appearance_or_disappearance_is_not_an_authoritative_listing_event": true,
+    "candidate_rule": "unique exact CoName among disappeared and appeared codes on one boundary",
+    "code_change_candidates_are_authoritative": false,
+    "first_requested_session_is_baseline": true
+  },
+  "partial_partition": null,
+  "provider": "J-Quants API",
+  "request": {
+    "datasets": [
+      "topix",
+      "listed_info",
+      "earnings_schedule",
+      "financial_results"
+    ],
+    "end_date": "2026-10-07",
+    "max_retries": 3,
+    "rate_limit_wait_seconds": 65.0,
+    "requests_per_minute": 5.0,
+    "start_date": "2016-10-15",
+    "timeout_seconds": 30.0
+  },
+  "snapshot_id": "jquants_v2_auxiliary_20261015T065406090214Z",
+  "software": {
+    "module_sha256": "f954fa68914c3e0e070d42e366eb160b1de910e907a31adfdf27c2d0341698bb",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "pyarrow": "25.0.1",
+    "python": "3.11.9",
+    "requests": "2.34.2"
+  },
+  "started_at_utc": "2026-10-15T06:54:06.091215Z",
+  "status": "failed",
+  "time_semantics": {
+    "earnings_schedule": "PubDate is availability/publication date; SchDate is the scheduled event date.",
+    "financial_results": "DiscDate and DiscTime are disclosure date/time in Japan local time.",
+    "listed_info": "Date is the requested point-in-time master date.",
+    "topix": "Date is the market observation date; Close is not known before that session close."
+  },
+  "updated_at_utc": "2026-10-15T15:18:46.653568Z"
+}

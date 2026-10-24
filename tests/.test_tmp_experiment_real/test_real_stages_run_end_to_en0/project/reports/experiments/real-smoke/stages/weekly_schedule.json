@@ -1,0 +1,39 @@
+{
+  "schema_id": "weekly-trading-schedule-v1",
+  "config": {
+    "min_trading_sessions_per_week": 4,
+    "require_topix": true
+  },
+  "calendar_date_min": "2015-11-01",
+  "calendar_date_max": "2025-01-31",
+  "calendar_rows": 3380,
+  "calendar_sessions": 2415,
+  "calendar_weeks": 484,
+  "included_weeks": 482,
+  "excluded_weeks": 2,
+  "exclusion_reason_counts": {
+    "calendar_boundary_incomplete": 2,
+    "evaluation_weekday_not_thursday_or_friday": 1,
+    "fewer_than_minimum_sessions": 1,
+    "next_session_entry_unavailable": 1,
+    "signal_weekday_not_monday_or_tuesday": 1
+  },
+  "signal_date_min": "2015-11-02",
+  "signal_date_max": "2025-01-20",
+  "calendar": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_real\\test_real_stages_run_end_to_en0\\project\\data\\raw\\price_snapshot\\trading_calendar.parquet",
+    "sha256": "693084a83e9b7009ccf88a88e46a556c2743238fe7930e78e66e6fb461160fcc"
+  },
+  "output": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_real\\test_real_stages_run_end_to_en0\\project\\data\\processed\\experiments\\real-smoke\\weekly_schedule.parquet",
+    "rows": 482,
+    "sha256": "fa57a063b34fcf93c9f9a5e0015e1e61f2dd7c2513b9ad548a234284acdf35e7"
+  },
+  "code_sha256": "6a568bb6f81be04d93d592a3a374579adc473667b8f72bed00e5be10badb37d2",
+  "versions": {
+    "python": "3.11.9",
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "pyarrow": "25.0.1"
+  }
+}

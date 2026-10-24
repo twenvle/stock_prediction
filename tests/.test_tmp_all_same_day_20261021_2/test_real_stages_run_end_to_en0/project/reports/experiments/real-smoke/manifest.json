@@ -1,0 +1,405 @@
+{
+  "code_sha256": {
+    "backtest.py": "55395bf62183277bf9edb14d5d295bb1af44285d79dd239b3899175f512f209e",
+    "descriptors.py": "1551d88159ccf76d78ec10cf70140cd4b675002e089005794fdec12e86dcd3fc",
+    "earnings_events.py": "6573bbf217b63d04bfb0eff580955530027d1f16bc929e2f4343f65abc516b84",
+    "evaluation.py": "2a42de1823cee314067221c704dccd84b332e752e3388f12c80e1cb27fa658ca",
+    "experiment.py": "76116388e820bf494df68bfd08757a05c5fded4e571f272917380f32b2d913fe",
+    "modeling.py": "c9112e3a3bcdfb0b163397820cdeba464bca7ce4c1fed356007ef51d8b257564",
+    "preprocessing.py": "6e9f7279b4ed8bab426c2b214ae12808f936b0fafdfc50588beb46932a7e2070",
+    "splits.py": "856d68cf04a1f6f2421ced2b320e5b1bab187bf8f262febfd1e1a0c39fe8796e",
+    "universe.py": "5741bc20020f72e6c729173b625c3af3c4b3376e3c0a635095b8a97b1a514ee1",
+    "weekly_dataset.py": "6a568bb6f81be04d93d592a3a374579adc473667b8f72bed00e5be10badb37d2"
+  },
+  "development_period_only": true,
+  "experiment_name": "test-development",
+  "experiment_report": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\reports\\experiments\\real-smoke\\experiment_report.md",
+    "sha256": "f0ab466ac9c2388bdeadf244c725944787a54ac9ad1efbb1d2e482f3121a415c"
+  },
+  "final_period_evaluated": false,
+  "final_period_prepared_rows": 0,
+  "final_period_used_for_model_selection": false,
+  "finished_at_utc": "2026-10-21T02:55:12.878121+00:00",
+  "input_identifiers": {
+    "auxiliary_snapshot": {
+      "api_version": "v2-shape",
+      "declared_sha256_count": 0,
+      "declared_sha256_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\manifest.json",
+      "manifest_sha256": "abfef1c14e1b9bdb21c74971f0381507adf3ae26e3780c16ad1ecbd40b7b2a2f",
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot",
+      "provider": "synthetic-test",
+      "request": {
+        "end_date": "2024-12-31",
+        "start_date": "2016-01-01"
+      },
+      "snapshot_id": "synthetic-auxiliary",
+      "status": "completed",
+      "totals": {
+        "listed_info_rows": 9392
+      }
+    },
+    "calendar": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\data\\raw\\price_snapshot\\trading_calendar.parquet",
+      "sha256": "b56c8c5f4462afa8579f4c93654807535469c962c9600b03e6972da82f6540cb"
+    },
+    "delistings": null,
+    "price_snapshot": {
+      "api_version": "v2-shape",
+      "declared_sha256_count": 9,
+      "declared_sha256_digest": "ae593ffae85420edf53fbc01bdc86f5def5b0aaa3918524a36302f5d1448a455",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\data\\raw\\price_snapshot\\manifest.json",
+      "manifest_sha256": "c17fb0b315a7611a5ab70bfc7d75ac69b6bebcbb17aae200caf6117780bb1e23",
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\data\\raw\\price_snapshot",
+      "provider": "synthetic-test",
+      "request": {
+        "end_date": "2024-12-31",
+        "start_date": "2016-01-01"
+      },
+      "snapshot_id": "synthetic-price",
+      "status": "completed",
+      "totals": {
+        "price_rows": 9392
+      }
+    },
+    "topix_raw": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\topix.parquet",
+      "sha256": "5716f61829ca873c545fde99296c48dc4ee621e78aa42e15de37443dbd029aaa"
+    }
+  },
+  "outputs": {
+    "artifacts": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\artifacts\\experiments\\real-smoke",
+    "backtest": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\artifacts\\experiments\\real-smoke\\backtest",
+    "evaluation": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\artifacts\\experiments\\real-smoke\\evaluation",
+    "interim": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\data\\interim\\experiments\\real-smoke",
+    "modeling": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\artifacts\\experiments\\real-smoke\\modeling",
+    "processed": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\data\\processed\\experiments\\real-smoke",
+    "reports": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\reports\\experiments\\real-smoke"
+  },
+  "random_seed": 1729,
+  "randomized_stages": [],
+  "resolved_config": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\reports\\experiments\\real-smoke\\config.resolved.json",
+    "sha256": "94da348ec9a3f70dedc21d0923b48a088d9c3dfa64997e29d6f7d6f1debc3f48"
+  },
+  "run_id": "real-smoke",
+  "schema_id": "stock-prediction-experiment-v1",
+  "source_config": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\configs\\experiment.json",
+    "sha256": "579af94cdd2927f61a02a95aec22cf81d4c408c5012623e3da2d5b621530be67"
+  },
+  "stage_configs": {
+    "backtest": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\configs\\backtest.json",
+      "sha256": "c331a56bf4bbb72615f26dfa666382413126c217c5acc557a3679c53155d2dd9",
+      "values": {
+        "annualization_sessions": 252,
+        "commission_bps": 5.0,
+        "default_lot_size": 100,
+        "eligibility_column": "is_signal_eligible",
+        "exit_price_mode": "evaluation_close",
+        "half_spread_bps": 5.0,
+        "initial_cash_yen": 10000000.0,
+        "liquidity_column": "median_turnover_value_20",
+        "lot_size_column": "lot_size",
+        "max_exit_wait_sessions": 20,
+        "max_participation_rate": 0.01,
+        "model_name": "linear",
+        "slippage_bps": 10.0,
+        "target_column": "target_return",
+        "top_n": 10,
+        "unresolved_delisting_policy": "error"
+      }
+    },
+    "descriptors": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\configs\\descriptors.json",
+      "sha256": "1423e6ddba8353b6054cdef7c460cb7a6ba66a21d0bffbe4c10ef8a10449c50e",
+      "values": {
+        "require_topix": true,
+        "volatility_ddof": 1
+      }
+    },
+    "earnings_events": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\configs\\earnings_events.json",
+      "sha256": "db980e9972969f08977daae7ad7cfa4fa43cb20b2e51f8540c0c765d264b87a1",
+      "values": {
+        "cooldown_trading_sessions": 25,
+        "earnings_doc_type_prefixes": [
+          "FinancialStatements"
+        ]
+      }
+    },
+    "evaluation": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\configs\\evaluation.json",
+      "sha256": "e2285543ebc8911f59b3b7853edb9ce0bf16a79b01c751c9fa28e2cbb50cb3b8",
+      "values": {
+        "industry_code_column": "S33",
+        "industry_date_column": "Date",
+        "industry_name_column": "S33Nm",
+        "industry_security_column": "Code",
+        "top_n": 10
+      }
+    },
+    "modeling": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\configs\\modeling.json",
+      "sha256": "d7b067088542bc4fc71149bade039cf54e6590adc4d29739873c9e6e23845b34",
+      "values": {
+        "feature_columns": [
+          "R_5",
+          "R_20",
+          "R_60",
+          "PriceToSMA_20",
+          "SMA_5To20",
+          "Volatility_5To20",
+          "Volatility_20",
+          "RangePosition_20",
+          "VolumeRatio_5To20",
+          "TurnoverRatio_5To20",
+          "RelativeTOPIX_20"
+        ],
+        "momentum_feature": "R_20",
+        "target_column": "target_return",
+        "top_n": 10
+      }
+    },
+    "preprocessing": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\configs\\preprocessing.json",
+      "sha256": "467f937d7f2c9aa439dec2a33eecc90cee37252822190f8842b639d8e462d2ec",
+      "values": {
+        "abnormal_return_threshold": 0.5,
+        "allow_unverified_calendar": false,
+        "end_date": null,
+        "start_date": null
+      }
+    },
+    "splits": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\configs\\splits.json",
+      "sha256": "bb03a13efe5798e3536863d77f04c8edefbd09ab804269be201acf563e5d1c22",
+      "values": {
+        "isolation_end_date": "2026-12-31",
+        "isolation_start_date": "2025-01-01",
+        "purge_trading_sessions": 4
+      }
+    },
+    "universe": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\configs\\universe.json",
+      "sha256": "ca16c8a63b744864da9e618961c3a93dda58f35158c68ba59c2fae2528e79b8a",
+      "values": {
+        "domestic_common_product_category": "011",
+        "liquidity_window_sessions": 20,
+        "max_participation_rate": 0.01,
+        "min_listing_sessions_elapsed": 60,
+        "min_median_turnover_yen": 100000000.0,
+        "min_price_formation_days": 15,
+        "planned_investment_yen": 1000000.0
+      }
+    },
+    "weekly_dataset": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\configs\\weekly_dataset.json",
+      "sha256": "1ca7bd35e9b65b3e3e688540cbcdd7f6504d0885e76847582100553a80e6780d",
+      "values": {
+        "min_trading_sessions_per_week": 4,
+        "require_topix": true
+      }
+    }
+  },
+  "stage_order": [
+    "preprocessing",
+    "topix_normalization",
+    "descriptors",
+    "weekly_schedule",
+    "universe",
+    "earnings_events",
+    "weekly_dataset",
+    "splits",
+    "modeling",
+    "evaluation",
+    "backtest"
+  ],
+  "stages": [
+    {
+      "finished_at_utc": "2026-10-21T02:54:51.165125+00:00",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\reports\\experiments\\real-smoke\\stages\\preprocessing\\manifest.json",
+      "manifest_sha256": "af9aee67ea36e0fcea7306dc3c7bc1a19c52b48408d83cba9cb4cf0c6293f76b",
+      "name": "preprocessing",
+      "started_at_utc": "2026-10-21T02:54:49.672607+00:00",
+      "status": "complete",
+      "summary": {
+        "output_rows": 9392,
+        "quarantined_rows": 0,
+        "status": "complete"
+      }
+    },
+    {
+      "finished_at_utc": "2026-10-21T02:54:51.196964+00:00",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\reports\\experiments\\real-smoke\\stages\\topix_normalization.json",
+      "manifest_sha256": "110f582709b8e959cced80e9dd11adfb5f6410af9904bf0e39b265cd247c9641",
+      "name": "topix_normalization",
+      "started_at_utc": "2026-10-21T02:54:51.170178+00:00",
+      "status": "complete",
+      "summary": {
+        "status": "complete"
+      }
+    },
+    {
+      "finished_at_utc": "2026-10-21T02:54:52.461578+00:00",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\reports\\experiments\\real-smoke\\stages\\descriptors\\manifest.json",
+      "manifest_sha256": "4c15d7dcb266910d4ab05b7941b68c83f64022b6a1327537573ce6537c66ed67",
+      "name": "descriptors",
+      "started_at_utc": "2026-10-21T02:54:51.202516+00:00",
+      "status": "complete",
+      "summary": {
+        "output_rows": 9392,
+        "status": "complete"
+      }
+    },
+    {
+      "finished_at_utc": "2026-10-21T02:54:52.868846+00:00",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\reports\\experiments\\real-smoke\\stages\\weekly_schedule.json",
+      "manifest_sha256": "ba4da46e60d273c887d35ab7a927812eb0500d4dc8cb3d2f564ca1f5c18b47be",
+      "name": "weekly_schedule",
+      "started_at_utc": "2026-10-21T02:54:52.464921+00:00",
+      "status": "complete",
+      "summary": {
+        "status": "complete"
+      }
+    },
+    {
+      "finished_at_utc": "2026-10-21T02:54:55.205403+00:00",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\reports\\experiments\\real-smoke\\stages\\universe\\manifest.json",
+      "manifest_sha256": "4bfa1b400288d28bb9fff2603e937029d595d2240ee2fbbb005d525519456808",
+      "name": "universe",
+      "started_at_utc": "2026-10-21T02:54:52.872841+00:00",
+      "status": "complete",
+      "summary": {
+        "eligible_rows": 1828,
+        "output_rows": 1876,
+        "status": "complete"
+      }
+    },
+    {
+      "finished_at_utc": "2026-10-21T02:54:56.194819+00:00",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\reports\\experiments\\real-smoke\\stages\\earnings_events\\manifest.json",
+      "manifest_sha256": "4dcfccb114281811cf9d0fafe00b5b148ab6796d7df86e72abe50c5d7e7af8b3",
+      "name": "earnings_events",
+      "started_at_utc": "2026-10-21T02:54:55.210399+00:00",
+      "status": "complete",
+      "summary": {
+        "eligible_rows": 1876,
+        "output_rows": 1876,
+        "status": "complete"
+      }
+    },
+    {
+      "finished_at_utc": "2026-10-21T02:55:01.230074+00:00",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\reports\\experiments\\real-smoke\\stages\\weekly_dataset\\manifest.json",
+      "manifest_sha256": "f3946da2880a861d6149a140a7d7dc35f35d00a147fda69cbf67a1155d3502fe",
+      "name": "weekly_dataset",
+      "started_at_utc": "2026-10-21T02:54:56.198826+00:00",
+      "status": "complete",
+      "summary": {
+        "output_rows": 1876,
+        "signal_eligible_rows": 1828,
+        "status": "complete",
+        "target_excess_return_sample_rows": 1816,
+        "target_return_sample_rows": 1816
+      }
+    },
+    {
+      "finished_at_utc": "2026-10-21T02:55:01.439274+00:00",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\reports\\experiments\\real-smoke\\stages\\splits\\manifest.json",
+      "manifest_sha256": "8b11d7d02e3b94dcc387a713c73f84dee82081c1dfe588d2cc723d19dabda4eb",
+      "name": "splits",
+      "started_at_utc": "2026-10-21T02:55:01.235086+00:00",
+      "status": "complete",
+      "summary": {
+        "isolation": {
+          "codes": 0,
+          "exit_date_max": null,
+          "rows": 0,
+          "signal_date_max": null,
+          "signal_date_min": null,
+          "signal_dates": 0
+        },
+        "status": "complete"
+      }
+    },
+    {
+      "finished_at_utc": "2026-10-21T02:55:03.445747+00:00",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\reports\\experiments\\real-smoke\\stages\\modeling\\manifest.json",
+      "manifest_sha256": "2635552828f59d0f89feac8b4d223428af1e108ece8dda9a515c2bc59da284a3",
+      "name": "modeling",
+      "started_at_utc": "2026-10-21T02:55:01.443579+00:00",
+      "status": "complete",
+      "summary": {
+        "isolation": {
+          "rows_excluded_from_modeling": 0,
+          "targets_or_features_inspected": false
+        },
+        "outputs": {
+          "daily_metric_rows": 780,
+          "fold_metric_rows": 15,
+          "prediction_rows": 3120
+        },
+        "status": "complete"
+      }
+    },
+    {
+      "finished_at_utc": "2026-10-21T02:55:09.803845+00:00",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\reports\\experiments\\real-smoke\\stages\\evaluation\\manifest.json",
+      "manifest_sha256": "285a0d4a77fa7915c371961a4a6603f3b9b10da3e3b7f304059db0ca01b83cd8",
+      "name": "evaluation",
+      "started_at_utc": "2026-10-21T02:55:03.449870+00:00",
+      "status": "complete",
+      "summary": {
+        "outputs": {
+          "daily_metric_rows": 780,
+          "industry_daily_metric_rows": 1560,
+          "industry_metric_rows": 6,
+          "industry_yearly_metric_rows": 30,
+          "predictions_with_industry_rows": 3120,
+          "summary_metric_rows": 3,
+          "yearly_metric_rows": 15
+        },
+        "status": "complete"
+      }
+    },
+    {
+      "finished_at_utc": "2026-10-21T02:55:12.874122+00:00",
+      "manifest_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_same_day_20261021_2\\test_real_stages_run_end_to_en0\\project\\reports\\experiments\\real-smoke\\stages\\backtest\\manifest.json",
+      "manifest_sha256": "afb704bde7bbc90b2b557919ad0c5293d5948f8134927b988b0829b56c052447",
+      "name": "backtest",
+      "started_at_utc": "2026-10-21T02:55:09.806966+00:00",
+      "status": "complete",
+      "summary": {
+        "main_result_complete": true,
+        "outputs": {
+          "corporate_action_rows": 0,
+          "daily_rows": 1300,
+          "order_rows": 2080,
+          "position_rows": 1040,
+          "trade_rows": 2080,
+          "weekly_rows": 260,
+          "yearly_rows": 5
+        },
+        "status": "complete"
+      }
+    }
+  ],
+  "started_at_utc": "2026-10-21T02:54:49.649610+00:00",
+  "status": "complete",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "pyarrow": "25.0.1",
+    "python": "3.11.9",
+    "requests": "2.34.2",
+    "stock-prediction": "0.1.0"
+  },
+  "warnings": [
+    "This experiment evaluates development-period predictions only; it does not run or unlock the 2025-2026 final period.",
+    "J-Quants acquisition is intentionally outside the experiment run; immutable snapshot manifests identify the inputs.",
+    "No confirmed delisting settlement table is supplied; the backtest will stop if a confirmed event must be settled."
+  ]
+}

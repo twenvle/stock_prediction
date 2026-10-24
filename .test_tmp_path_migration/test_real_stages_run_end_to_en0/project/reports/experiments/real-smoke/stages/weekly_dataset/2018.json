@@ -1,0 +1,98 @@
+{
+  "schema_id": "weekly-research-dataset-v2",
+  "config": {
+    "min_trading_sessions_per_week": 4,
+    "require_topix": true,
+    "signal_start_date": "2017-02-06"
+  },
+  "schedule": {
+    "schema_id": "weekly-trading-schedule-v2",
+    "config": {
+      "min_trading_sessions_per_week": 4,
+      "require_topix": true,
+      "signal_start_date": "2017-02-06"
+    },
+    "calendar_date_min": "2015-11-01",
+    "calendar_date_max": "2025-01-31",
+    "calendar_rows": 3380,
+    "calendar_sessions": 2392,
+    "configured_signal_start_date": "2017-02-06",
+    "calendar_weeks": 484,
+    "included_weeks": 412,
+    "excluded_weeks": 72,
+    "exclusion_reason_counts": {
+      "calendar_boundary_incomplete": 2,
+      "evaluation_weekday_not_thursday_or_friday": 6,
+      "fewer_than_minimum_sessions": 6,
+      "next_session_entry_unavailable": 5,
+      "signal_before_configured_start": 66,
+      "signal_weekday_not_monday_or_tuesday": 5
+    },
+    "signal_date_min": "2017-02-06",
+    "signal_date_max": "2024-12-23"
+  },
+  "input_price_rows": 1044,
+  "input_price_securities": 4,
+  "input_price_date_min": "2018-01-01",
+  "input_price_date_max": "2018-12-31",
+  "input_price_unavailable_rows": 0,
+  "input_descriptor_rows": 1044,
+  "input_descriptor_securities": 4,
+  "input_descriptor_date_min": "2018-01-01",
+  "input_descriptor_date_max": "2018-12-31",
+  "input_universe_rows": 212,
+  "input_universe_date_min": "2018-01-01",
+  "input_universe_date_max": "2018-12-31",
+  "input_earnings_rows": 212,
+  "input_topix_rows": 2392,
+  "duplicate_key_counts": {
+    "prices": 0,
+    "descriptors": 0,
+    "universe": 0,
+    "earnings": 0
+  },
+  "output_rows": 212,
+  "signal_dates": 53,
+  "securities": 4,
+  "date_min": "2018-01-01",
+  "date_max": "2018-12-31",
+  "universe_eligible_rows": 212,
+  "earnings_eligible_rows": 212,
+  "signal_eligible_rows": 212,
+  "signal_eligible_without_cooldown_rows": 212,
+  "target_return_rows": 208,
+  "target_excess_return_rows": 208,
+  "target_return_sample_rows": 208,
+  "target_excess_return_sample_rows": 208,
+  "signal_eligible_missing_target_rows": 4,
+  "missing_descriptor_rows": 0,
+  "complete_feature_rows": 212,
+  "universe_exclusion_reason_counts": {},
+  "earnings_exclusion_reason_counts": {},
+  "active_schedule_date_missing_rows": 0,
+  "feature_missing_rate": {
+    "R_5": 0.0,
+    "R_20": 0.0,
+    "R_60": 0.0,
+    "PriceToSMA_20": 0.0,
+    "SMA_5To20": 0.0,
+    "Volatility_5To20": 0.0,
+    "Volatility_20": 0.0,
+    "RangePosition_20": 0.0,
+    "VolumeRatio_5To20": 0.0,
+    "TurnoverRatio_5To20": 0.0,
+    "RelativeTOPIX_20": 0.0
+  },
+  "target_missing_reason_counts": {
+    "evaluation_adjusted_close_unavailable": 4
+  },
+  "limitations": [
+    "Missing evaluation prices are reported, not filled; delisting outcomes require a later explicit policy.",
+    "is_executable and is_earnings_eligible_ex_post are retained for audits but never affect signal eligibility.",
+    "Feature imputation, outlier handling, standardization, and target selection remain fold-local later steps.",
+    "Adjusted prices may be revised retrospectively after corporate actions; input snapshots must remain identified."
+  ],
+  "year": 2018,
+  "output_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_path_migration\\test_real_stages_run_end_to_en0\\project\\data\\processed\\experiments\\real-smoke\\weekly_dataset\\2018.parquet",
+  "output_sha256": "29dd0b4ff9d2df1b4adc4ab5545b61771dc420347b8f6c3ab0e7723cb80dee56"
+}

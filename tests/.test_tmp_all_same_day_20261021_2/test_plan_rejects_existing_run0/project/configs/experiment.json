@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "experiment_name": "test-development",
+  "random_seed": 1729,
+  "inputs": {
+    "price_snapshot_dir": "data/raw/price_snapshot",
+    "auxiliary_snapshot_dir": "data/raw/aux_snapshot",
+    "delistings_path": null
+  },
+  "stage_configs": {
+    "preprocessing": "configs/preprocessing.json",
+    "descriptors": "configs/descriptors.json",
+    "universe": "configs/universe.json",
+    "earnings_events": "configs/earnings_events.json",
+    "weekly_dataset": "configs/weekly_dataset.json",
+    "splits": "configs/splits.json",
+    "modeling": "configs/modeling.json",
+    "evaluation": "configs/evaluation.json",
+    "backtest": "configs/backtest.json"
+  }
+}

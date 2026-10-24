@@ -1,0 +1,9 @@
+{
+  "domestic_common_product_category": "011",
+  "min_listing_sessions_elapsed": 60,
+  "liquidity_window_sessions": 20,
+  "min_price_formation_days": 15,
+  "min_median_turnover_yen": 100000000.0,
+  "planned_investment_yen": 1000000.0,
+  "max_participation_rate": 0.01
+}

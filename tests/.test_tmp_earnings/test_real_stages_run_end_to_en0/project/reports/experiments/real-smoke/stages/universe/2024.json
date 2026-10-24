@@ -1,0 +1,57 @@
+{
+  "schema_id": "point-in-time-universe-v1",
+  "config": {
+    "domestic_common_product_category": "011",
+    "min_listing_sessions_elapsed": 60,
+    "liquidity_window_sessions": 20,
+    "min_price_formation_days": 15,
+    "min_median_turnover_yen": 100000000.0,
+    "planned_investment_yen": 1000000.0,
+    "max_participation_rate": 0.01
+  },
+  "input_master_rows": 1048,
+  "history_master_rows": 240,
+  "input_price_rows": 1048,
+  "history_price_rows": 240,
+  "output_rows": 208,
+  "signal_dates": 52,
+  "securities": 4,
+  "date_min": "2024-01-01",
+  "date_max": "2024-12-23",
+  "criterion_true_counts": {
+    "is_domestic_common_stock": 208,
+    "has_min_listing_history": 208,
+    "has_full_liquidity_window": 208,
+    "meets_price_formation_days": 208,
+    "meets_median_turnover": 208,
+    "meets_participation_limit": 208,
+    "signal_price_formed": 208,
+    "is_liquid": 208,
+    "is_eligible": 208
+  },
+  "exclusion_reason_counts": {},
+  "schedule_supplied": true,
+  "executable_rows": 208,
+  "master_rows_without_price": 0,
+  "price_rows_not_in_master": 0,
+  "limitations": [
+    "Daily OHLCV and limit flags provide conservative execution proxies, not order-book fill certainty.",
+    "Supervisory/special-treatment designations are unavailable in the current input schema.",
+    "Future entry/exit observations never contribute to is_eligible.",
+    "The initial master snapshot does not reveal earlier listing history; 60 observed sessions are required."
+  ],
+  "master_input": {
+    "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\listed_info\\2024.parquet",
+    "rows": 1048,
+    "bytes": 10884,
+    "sha256": "7f61da2204ec5ff5d609ced9d9dd497de9763585a3fc26abbd79d4b531de9402"
+  },
+  "price_input": {
+    "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\interim\\experiments\\real-smoke\\prices\\2024.parquet",
+    "rows": 1048,
+    "bytes": 119235,
+    "sha256": "010779fa5811a49f992f00594c725d06cdd496b2b23a6b64852cf37f85a17936"
+  },
+  "output_file": "2024.parquet",
+  "output_sha256": "004bab6d450129ede80fd4393ff9583deb3e3c564ca8e358cc8a2c0da36c5ce5"
+}

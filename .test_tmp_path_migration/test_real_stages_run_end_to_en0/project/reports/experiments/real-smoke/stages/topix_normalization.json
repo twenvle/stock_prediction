@@ -1,0 +1,18 @@
+{
+  "date_max": "2024-12-31",
+  "date_min": "2015-11-02",
+  "duplicate_dates": 0,
+  "input": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_path_migration\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\topix.parquet",
+    "rows": 2392,
+    "sha256": "5716f61829ca873c545fde99296c48dc4ee621e78aa42e15de37443dbd029aaa"
+  },
+  "missing_close_rows": 0,
+  "output": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_path_migration\\test_real_stages_run_end_to_en0\\project\\data\\interim\\experiments\\real-smoke\\topix.parquet",
+    "rows": 2392,
+    "sha256": "2818cad584b54d802a04f576ae764487a1f01ddeb7455fd84ba34d01bee630c8"
+  },
+  "schema_id": "normalized-topix-v1",
+  "status": "complete"
+}

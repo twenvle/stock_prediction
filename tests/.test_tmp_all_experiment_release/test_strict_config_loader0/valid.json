@@ -1,0 +1,1 @@
+{"target_column": "target_excess_return", "feature_columns": ["R_5", "R_20", "R_60", "PriceToSMA_20", "SMA_5To20", "Volatility_5To20", "Volatility_20", "RangePosition_20", "VolumeRatio_5To20", "TurnoverRatio_5To20", "RelativeTOPIX_20"], "momentum_feature": "R_20", "top_n": 3}

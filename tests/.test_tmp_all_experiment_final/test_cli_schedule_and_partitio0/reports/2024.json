@@ -1,0 +1,88 @@
+{
+  "schema_id": "weekly-research-dataset-v1",
+  "config": {
+    "min_trading_sessions_per_week": 4,
+    "require_topix": true
+  },
+  "schedule": {
+    "schema_id": "weekly-trading-schedule-v1",
+    "config": {
+      "min_trading_sessions_per_week": 4,
+      "require_topix": true
+    },
+    "calendar_date_min": "2024-01-01",
+    "calendar_date_max": "2024-01-07",
+    "calendar_rows": 7,
+    "calendar_sessions": 4,
+    "calendar_weeks": 1,
+    "included_weeks": 1,
+    "excluded_weeks": 0,
+    "exclusion_reason_counts": {},
+    "signal_date_min": "2024-01-02",
+    "signal_date_max": "2024-01-02"
+  },
+  "input_price_rows": 4,
+  "input_price_securities": 2,
+  "input_price_date_min": "2024-01-02",
+  "input_price_date_max": "2024-01-05",
+  "input_price_unavailable_rows": 0,
+  "input_descriptor_rows": 2,
+  "input_descriptor_securities": 2,
+  "input_descriptor_date_min": "2024-01-02",
+  "input_descriptor_date_max": "2024-01-02",
+  "input_universe_rows": 2,
+  "input_universe_date_min": "2024-01-02",
+  "input_universe_date_max": "2024-01-02",
+  "input_earnings_rows": 2,
+  "input_topix_rows": 2,
+  "duplicate_key_counts": {
+    "prices": 0,
+    "descriptors": 0,
+    "universe": 0,
+    "earnings": 0
+  },
+  "output_rows": 2,
+  "signal_dates": 1,
+  "securities": 2,
+  "date_min": "2024-01-02",
+  "date_max": "2024-01-02",
+  "universe_eligible_rows": 1,
+  "earnings_eligible_rows": 2,
+  "signal_eligible_rows": 1,
+  "signal_eligible_without_cooldown_rows": 1,
+  "target_return_rows": 2,
+  "target_excess_return_rows": 2,
+  "target_return_sample_rows": 1,
+  "target_excess_return_sample_rows": 1,
+  "signal_eligible_missing_target_rows": 0,
+  "missing_descriptor_rows": 0,
+  "complete_feature_rows": 1,
+  "universe_exclusion_reason_counts": {
+    "not_domestic_common_stock": 1
+  },
+  "earnings_exclusion_reason_counts": {},
+  "active_schedule_date_missing_rows": 0,
+  "feature_missing_rate": {
+    "R_5": 0.0,
+    "R_20": 0.0,
+    "R_60": 0.5,
+    "PriceToSMA_20": 0.0,
+    "SMA_5To20": 0.0,
+    "Volatility_5To20": 0.0,
+    "Volatility_20": 0.0,
+    "RangePosition_20": 0.0,
+    "VolumeRatio_5To20": 0.0,
+    "TurnoverRatio_5To20": 0.0,
+    "RelativeTOPIX_20": 0.0
+  },
+  "target_missing_reason_counts": {},
+  "limitations": [
+    "Missing evaluation prices are reported, not filled; delisting outcomes require a later explicit policy.",
+    "is_executable and is_earnings_eligible_ex_post are retained for audits but never affect signal eligibility.",
+    "Feature imputation, outlier handling, standardization, and target selection remain fold-local later steps.",
+    "Adjusted prices may be revised retrospectively after corporate actions; input snapshots must remain identified."
+  ],
+  "year": 2024,
+  "output_path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_cli_schedule_and_partitio0\\output\\2024.parquet",
+  "output_sha256": "a0a4e7bae50cc9970dc43bbc5578453b698e3dde2c1b911e93eec94a16ddbd28"
+}

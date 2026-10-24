@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stock-prediction"
+version = "0.1.0"
+description = "Reproducible data pipeline for Japanese equity return research"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.2,<4",
+    "numpy>=1.26,<3",
+    "pyarrow>=15,<26",
+    "requests>=2.31,<3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+stock-download = "stock_prediction.data_download:main"
+stock-download-auxiliary = "stock_prediction.auxiliary_data_download:main"
+stock-preprocess = "stock_prediction.preprocessing:main"
+stock-descriptors = "stock_prediction.descriptors:main"
+stock-universe = "stock_prediction.universe:main"
+stock-earnings-events = "stock_prediction.earnings_events:main"
+stock-weekly-dataset = "stock_prediction.weekly_dataset:main"
+stock-splits = "stock_prediction.splits:main"
+stock-modeling = "stock_prediction.modeling:main"
+stock-evaluation = "stock_prediction.evaluation:main"
+stock-backtest = "stock_prediction.backtest:main"
+stock-experiment = "stock_prediction.experiment:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

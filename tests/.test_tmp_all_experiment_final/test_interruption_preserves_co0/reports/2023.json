@@ -1,0 +1,43 @@
+{
+  "schema_id": "earnings-exclusions-v1",
+  "config": {
+    "cooldown_trading_sessions": 25,
+    "earnings_doc_type_prefixes": [
+      "FinancialStatements"
+    ]
+  },
+  "candidate_rows": 1,
+  "signal_dates": 1,
+  "securities": 1,
+  "date_min": "2023-12-18",
+  "date_max": "2023-12-18",
+  "earnings_schedule_rows": 1,
+  "schedule_publication_date_min": "2023-12-01",
+  "schedule_publication_date_max": "2023-12-01",
+  "schedule_missing_date_rows": 0,
+  "financial_result_rows": 1,
+  "actual_earnings_event_rows": 1,
+  "financial_doc_type_counts": {
+    "FinancialStatements_2Q": 1
+  },
+  "scheduled_crossing_rows": 1,
+  "actual_crossing_rows_ex_post": 0,
+  "cooldown_rows": 0,
+  "eligible_without_cooldown_rows": 0,
+  "eligible_rows": 0,
+  "eligible_rows_ex_post": 0,
+  "active_schedule_date_missing_rows": 0,
+  "limitations": [
+    "Scheduled dates have no announcement time, so signal-date events are conservatively included.",
+    "Same-day disclosures at/before the historical TSE close are cooldown day 0; later or missing times are ex-post events.",
+    "Actual holding-period disclosures never affect is_earnings_eligible.",
+    "Input event-history completeness must be established from the immutable source snapshot manifest."
+  ],
+  "candidate_input": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_interruption_preserves_co0\\candidates\\2023.parquet",
+    "rows": 1,
+    "sha256": "f420abbb7b834eb11c15328942a3b79b595fa719d8cf2a9dbf6b3ae34496d352"
+  },
+  "output_file": "2023.parquet",
+  "output_sha256": "5615892c3fdcaf3ab4aec77e939e515bef9261994fe9b841e18e89abd5d41c1c"
+}

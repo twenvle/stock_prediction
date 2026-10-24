@@ -1,0 +1,110 @@
+{
+  "api_base_url": "https://api.jquants.com/v2",
+  "api_version": "v2",
+  "calendar": {
+    "date_max": "2025-01-07",
+    "date_min": "2025-01-06",
+    "duplicate_dates": 0,
+    "holiday_division_counts": {
+      "1": 2
+    },
+    "missing_rate": {
+      "Date": 0.0,
+      "HolDiv": 0.0
+    },
+    "path": "trading_calendar.parquet",
+    "rows": 2,
+    "sha256": "28e4352497b81d744003a719d0184191bcec234fdc8cd04516ff162acdcd35b7",
+    "tse_trading_days": 2
+  },
+  "completed_at_utc": "2026-10-13T10:21:38.519896Z",
+  "completed_partitions": [],
+  "credential_persisted": false,
+  "current_partition": {
+    "completed_trading_dates": 1,
+    "last_completed_date": "2025-01-06",
+    "requested_trading_dates": 2,
+    "year": 2025
+  },
+  "endpoints": {
+    "daily_prices": "/equities/bars/daily",
+    "trading_calendar": "/markets/calendar"
+  },
+  "error_message": "stop now",
+  "error_type": "KeyboardInterrupt",
+  "manifest_schema_version": 1,
+  "partial_partition": {
+    "columns": [
+      "Date",
+      "Code",
+      "O",
+      "H",
+      "L",
+      "C",
+      "UL",
+      "LL",
+      "Vo",
+      "Va",
+      "AdjFactor",
+      "AdjO",
+      "AdjH",
+      "AdjL",
+      "AdjC",
+      "AdjVo"
+    ],
+    "completed_trading_dates": 1,
+    "date_max": "2025-01-06",
+    "date_min": "2025-01-06",
+    "duplicate_keys": 0,
+    "last_completed_date": "2025-01-06",
+    "missing_rate": {
+      "AdjC": 0.0,
+      "AdjFactor": 0.0,
+      "AdjH": 0.0,
+      "AdjL": 0.0,
+      "AdjO": 0.0,
+      "AdjVo": 0.0,
+      "C": 0.0,
+      "Code": 0.0,
+      "Date": 0.0,
+      "H": 0.0,
+      "L": 0.0,
+      "LL": 0.0,
+      "O": 0.0,
+      "UL": 0.0,
+      "Va": 0.0,
+      "Vo": 0.0
+    },
+    "path": "partial_prices/2025.parquet",
+    "rows": 2,
+    "securities": 2,
+    "sha256": "416b2faadbfeb9b02de8b6dbb6d861d8dacd9f7f39c04189b356cd4c7bd71f8c",
+    "year": 2025
+  },
+  "provider": "J-Quants API",
+  "request": {
+    "end_date": "2025-01-07",
+    "max_retries": 3,
+    "rate_limit_wait_seconds": 65.0,
+    "requests_per_minute": 5.0,
+    "start_date": "2025-01-06",
+    "timeout_seconds": 30.0
+  },
+  "snapshot_id": "interrupted",
+  "software": {
+    "module_sha256": "0fb35dacd44a70d5e1630a5dc3d833752c5ae6da4ffcab80e74e5fa9e7d279e5",
+    "pandas": "3.0.6",
+    "pyarrow": "25.0.1",
+    "python": "3.11.9",
+    "requests": "2.34.2"
+  },
+  "started_at_utc": "2026-10-13T10:21:38.448266Z",
+  "status": "interrupted",
+  "totals": {
+    "completed_trading_dates": 1,
+    "completed_years": 0,
+    "price_rows": 0,
+    "requested_trading_dates": 2
+  },
+  "updated_at_utc": "2026-10-13T10:21:38.519896Z"
+}

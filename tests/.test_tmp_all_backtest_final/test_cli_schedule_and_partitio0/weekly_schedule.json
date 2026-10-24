@@ -1,0 +1,33 @@
+{
+  "schema_id": "weekly-trading-schedule-v1",
+  "config": {
+    "min_trading_sessions_per_week": 4,
+    "require_topix": true
+  },
+  "calendar_date_min": "2024-01-01",
+  "calendar_date_max": "2024-01-07",
+  "calendar_rows": 7,
+  "calendar_sessions": 4,
+  "calendar_weeks": 1,
+  "included_weeks": 1,
+  "excluded_weeks": 0,
+  "exclusion_reason_counts": {},
+  "signal_date_min": "2024-01-02",
+  "signal_date_max": "2024-01-02",
+  "calendar": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_backtest_final\\test_cli_schedule_and_partitio0\\calendar.parquet",
+    "sha256": "ce5aef7cc09e091c0f95cb13d7dd88f944bd686a2a25a18bc69c46407587f2a6"
+  },
+  "output": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_backtest_final\\test_cli_schedule_and_partitio0\\weekly_schedule.parquet",
+    "rows": 1,
+    "sha256": "f8f5d1584fe8e576f405bd2a3333888799330de3f02c2f3de0d75e27d103819d"
+  },
+  "code_sha256": "6a568bb6f81be04d93d592a3a374579adc473667b8f72bed00e5be10badb37d2",
+  "versions": {
+    "python": "3.11.9",
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "pyarrow": "25.0.1"
+  }
+}

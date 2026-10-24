@@ -1,0 +1,33 @@
+# Original datasets and regenerated outputs are kept outside version control.
+/data/raw/
+/data/interim/
+/data/processed/
+/artifacts/
+/reports/
+
+# Local runtime dependencies and Python environments.
+/.runtime_dependencies/
+/.venv/
+/venv/
+/env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+/.pytest_cache/
+/.mypy_cache/
+/.ruff_cache/
+/.coverage
+/htmlcov/
+/build/
+/dist/
+.ipynb_checkpoints/
+
+# Secrets and local credentials.
+.env
+.env.*
+!.env.example
+/credentials.json
+/token.json
+/.aws/
+
+# Source, tests, docs, and configs remain tracked.

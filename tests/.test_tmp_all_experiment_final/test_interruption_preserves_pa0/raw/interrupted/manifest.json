@@ -1,0 +1,96 @@
+{
+  "api_base_url": "https://api.jquants.com/v2",
+  "api_version": "v2",
+  "calendar": {
+    "columns": [
+      "Date",
+      "HolDiv"
+    ],
+    "date_max": "2025-01-03",
+    "date_min": "2025-01-02",
+    "duplicate_keys": 0,
+    "missing_rate": {
+      "Date": 0.0,
+      "HolDiv": 0.0
+    },
+    "path": "trading_calendar.parquet",
+    "rows": 2,
+    "securities": null,
+    "sha256": "7ebb2d4f084bf3da65ae8d9504aab1943cf1de659f56884f67d2ffe0bfb3378b",
+    "tse_trading_days": 2
+  },
+  "calendar_source": null,
+  "completed_at_utc": "2026-10-13T11:09:13.726235Z",
+  "credential_persisted": false,
+  "current_partition": {
+    "completed_dates": 1,
+    "dataset": "listed_info",
+    "last_completed_date": "2025-01-02",
+    "requested_dates": 2,
+    "year": 2025
+  },
+  "datasets": {
+    "listed_info": {
+      "completed_dates": 1,
+      "completed_partitions": [],
+      "requested_dates": 2,
+      "rows": 0,
+      "status": "interrupted"
+    }
+  },
+  "endpoints": {
+    "earnings_schedule": "/fins/earnings-date",
+    "financial_results": "/fins/summary",
+    "listed_info": "/equities/master",
+    "topix": "/indices/bars/daily/topix"
+  },
+  "error_message": "stop now",
+  "error_type": "KeyboardInterrupt",
+  "manifest_schema_version": 1,
+  "master_transition_limitations": {
+    "appearance_or_disappearance_is_not_an_authoritative_listing_event": true,
+    "candidate_rule": "unique exact CoName among disappeared and appeared codes on one boundary",
+    "code_change_candidates_are_authoritative": false,
+    "first_requested_session_is_baseline": true
+  },
+  "partial_partition": {
+    "code_change_candidates_path": "partial/code_change_candidates/2025.parquet",
+    "completed_dates": 1,
+    "last_completed_date": "2025-01-02",
+    "master_transitions_path": "partial/master_transitions/2025.parquet",
+    "path": "partial/listed_info/2025.parquet",
+    "rows": 2,
+    "sha256": "bed8407a06b8722270f849d598b6160234eae67e26a9db95881a9ca5752d09ec",
+    "year": 2025
+  },
+  "provider": "J-Quants API",
+  "request": {
+    "datasets": [
+      "listed_info"
+    ],
+    "end_date": "2025-01-03",
+    "max_retries": 3,
+    "rate_limit_wait_seconds": 65.0,
+    "requests_per_minute": 5.0,
+    "start_date": "2025-01-02",
+    "timeout_seconds": 30.0
+  },
+  "snapshot_id": "interrupted",
+  "software": {
+    "module_sha256": "f954fa68914c3e0e070d42e366eb160b1de910e907a31adfdf27c2d0341698bb",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "pyarrow": "25.0.1",
+    "python": "3.11.9",
+    "requests": "2.34.2"
+  },
+  "started_at_utc": "2026-10-13T11:09:13.656785Z",
+  "status": "interrupted",
+  "time_semantics": {
+    "earnings_schedule": "PubDate is availability/publication date; SchDate is the scheduled event date.",
+    "financial_results": "DiscDate and DiscTime are disclosure date/time in Japan local time.",
+    "listed_info": "Date is the requested point-in-time master date.",
+    "topix": "Date is the market observation date; Close is not known before that session close."
+  },
+  "updated_at_utc": "2026-10-13T11:09:13.726235Z"
+}

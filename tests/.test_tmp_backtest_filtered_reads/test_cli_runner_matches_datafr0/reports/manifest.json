@@ -1,0 +1,142 @@
+{
+  "schema_id": "weekly-executable-backtest-v1",
+  "status": "complete",
+  "started_at_utc": "2026-10-13T10:26:04.305039+00:00",
+  "config": {
+    "model_name": "linear",
+    "target_column": "target_return",
+    "eligibility_column": "is_signal_eligible",
+    "liquidity_column": "median_turnover_value_20",
+    "lot_size_column": "lot_size",
+    "initial_cash_yen": 10000000.0,
+    "top_n": 1,
+    "default_lot_size": 100,
+    "max_participation_rate": 0.01,
+    "commission_bps": 5.0,
+    "half_spread_bps": 5.0,
+    "slippage_bps": 10.0,
+    "exit_price_mode": "evaluation_close",
+    "max_exit_wait_sessions": 20,
+    "unresolved_delisting_policy": "error",
+    "annualization_sessions": 252
+  },
+  "inputs": {
+    "predictions": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_backtest_filtered_reads\\test_cli_runner_matches_datafr0\\inputs\\predictions.parquet",
+      "sha256": "93e7d449807afe3e9947a3583a317555a6cbbc1cd44d27bd68aa7bcea64510e9"
+    },
+    "candidate_partitions": [
+      {
+        "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_backtest_filtered_reads\\test_cli_runner_matches_datafr0\\inputs\\candidates\\2024.parquet",
+        "sha256": "47a6908cdbfae6f5cf90a0a8ca62033893e19aaec9ca7a086973e7aaa07aa067"
+      }
+    ],
+    "price_partitions": [
+      {
+        "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_backtest_filtered_reads\\test_cli_runner_matches_datafr0\\inputs\\prices\\2024.parquet",
+        "sha256": "734c110b72420a86d39cb4d6d8be75e960097c4e4dfc3bfbe00fd4a0b435642e"
+      }
+    ],
+    "calendar": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_backtest_filtered_reads\\test_cli_runner_matches_datafr0\\inputs\\calendar.parquet",
+      "sha256": "5b77072dd0d7bf5780ce19b352a68a8494490835a5eecc70c2124a062cf22db9"
+    },
+    "delistings": null
+  },
+  "output_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_backtest_filtered_reads\\test_cli_runner_matches_datafr0\\artifacts",
+  "report_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_backtest_filtered_reads\\test_cli_runner_matches_datafr0\\reports",
+  "completed_outputs": [
+    {
+      "name": "orders",
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_backtest_filtered_reads\\test_cli_runner_matches_datafr0\\artifacts\\orders.parquet",
+      "rows": 2,
+      "sha256": "6abe9363d83837a09a1b2841f64f00ebe643dec7584e5bd6038c81a8caa9ea49"
+    },
+    {
+      "name": "trades",
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_backtest_filtered_reads\\test_cli_runner_matches_datafr0\\artifacts\\trades.parquet",
+      "rows": 2,
+      "sha256": "7d7843f3cbffe26380af6168b977dbe66c81eb2e25b77d98d5eb7caea3c3cbcb"
+    },
+    {
+      "name": "positions",
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_backtest_filtered_reads\\test_cli_runner_matches_datafr0\\artifacts\\positions.parquet",
+      "rows": 1,
+      "sha256": "085b13e47ea4e6e5c66902ad4d1c98d71a4e3ebaffce23f9050016495fa267e8"
+    },
+    {
+      "name": "corporate_actions",
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_backtest_filtered_reads\\test_cli_runner_matches_datafr0\\artifacts\\corporate_actions.parquet",
+      "rows": 0,
+      "sha256": "583bdba29e5c898891213efa306dcf8f6059d94467c4b82ca461e1bf44241b04"
+    },
+    {
+      "name": "daily_portfolio",
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_backtest_filtered_reads\\test_cli_runner_matches_datafr0\\artifacts\\daily_portfolio.parquet",
+      "rows": 5,
+      "sha256": "5858887e2927edebafbf3b5db559cdcfee3a416ba0f2fe8f9addff1cdd10dab4"
+    },
+    {
+      "name": "weekly_metrics",
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_backtest_filtered_reads\\test_cli_runner_matches_datafr0\\artifacts\\weekly_metrics.parquet",
+      "rows": 1,
+      "sha256": "ee357cfddc7fc7370512a5f9c4670440a4bccb4ec212f34dd117f2f26f9becc4"
+    },
+    {
+      "name": "summary_metrics",
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_backtest_filtered_reads\\test_cli_runner_matches_datafr0\\artifacts\\summary_metrics.parquet",
+      "rows": 1,
+      "sha256": "12de23c181fd383f5a4b7e4bd1f17ef5ca272befbc521907a1a03286c818c194"
+    }
+  ],
+  "code_sha256": "974f1db969ae074d0973b348efb9d03b2bf924bc675455d8d1d5a8086ee109f0",
+  "versions": {
+    "python": "3.11.9",
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "pyarrow": "25.0.1"
+  },
+  "input": {
+    "prediction_rows_selected_model_target": 1,
+    "candidate_rows": 1,
+    "price_rows_in_simulation": 25,
+    "delisting_event_rows": 0,
+    "signal_dates": 1,
+    "date_min": "2024-01-08",
+    "date_max": "2024-01-12"
+  },
+  "selection": {
+    "selected_rows": 1,
+    "top_n": 1,
+    "tie_break": "prediction descending, code ascending",
+    "target_values_used": false
+  },
+  "execution": {
+    "entry": "next TSE session open; unfilled remainder expires that session",
+    "exit": "evaluation_close",
+    "blocked_exit": "retry up to 20 TSE sessions",
+    "participation_denominator": "median_turnover_value_20",
+    "future_entry_day_turnover_used_for_sizing": false,
+    "default_lot_size_rows": 0
+  },
+  "outputs": {
+    "order_rows": 2,
+    "trade_rows": 2,
+    "position_rows": 1,
+    "corporate_action_rows": 0,
+    "daily_rows": 5,
+    "weekly_rows": 1
+  },
+  "main_result_complete": true,
+  "open_position_ids": [],
+  "limitations": [
+    "Daily OHLCV and limit flags are conservative execution proxies, not order-book fills.",
+    "A limit-up buy or limit-down sell day is treated as wholly unexecutable.",
+    "Dividends and taxes are not included; results are price-return portfolio results.",
+    "Delisting is never inferred from a missing price or listed-master disappearance.",
+    "A missing point-in-time lot size uses the configured default and is counted in the report.",
+    "Open positions after the retry horizon make the main result incomplete."
+  ],
+  "random_seed": null,
+  "finished_at_utc": "2026-10-13T10:26:04.442099+00:00"
+}

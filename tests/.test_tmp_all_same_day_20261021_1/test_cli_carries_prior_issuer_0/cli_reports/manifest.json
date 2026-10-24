@@ -1,0 +1,138 @@
+{
+  "status": "complete",
+  "started_at_utc": "2026-10-21T02:54:39.718230+00:00",
+  "schema_id": "jquants-v2-daily-bars-base-16-with-known-optional-columns",
+  "config": {
+    "start_date": null,
+    "end_date": null,
+    "abnormal_return_threshold": 0.5,
+    "allow_unverified_calendar": true
+  },
+  "inputs": [
+    {
+      "file": "2023.parquet",
+      "sha256": "588f2e17eac0935a1ecda59be87f841786dd677e527b2a6f579a1d58d41466d5",
+      "bytes": 8919,
+      "raw_rows": 1,
+      "date_min": "2023-12-29",
+      "date_max": "2023-12-29",
+      "schema": {
+        "Date": "timestamp[ns]",
+        "Code": "large_string",
+        "O": "double",
+        "H": "double",
+        "L": "double",
+        "C": "double",
+        "UL": "large_string",
+        "LL": "large_string",
+        "Vo": "double",
+        "Va": "double",
+        "AdjFactor": "double",
+        "AdjO": "double",
+        "AdjH": "double",
+        "AdjL": "double",
+        "AdjC": "double",
+        "AdjVo": "double"
+      },
+      "api_acquired_at": null,
+      "api_version": null
+    },
+    {
+      "file": "2024.parquet",
+      "sha256": "87bf2b17362b48b337a39e278c8d022c4120dcd2e6d3fd31b2d2ef8c03ade64c",
+      "bytes": 8919,
+      "raw_rows": 1,
+      "date_min": "2024-12-30",
+      "date_max": "2024-12-30",
+      "schema": {
+        "Date": "timestamp[ns]",
+        "Code": "large_string",
+        "O": "double",
+        "H": "double",
+        "L": "double",
+        "C": "double",
+        "UL": "large_string",
+        "LL": "large_string",
+        "Vo": "double",
+        "Va": "double",
+        "AdjFactor": "double",
+        "AdjO": "double",
+        "AdjH": "double",
+        "AdjL": "double",
+        "AdjC": "double",
+        "AdjVo": "double"
+      },
+      "api_acquired_at": null,
+      "api_version": null
+    },
+    {
+      "file": "2025.parquet",
+      "sha256": "73e458c632559b7d06af04ca501692132e5f2659563f8071a4bb26f97d2a00ac",
+      "bytes": 8919,
+      "raw_rows": 1,
+      "date_min": "2025-01-06",
+      "date_max": "2025-01-06",
+      "schema": {
+        "Date": "timestamp[ns]",
+        "Code": "large_string",
+        "O": "double",
+        "H": "double",
+        "L": "double",
+        "C": "double",
+        "UL": "large_string",
+        "LL": "large_string",
+        "Vo": "double",
+        "Va": "double",
+        "AdjFactor": "double",
+        "AdjO": "double",
+        "AdjH": "double",
+        "AdjL": "double",
+        "AdjC": "double",
+        "AdjVo": "double"
+      },
+      "api_acquired_at": null,
+      "api_version": null
+    }
+  ],
+  "ignored_files": [],
+  "calendar": null,
+  "code_sha256": {
+    "preprocessing.py": "6e9f7279b4ed8bab426c2b214ae12808f936b0fafdfc50588beb46932a7e2070",
+    "__init__.py": "ce337f2bb2744475fc1bee10ffb932a2769cc5e0a896ba022b6eeb6a09f88766",
+    "pyproject.toml": "b08b3a14d35e023bf4425a96853c1d3fe54033d6f0498ac785007bb60afb8f9b"
+  },
+  "git_revision": null,
+  "random_seed": null,
+  "versions": {
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "pyarrow": "25.0.1"
+  },
+  "completed_partitions": [
+    {
+      "year": 2023,
+      "output_rows": 1,
+      "quarantined_rows": 0,
+      "output_sha256": "a40a0b9c15ed17d0bc6631673d254deacc5caead5ae9d594532edb35e33dd447",
+      "quarantine_sha256": "9ac319fca222c6e31cd96b181a472b3073a72768c549e543d5b9442abc538906"
+    },
+    {
+      "year": 2024,
+      "output_rows": 1,
+      "quarantined_rows": 0,
+      "output_sha256": "ae36754d7c495602972a2056be923f6bd46baa4fb736e3e3c8e1a095ae7d2278",
+      "quarantine_sha256": "9ac319fca222c6e31cd96b181a472b3073a72768c549e543d5b9442abc538906"
+    },
+    {
+      "year": 2025,
+      "output_rows": 1,
+      "quarantined_rows": 0,
+      "output_sha256": "d745ebf3c63cbe9069e4bac669cec7387ad014c24329fdcda20dfa8d56085bf0",
+      "quarantine_sha256": "9ac319fca222c6e31cd96b181a472b3073a72768c549e543d5b9442abc538906"
+    }
+  ],
+  "output_rows": 3,
+  "quarantined_rows": 0,
+  "api_metadata_note": "Acquisition timestamps/API version were not supplied; file mtime is not acquisition time.",
+  "finished_at_utc": "2026-10-21T02:54:40.062235+00:00"
+}

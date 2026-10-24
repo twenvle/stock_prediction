@@ -1,0 +1,91 @@
+{
+  "status": "complete",
+  "started_at_utc": "2026-10-11T17:14:10.470519+00:00",
+  "schema_id": "daily-technical-descriptors-v1",
+  "config": {
+    "volatility_ddof": 1,
+    "require_topix": false
+  },
+  "prices_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_release\\test_partitioned_cli_preserves0\\interim",
+  "calendar": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_release\\test_partitioned_cli_preserves0\\calendar.parquet",
+    "sha256": "63209796b94beb399cb3f54c5d1fb0732882eae7e63a507c3d96d6a3d287495b"
+  },
+  "topix_supplied": false,
+  "topix": null,
+  "inputs": [
+    {
+      "file": "2023.parquet",
+      "rows": 86,
+      "bytes": 9736,
+      "sha256": "b168251d0a6b3ffbe6ec28370a4a6397e848d41760d83f0addc8602d0d2d7e80"
+    },
+    {
+      "file": "2024.parquet",
+      "rows": 87,
+      "bytes": 9779,
+      "sha256": "ab82dd40fbb0a7dadb31405d4490193d7436780e9f16660c6988f58f04f6a2a8"
+    }
+  ],
+  "ignored_files": [],
+  "completed_partitions": [
+    {
+      "year": 2023,
+      "input_rows": 86,
+      "output_rows": 86,
+      "output_sha256": "2f49e7ad91eca75779f3eb3f2f8e6a95ee712deac63986280f0f5d148986a9ef",
+      "date_min": "2023-09-01",
+      "date_max": "2023-12-29",
+      "securities": 1,
+      "rows_without_price": 0,
+      "feature_missing_rate": {
+        "R_5": 0.05813953488372093,
+        "R_20": 0.23255813953488372,
+        "R_60": 0.6976744186046512,
+        "PriceToSMA_20": 0.22093023255813954,
+        "SMA_5To20": 0.22093023255813954,
+        "Volatility_5To20": 0.23255813953488372,
+        "Volatility_20": 0.23255813953488372,
+        "RangePosition_20": 0.22093023255813954,
+        "VolumeRatio_5To20": 0.22093023255813954,
+        "TurnoverRatio_5To20": 0.22093023255813954,
+        "RelativeTOPIX_20": 1.0
+      }
+    },
+    {
+      "year": 2024,
+      "input_rows": 87,
+      "output_rows": 87,
+      "output_sha256": "b6dafadd90cdf261d148be53b7b86c06bec32b38e6f8fcb5377b8a68501c53d4",
+      "date_min": "2024-01-01",
+      "date_max": "2024-04-30",
+      "securities": 1,
+      "rows_without_price": 0,
+      "feature_missing_rate": {
+        "R_5": 0.0,
+        "R_20": 0.0,
+        "R_60": 0.0,
+        "PriceToSMA_20": 0.0,
+        "SMA_5To20": 0.0,
+        "Volatility_5To20": 0.0,
+        "Volatility_20": 0.0,
+        "RangePosition_20": 0.0,
+        "VolumeRatio_5To20": 0.0,
+        "TurnoverRatio_5To20": 0.0,
+        "RelativeTOPIX_20": 1.0
+      }
+    }
+  ],
+  "output_rows": 173,
+  "code_sha256": {
+    "descriptors.py": "1551d88159ccf76d78ec10cf70140cd4b675002e089005794fdec12e86dcd3fc",
+    "pyproject.toml": "028572a680420303696d41349b0a838edef30a4d7edc6182cda241c2348cd8ff"
+  },
+  "versions": {
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "pyarrow": "25.0.1"
+  },
+  "random_seed": null,
+  "finished_at_utc": "2026-10-11T17:14:10.669120+00:00"
+}

@@ -1,0 +1,243 @@
+{
+  "status": "complete",
+  "started_at_utc": "2026-10-21T03:53:52.402428+00:00",
+  "schema_id": "point-in-time-universe-v1",
+  "config": {
+    "domestic_common_product_category": "011",
+    "min_listing_sessions_elapsed": 60,
+    "liquidity_window_sessions": 20,
+    "min_price_formation_days": 15,
+    "min_median_turnover_yen": 100000000.0,
+    "planned_investment_yen": 1000000.0,
+    "max_participation_rate": 0.01
+  },
+  "listed_info_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\listed_info",
+  "prices_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\interim\\experiments\\real-smoke\\prices",
+  "calendar": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\raw\\price_snapshot\\trading_calendar.parquet",
+    "sha256": "b56c8c5f4462afa8579f4c93654807535469c962c9600b03e6972da82f6540cb"
+  },
+  "schedule": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\processed\\experiments\\real-smoke\\weekly_schedule.parquet",
+    "sha256": "3232f3324340564c70df09153096e6d90a30f6f2a741217bcabcc9cd29fc2d42"
+  },
+  "master_inputs": {
+    "2016": {
+      "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\listed_info\\2016.parquet",
+      "rows": 1044,
+      "bytes": 10875,
+      "sha256": "4065a116c1cac3c3c705aa31d90ba2ddac529042c49fbe83655beda1f4c62f80"
+    },
+    "2017": {
+      "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\listed_info\\2017.parquet",
+      "rows": 1040,
+      "bytes": 10851,
+      "sha256": "e62684cf27df0f7ffa617fdb8b3cca642caff73da0d7dfa81b13eb8e22751ec4"
+    },
+    "2018": {
+      "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\listed_info\\2018.parquet",
+      "rows": 1044,
+      "bytes": 10876,
+      "sha256": "2e1f72c156cfa21fd7474326b90f9f6a045b5d45539665826809537baae19636"
+    },
+    "2019": {
+      "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\listed_info\\2019.parquet",
+      "rows": 1044,
+      "bytes": 10876,
+      "sha256": "ed7fa2650e3b738fd8dcd523184b19edc0aba67eae9d79bcbcc52245fc8c9ac5"
+    },
+    "2020": {
+      "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\listed_info\\2020.parquet",
+      "rows": 1048,
+      "bytes": 10883,
+      "sha256": "a78fda20b2c373bf653a667ee3439ffede973b41699ad0527c81c63e7e5515c5"
+    },
+    "2021": {
+      "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\listed_info\\2021.parquet",
+      "rows": 1044,
+      "bytes": 10877,
+      "sha256": "9460b698a37fd5013b4be1b58f470e018ca0fa67eeffa3fbe4f1a496e17c37c0"
+    },
+    "2022": {
+      "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\listed_info\\2022.parquet",
+      "rows": 1040,
+      "bytes": 10851,
+      "sha256": "ab6e323d06d0811398940f5ed83c6e1e39aa06519d390c2672503bb2669c647f"
+    },
+    "2023": {
+      "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\listed_info\\2023.parquet",
+      "rows": 1040,
+      "bytes": 10852,
+      "sha256": "8015aed6e0de3096d51a8104b4d009ac41737c1c895ca13caf53d63b2062f254"
+    },
+    "2024": {
+      "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\listed_info\\2024.parquet",
+      "rows": 1048,
+      "bytes": 10884,
+      "sha256": "7f61da2204ec5ff5d609ced9d9dd497de9763585a3fc26abbd79d4b531de9402"
+    }
+  },
+  "price_inputs": {
+    "2016": {
+      "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\interim\\experiments\\real-smoke\\prices\\2016.parquet",
+      "rows": 1044,
+      "bytes": 118351,
+      "sha256": "0eba356906efea96c22aa35d5d2b84b8b975c502fab40fb3ca8f72c0d44f09ef"
+    },
+    "2017": {
+      "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\interim\\experiments\\real-smoke\\prices\\2017.parquet",
+      "rows": 1040,
+      "bytes": 117401,
+      "sha256": "79e23e7f901e795fe0d7d6fc44fe500352a85addfc31168429c792aa983750ef"
+    },
+    "2018": {
+      "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\interim\\experiments\\real-smoke\\prices\\2018.parquet",
+      "rows": 1044,
+      "bytes": 118904,
+      "sha256": "fc3727bf5aefac0c0abb1da96181a05a884524764bfbb8acc59d732b7d6c5fe5"
+    },
+    "2019": {
+      "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\interim\\experiments\\real-smoke\\prices\\2019.parquet",
+      "rows": 1044,
+      "bytes": 118903,
+      "sha256": "f381ab8c8db5f0de0d4673f9d422dfbdb731628771c91ea83337fd42c089b6f9"
+    },
+    "2020": {
+      "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\interim\\experiments\\real-smoke\\prices\\2020.parquet",
+      "rows": 1048,
+      "bytes": 119235,
+      "sha256": "9b63956dc662c49b08e6a9a153e2aa376d5e7eb2c2c1e0e7b1e0f5e316fd9c3d"
+    },
+    "2021": {
+      "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\interim\\experiments\\real-smoke\\prices\\2021.parquet",
+      "rows": 1044,
+      "bytes": 118905,
+      "sha256": "7f3f69998863b05ff7687e6e7caf574d1f5c45ca92796dc5493c258527132048"
+    },
+    "2022": {
+      "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\interim\\experiments\\real-smoke\\prices\\2022.parquet",
+      "rows": 1040,
+      "bytes": 117401,
+      "sha256": "40eb8654ce966e45f7e3c88d413a7b7be00f584de21183f3c9a6e49a5d4db13b"
+    },
+    "2023": {
+      "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\interim\\experiments\\real-smoke\\prices\\2023.parquet",
+      "rows": 1040,
+      "bytes": 117401,
+      "sha256": "c33dae950816b3c34a6d11559462cbf13b26972d0679cf903a5135489a245335"
+    },
+    "2024": {
+      "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_real_stages_run_end_to_en0\\project\\data\\interim\\experiments\\real-smoke\\prices\\2024.parquet",
+      "rows": 1048,
+      "bytes": 119235,
+      "sha256": "010779fa5811a49f992f00594c725d06cdd496b2b23a6b64852cf37f85a17936"
+    }
+  },
+  "completed_partitions": [
+    {
+      "year": 2017,
+      "output_rows": 188,
+      "eligible_rows": 188,
+      "signal_dates": 47,
+      "date_min": "2017-02-06",
+      "date_max": "2017-12-25",
+      "exclusion_reason_counts": {},
+      "output_sha256": "d99bba7cec404620bc3edb140c08728f224dcd51b4fcf58b5fe797b065506939"
+    },
+    {
+      "year": 2018,
+      "output_rows": 212,
+      "eligible_rows": 212,
+      "signal_dates": 53,
+      "date_min": "2018-01-01",
+      "date_max": "2018-12-31",
+      "exclusion_reason_counts": {},
+      "output_sha256": "79793fdfd173e59ff3e69cb0d4d112b74779f2381832f6de911b0ed6fa911eab"
+    },
+    {
+      "year": 2019,
+      "output_rows": 208,
+      "eligible_rows": 208,
+      "signal_dates": 52,
+      "date_min": "2019-01-07",
+      "date_max": "2019-12-30",
+      "exclusion_reason_counts": {},
+      "output_sha256": "11e323fd1573813363830a1a895c515d96bb13de32a95237f4827c283c715e5a"
+    },
+    {
+      "year": 2020,
+      "output_rows": 208,
+      "eligible_rows": 208,
+      "signal_dates": 52,
+      "date_min": "2020-01-06",
+      "date_max": "2020-12-28",
+      "exclusion_reason_counts": {},
+      "output_sha256": "2a02a5d0ac855080d5860b7fe85f07ec56e4482aaf4c7d93b2ca329ed7a7843c"
+    },
+    {
+      "year": 2021,
+      "output_rows": 208,
+      "eligible_rows": 208,
+      "signal_dates": 52,
+      "date_min": "2021-01-04",
+      "date_max": "2021-12-27",
+      "exclusion_reason_counts": {},
+      "output_sha256": "f34d63d611b300faf59d361cf1e0f7ff3b4891f592165d3b356b40a203ebc9ce"
+    },
+    {
+      "year": 2022,
+      "output_rows": 208,
+      "eligible_rows": 208,
+      "signal_dates": 52,
+      "date_min": "2022-01-03",
+      "date_max": "2022-12-26",
+      "exclusion_reason_counts": {},
+      "output_sha256": "383f971c46cac0feb48b8582195222043ed6884c2ce1e3c84c5a5604ed241ce2"
+    },
+    {
+      "year": 2023,
+      "output_rows": 208,
+      "eligible_rows": 208,
+      "signal_dates": 52,
+      "date_min": "2023-01-02",
+      "date_max": "2023-12-25",
+      "exclusion_reason_counts": {},
+      "output_sha256": "49484154399d7b85df78e7e8d86ec1e234f98c9b84f7d7e451d5121ea05524e8"
+    },
+    {
+      "year": 2024,
+      "output_rows": 208,
+      "eligible_rows": 208,
+      "signal_dates": 52,
+      "date_min": "2024-01-01",
+      "date_max": "2024-12-23",
+      "exclusion_reason_counts": {},
+      "output_sha256": "004bab6d450129ede80fd4393ff9583deb3e3c564ca8e358cc8a2c0da36c5ce5"
+    }
+  ],
+  "skipped_partitions": [
+    {
+      "year": 2016,
+      "reason": "no_configured_signal_dates",
+      "master_input_rows": 1044,
+      "price_input_rows": 1044
+    }
+  ],
+  "output_rows": 1648,
+  "eligible_rows": 1648,
+  "code_sha256": {
+    "universe.py": "04b89c716d1a3f5cf9a95c878ac8948bd4cba031544cedd5a296fee4d4898d87",
+    "pyproject.toml": "b08b3a14d35e023bf4425a96853c1d3fe54033d6f0498ac785007bb60afb8f9b"
+  },
+  "versions": {
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "pyarrow": "25.0.1"
+  },
+  "random_seed": null,
+  "limitations": [
+    "Execution columns are ex-post conservative proxies and are excluded from is_eligible.",
+    "Supervisory/special-treatment designations and order-book fills are not available."
+  ],
+  "finished_at_utc": "2026-10-21T03:53:54.084182+00:00"
+}

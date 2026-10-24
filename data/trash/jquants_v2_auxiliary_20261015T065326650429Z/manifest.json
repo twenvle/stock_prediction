@@ -1,0 +1,108 @@
+{
+  "api_base_url": "https://api.jquants.com/v2",
+  "api_version": "v2",
+  "calendar": {
+    "columns": [
+      "Date",
+      "HolDiv"
+    ],
+    "date_max": "2026-10-07",
+    "date_min": "2016-10-08",
+    "duplicate_keys": 0,
+    "missing_rate": {
+      "Date": 0.0,
+      "HolDiv": 0.0
+    },
+    "path": "trading_calendar.parquet",
+    "rows": 3652,
+    "securities": null,
+    "sha256": "8a975b17e1f855cda9e70656898edfb76c99bb9b4b6d3cbdf661d9dc6500352c",
+    "tse_trading_days": 2440
+  },
+  "calendar_source": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\data\\raw\\jquants_v2_20261008T120437054560Z\\trading_calendar.parquet",
+    "sha256": "8a975b17e1f855cda9e70656898edfb76c99bb9b4b6d3cbdf661d9dc6500352c"
+  },
+  "completed_at_utc": "2026-10-15T06:53:27.475709Z",
+  "credential_persisted": false,
+  "current_partition": null,
+  "datasets": {
+    "earnings_schedule": {
+      "completed_dates": 0,
+      "completed_partitions": [],
+      "requested_dates": 0,
+      "rows": 0,
+      "status": "pending"
+    },
+    "financial_results": {
+      "completed_dates": 0,
+      "completed_partitions": [],
+      "requested_dates": 0,
+      "rows": 0,
+      "status": "pending"
+    },
+    "listed_info": {
+      "completed_dates": 0,
+      "completed_partitions": [],
+      "requested_dates": 0,
+      "rows": 0,
+      "status": "pending"
+    },
+    "topix": {
+      "completed_dates": 0,
+      "completed_partitions": [],
+      "requested_dates": 2440,
+      "rows": 0,
+      "status": "failed"
+    }
+  },
+  "endpoints": {
+    "earnings_schedule": "/fins/earnings-date",
+    "financial_results": "/fins/summary",
+    "listed_info": "/equities/master",
+    "topix": "/indices/bars/daily/topix"
+  },
+  "error_message": "J-Quants API returned HTTP 400: Your subscription covers the following dates: 2016-10-15 ~ . If you want more data, please check other plans:https://jpx-jquants.com/#dataset",
+  "error_type": "ApiResponseError",
+  "manifest_schema_version": 1,
+  "master_transition_limitations": {
+    "appearance_or_disappearance_is_not_an_authoritative_listing_event": true,
+    "candidate_rule": "unique exact CoName among disappeared and appeared codes on one boundary",
+    "code_change_candidates_are_authoritative": false,
+    "first_requested_session_is_baseline": true
+  },
+  "partial_partition": null,
+  "provider": "J-Quants API",
+  "request": {
+    "datasets": [
+      "topix",
+      "listed_info",
+      "earnings_schedule",
+      "financial_results"
+    ],
+    "end_date": "2026-10-07",
+    "max_retries": 3,
+    "rate_limit_wait_seconds": 65.0,
+    "requests_per_minute": 5.0,
+    "start_date": "2016-10-08",
+    "timeout_seconds": 30.0
+  },
+  "snapshot_id": "jquants_v2_auxiliary_20261015T065326650429Z",
+  "software": {
+    "module_sha256": "f954fa68914c3e0e070d42e366eb160b1de910e907a31adfdf27c2d0341698bb",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "pyarrow": "25.0.1",
+    "python": "3.11.9",
+    "requests": "2.34.2"
+  },
+  "started_at_utc": "2026-10-15T06:53:26.650429Z",
+  "status": "failed",
+  "time_semantics": {
+    "earnings_schedule": "PubDate is availability/publication date; SchDate is the scheduled event date.",
+    "financial_results": "DiscDate and DiscTime are disclosure date/time in Japan local time.",
+    "listed_info": "Date is the requested point-in-time master date.",
+    "topix": "Date is the market observation date; Close is not known before that session close."
+  },
+  "updated_at_utc": "2026-10-15T06:53:27.475709Z"
+}

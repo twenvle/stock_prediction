@@ -1,0 +1,59 @@
+{
+  "schema_id": "weekly-executable-backtest-v1",
+  "status": "interrupted",
+  "started_at_utc": "2026-10-21T04:19:49.632061+00:00",
+  "config": {
+    "model_name": "linear",
+    "target_column": "target_return",
+    "eligibility_column": "is_signal_eligible",
+    "liquidity_column": "median_turnover_value_20",
+    "lot_size_column": "lot_size",
+    "initial_cash_yen": 10000000.0,
+    "top_n": 1,
+    "default_lot_size": 100,
+    "max_participation_rate": 0.01,
+    "commission_bps": 5.0,
+    "half_spread_bps": 5.0,
+    "slippage_bps": 10.0,
+    "exit_price_mode": "evaluation_close",
+    "max_exit_wait_sessions": 20,
+    "unresolved_delisting_policy": "error",
+    "annualization_sessions": 252
+  },
+  "inputs": {
+    "predictions": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_approved_start\\test_interruption_manifest_pre0\\inputs\\predictions.parquet",
+      "sha256": "93e7d449807afe3e9947a3583a317555a6cbbc1cd44d27bd68aa7bcea64510e9"
+    },
+    "candidate_partitions": [
+      {
+        "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_approved_start\\test_interruption_manifest_pre0\\inputs\\candidates\\2024.parquet",
+        "sha256": "47a6908cdbfae6f5cf90a0a8ca62033893e19aaec9ca7a086973e7aaa07aa067"
+      }
+    ],
+    "price_partitions": [
+      {
+        "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_approved_start\\test_interruption_manifest_pre0\\inputs\\prices\\2024.parquet",
+        "sha256": "734c110b72420a86d39cb4d6d8be75e960097c4e4dfc3bfbe00fd4a0b435642e"
+      }
+    ],
+    "calendar": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_approved_start\\test_interruption_manifest_pre0\\inputs\\calendar.parquet",
+      "sha256": "5b77072dd0d7bf5780ce19b352a68a8494490835a5eecc70c2124a062cf22db9"
+    },
+    "delistings": null
+  },
+  "output_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_approved_start\\test_interruption_manifest_pre0\\artifacts",
+  "report_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_approved_start\\test_interruption_manifest_pre0\\reports",
+  "completed_outputs": [],
+  "code_sha256": "55395bf62183277bf9edb14d5d295bb1af44285d79dd239b3899175f512f209e",
+  "versions": {
+    "python": "3.11.9",
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "pyarrow": "25.0.1"
+  },
+  "error_type": "KeyboardInterrupt",
+  "error_message": "",
+  "finished_at_utc": "2026-10-21T04:19:49.646059+00:00"
+}

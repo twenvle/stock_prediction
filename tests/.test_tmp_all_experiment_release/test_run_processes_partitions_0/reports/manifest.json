@@ -1,0 +1,103 @@
+{
+  "status": "complete",
+  "started_at_utc": "2026-10-13T11:11:51.794752+00:00",
+  "schema_id": "jquants-v2-daily-bars-base-16-with-known-optional-columns",
+  "config": {
+    "start_date": null,
+    "end_date": null,
+    "abnormal_return_threshold": 0.5,
+    "allow_unverified_calendar": true
+  },
+  "inputs": [
+    {
+      "file": "2024.parquet",
+      "sha256": "8d43048604b49a90e02ba3df29dca64ef7583546cd523edc12119889cbed6078",
+      "bytes": 9000,
+      "raw_rows": 2,
+      "date_min": "2024-12-30",
+      "date_max": "2024-12-30",
+      "schema": {
+        "Date": "timestamp[ns]",
+        "Code": "large_string",
+        "O": "double",
+        "H": "double",
+        "L": "double",
+        "C": "double",
+        "UL": "large_string",
+        "LL": "large_string",
+        "Vo": "double",
+        "Va": "double",
+        "AdjFactor": "double",
+        "AdjO": "double",
+        "AdjH": "double",
+        "AdjL": "double",
+        "AdjC": "double",
+        "AdjVo": "double"
+      },
+      "api_acquired_at": null,
+      "api_version": null
+    },
+    {
+      "file": "2025.parquet",
+      "sha256": "7b55d12a03f23c4bd04b95d128a852efa12be0506d4b9848da6142d323754bfe",
+      "bytes": 9000,
+      "raw_rows": 2,
+      "date_min": "2025-01-06",
+      "date_max": "2025-01-06",
+      "schema": {
+        "Date": "timestamp[ns]",
+        "Code": "large_string",
+        "O": "double",
+        "H": "double",
+        "L": "double",
+        "C": "double",
+        "UL": "large_string",
+        "LL": "large_string",
+        "Vo": "double",
+        "Va": "double",
+        "AdjFactor": "double",
+        "AdjO": "double",
+        "AdjH": "double",
+        "AdjL": "double",
+        "AdjC": "double",
+        "AdjVo": "double"
+      },
+      "api_acquired_at": null,
+      "api_version": null
+    }
+  ],
+  "ignored_files": [],
+  "calendar": null,
+  "code_sha256": {
+    "preprocessing.py": "6e9f7279b4ed8bab426c2b214ae12808f936b0fafdfc50588beb46932a7e2070",
+    "__init__.py": "ce337f2bb2744475fc1bee10ffb932a2769cc5e0a896ba022b6eeb6a09f88766",
+    "pyproject.toml": "b08b3a14d35e023bf4425a96853c1d3fe54033d6f0498ac785007bb60afb8f9b"
+  },
+  "git_revision": null,
+  "random_seed": null,
+  "versions": {
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "pyarrow": "25.0.1"
+  },
+  "completed_partitions": [
+    {
+      "year": 2024,
+      "output_rows": 2,
+      "quarantined_rows": 0,
+      "output_sha256": "8d58df35358bf25e45b735a7ac73771247b51fdaa3a993c17511a923a52e82d4",
+      "quarantine_sha256": "9ac319fca222c6e31cd96b181a472b3073a72768c549e543d5b9442abc538906"
+    },
+    {
+      "year": 2025,
+      "output_rows": 2,
+      "quarantined_rows": 0,
+      "output_sha256": "8e5492d2051b477768aaa10bfceb5b4803e08a842783be65a007aa19907483a6",
+      "quarantine_sha256": "9ac319fca222c6e31cd96b181a472b3073a72768c549e543d5b9442abc538906"
+    }
+  ],
+  "output_rows": 4,
+  "quarantined_rows": 0,
+  "api_metadata_note": "Acquisition timestamps/API version were not supplied; file mtime is not acquisition time.",
+  "finished_at_utc": "2026-10-13T11:11:51.972237+00:00"
+}

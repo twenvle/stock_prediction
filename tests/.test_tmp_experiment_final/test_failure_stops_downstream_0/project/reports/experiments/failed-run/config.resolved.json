@@ -1,0 +1,163 @@
+{
+  "experiment_name": "test-development",
+  "inputs": {
+    "auxiliary_snapshot": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\data\\raw\\aux_snapshot",
+    "calendar": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\data\\raw\\price_snapshot\\trading_calendar.parquet",
+    "delistings": null,
+    "earnings_schedule": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\data\\raw\\aux_snapshot\\earnings_schedule",
+    "financial_results": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\data\\raw\\aux_snapshot\\financial_results",
+    "listed_info": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\data\\raw\\aux_snapshot\\listed_info",
+    "price_snapshot": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\data\\raw\\price_snapshot",
+    "prices": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\data\\raw\\price_snapshot\\prices",
+    "topix_raw": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\data\\raw\\aux_snapshot\\topix.parquet"
+  },
+  "outputs": {
+    "artifact_root": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\artifacts\\experiments\\failed-run",
+    "backtest": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\artifacts\\experiments\\failed-run\\backtest",
+    "descriptors": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\data\\processed\\experiments\\failed-run\\descriptors",
+    "earnings_events": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\data\\processed\\experiments\\failed-run\\earnings_events",
+    "evaluation": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\artifacts\\experiments\\failed-run\\evaluation",
+    "interim_root": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\data\\interim\\experiments\\failed-run",
+    "modeling": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\artifacts\\experiments\\failed-run\\modeling",
+    "prices": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\data\\interim\\experiments\\failed-run\\prices",
+    "processed_root": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\data\\processed\\experiments\\failed-run",
+    "report_root": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\reports\\experiments\\failed-run",
+    "splits": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\data\\processed\\experiments\\failed-run\\splits",
+    "topix": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\data\\interim\\experiments\\failed-run\\topix.parquet",
+    "universe": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\data\\processed\\experiments\\failed-run\\universe",
+    "weekly_dataset": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\data\\processed\\experiments\\failed-run\\weekly_dataset",
+    "weekly_schedule": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\data\\processed\\experiments\\failed-run\\weekly_schedule.parquet"
+  },
+  "project_root": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project",
+  "random_seed": 1729,
+  "run_id": "failed-run",
+  "schema_version": 1,
+  "stage_configs": {
+    "backtest": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\configs\\backtest.json",
+      "sha256": "c331a56bf4bbb72615f26dfa666382413126c217c5acc557a3679c53155d2dd9",
+      "values": {
+        "annualization_sessions": 252,
+        "commission_bps": 5.0,
+        "default_lot_size": 100,
+        "eligibility_column": "is_signal_eligible",
+        "exit_price_mode": "evaluation_close",
+        "half_spread_bps": 5.0,
+        "initial_cash_yen": 10000000.0,
+        "liquidity_column": "median_turnover_value_20",
+        "lot_size_column": "lot_size",
+        "max_exit_wait_sessions": 20,
+        "max_participation_rate": 0.01,
+        "model_name": "linear",
+        "slippage_bps": 10.0,
+        "target_column": "target_return",
+        "top_n": 10,
+        "unresolved_delisting_policy": "error"
+      }
+    },
+    "descriptors": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\configs\\descriptors.json",
+      "sha256": "1423e6ddba8353b6054cdef7c460cb7a6ba66a21d0bffbe4c10ef8a10449c50e",
+      "values": {
+        "require_topix": true,
+        "volatility_ddof": 1
+      }
+    },
+    "earnings_events": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\configs\\earnings_events.json",
+      "sha256": "db980e9972969f08977daae7ad7cfa4fa43cb20b2e51f8540c0c765d264b87a1",
+      "values": {
+        "cooldown_trading_sessions": 25,
+        "earnings_doc_type_prefixes": [
+          "FinancialStatements"
+        ]
+      }
+    },
+    "evaluation": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\configs\\evaluation.json",
+      "sha256": "e2285543ebc8911f59b3b7853edb9ce0bf16a79b01c751c9fa28e2cbb50cb3b8",
+      "values": {
+        "industry_code_column": "S33",
+        "industry_date_column": "Date",
+        "industry_name_column": "S33Nm",
+        "industry_security_column": "Code",
+        "top_n": 10
+      }
+    },
+    "modeling": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\configs\\modeling.json",
+      "sha256": "d7b067088542bc4fc71149bade039cf54e6590adc4d29739873c9e6e23845b34",
+      "values": {
+        "feature_columns": [
+          "R_5",
+          "R_20",
+          "R_60",
+          "PriceToSMA_20",
+          "SMA_5To20",
+          "Volatility_5To20",
+          "Volatility_20",
+          "RangePosition_20",
+          "VolumeRatio_5To20",
+          "TurnoverRatio_5To20",
+          "RelativeTOPIX_20"
+        ],
+        "momentum_feature": "R_20",
+        "target_column": "target_return",
+        "top_n": 10
+      }
+    },
+    "preprocessing": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\configs\\preprocessing.json",
+      "sha256": "467f937d7f2c9aa439dec2a33eecc90cee37252822190f8842b639d8e462d2ec",
+      "values": {
+        "abnormal_return_threshold": 0.5,
+        "allow_unverified_calendar": false,
+        "end_date": null,
+        "start_date": null
+      }
+    },
+    "splits": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\configs\\splits.json",
+      "sha256": "bb03a13efe5798e3536863d77f04c8edefbd09ab804269be201acf563e5d1c22",
+      "values": {
+        "isolation_end_date": "2026-12-31",
+        "isolation_start_date": "2025-01-01",
+        "purge_trading_sessions": 4
+      }
+    },
+    "universe": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\configs\\universe.json",
+      "sha256": "ca16c8a63b744864da9e618961c3a93dda58f35158c68ba59c2fae2528e79b8a",
+      "values": {
+        "domestic_common_product_category": "011",
+        "liquidity_window_sessions": 20,
+        "max_participation_rate": 0.01,
+        "min_listing_sessions_elapsed": 60,
+        "min_median_turnover_yen": 100000000.0,
+        "min_price_formation_days": 15,
+        "planned_investment_yen": 1000000.0
+      }
+    },
+    "weekly_dataset": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_failure_stops_downstream_0\\project\\configs\\weekly_dataset.json",
+      "sha256": "1ca7bd35e9b65b3e3e688540cbcdd7f6504d0885e76847582100553a80e6780d",
+      "values": {
+        "min_trading_sessions_per_week": 4,
+        "require_topix": true
+      }
+    }
+  },
+  "stage_order": [
+    "preprocessing",
+    "topix_normalization",
+    "descriptors",
+    "weekly_schedule",
+    "universe",
+    "earnings_events",
+    "weekly_dataset",
+    "splits",
+    "modeling",
+    "evaluation",
+    "backtest"
+  ]
+}

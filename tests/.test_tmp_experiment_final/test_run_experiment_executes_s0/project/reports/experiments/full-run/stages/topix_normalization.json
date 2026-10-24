@@ -1,0 +1,18 @@
+{
+  "date_max": "2024-01-05",
+  "date_min": "2024-01-04",
+  "duplicate_dates": 0,
+  "input": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_run_experiment_executes_s0\\project\\data\\raw\\aux_snapshot\\topix.parquet",
+    "rows": 2,
+    "sha256": "c293359061e16efb858d046ffaf61ecf4ca42d520063862dfe70e9cdb2b6f5ba"
+  },
+  "missing_close_rows": 0,
+  "output": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_run_experiment_executes_s0\\project\\data\\interim\\experiments\\full-run\\topix.parquet",
+    "rows": 2,
+    "sha256": "a2ba282c854c714a6a371a55eca6b1cbdad5e638d25bb884fc9b7aab0d237afa"
+  },
+  "schema_id": "normalized-topix-v1",
+  "status": "complete"
+}

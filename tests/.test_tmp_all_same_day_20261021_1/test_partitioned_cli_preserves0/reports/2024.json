@@ -1,0 +1,57 @@
+{
+  "schema_id": "daily-technical-descriptors-v1",
+  "config": {
+    "volatility_ddof": 1,
+    "require_topix": false
+  },
+  "input_rows": 87,
+  "history_rows": 60,
+  "output_rows": 87,
+  "securities": 1,
+  "date_min": "2024-01-01",
+  "date_max": "2024-04-30",
+  "duplicate_keys": 0,
+  "rows_without_price": 0,
+  "feature_missing_rate": {
+    "R_5": 0.0,
+    "R_20": 0.0,
+    "R_60": 0.0,
+    "PriceToSMA_20": 0.0,
+    "SMA_5To20": 0.0,
+    "Volatility_5To20": 0.0,
+    "Volatility_20": 0.0,
+    "RangePosition_20": 0.0,
+    "VolumeRatio_5To20": 0.0,
+    "TurnoverRatio_5To20": 0.0,
+    "RelativeTOPIX_20": 1.0
+  },
+  "feature_available_rows": {
+    "R_5": 87,
+    "R_20": 87,
+    "R_60": 87,
+    "PriceToSMA_20": 87,
+    "SMA_5To20": 87,
+    "Volatility_5To20": 87,
+    "Volatility_20": 87,
+    "RangePosition_20": 87,
+    "VolumeRatio_5To20": 87,
+    "TurnoverRatio_5To20": 87,
+    "RelativeTOPIX_20": 0
+  },
+  "complete_non_topix_feature_rows": 87,
+  "complete_feature_rows": 0,
+  "topix_supplied": false,
+  "topix_rows": null,
+  "calendar_date_min": "2023-09-01",
+  "calendar_date_max": "2024-04-30",
+  "calendar_rows": 243,
+  "calendar_sessions": 173,
+  "input": {
+    "file": "2024.parquet",
+    "rows": 87,
+    "bytes": 9779,
+    "sha256": "ab82dd40fbb0a7dadb31405d4490193d7436780e9f16660c6988f58f04f6a2a8"
+  },
+  "output_file": "2024.parquet",
+  "output_sha256": "b6dafadd90cdf261d148be53b7b86c06bec32b38e6f8fcb5377b8a68501c53d4"
+}

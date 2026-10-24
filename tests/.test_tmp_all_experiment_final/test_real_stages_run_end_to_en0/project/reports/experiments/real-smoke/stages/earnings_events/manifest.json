@@ -1,0 +1,282 @@
+{
+  "status": "complete",
+  "started_at_utc": "2026-10-13T11:09:25.377173+00:00",
+  "schema_id": "earnings-exclusions-v1",
+  "config": {
+    "cooldown_trading_sessions": 25,
+    "earnings_doc_type_prefixes": [
+      "FinancialStatements"
+    ]
+  },
+  "candidates_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\processed\\experiments\\real-smoke\\universe",
+  "earnings_schedule_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\earnings_schedule",
+  "financial_results_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\financial_results",
+  "calendar": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\raw\\price_snapshot\\trading_calendar.parquet",
+    "sha256": "b56c8c5f4462afa8579f4c93654807535469c962c9600b03e6972da82f6540cb"
+  },
+  "candidate_inputs": {
+    "2016": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\processed\\experiments\\real-smoke\\universe\\2016.parquet",
+      "rows": 208,
+      "sha256": "98dfbca6811f7a56796f38691b5d43b8e986c7eba5e5bd4183d0e66ac4bfa632"
+    },
+    "2017": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\processed\\experiments\\real-smoke\\universe\\2017.parquet",
+      "rows": 208,
+      "sha256": "9e743ac22298cf16a94ffa26440635fd04d4733c5bbd4ae429b767a61d87afac"
+    },
+    "2018": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\processed\\experiments\\real-smoke\\universe\\2018.parquet",
+      "rows": 212,
+      "sha256": "79793fdfd173e59ff3e69cb0d4d112b74779f2381832f6de911b0ed6fa911eab"
+    },
+    "2019": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\processed\\experiments\\real-smoke\\universe\\2019.parquet",
+      "rows": 208,
+      "sha256": "11e323fd1573813363830a1a895c515d96bb13de32a95237f4827c283c715e5a"
+    },
+    "2020": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\processed\\experiments\\real-smoke\\universe\\2020.parquet",
+      "rows": 208,
+      "sha256": "2a02a5d0ac855080d5860b7fe85f07ec56e4482aaf4c7d93b2ca329ed7a7843c"
+    },
+    "2021": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\processed\\experiments\\real-smoke\\universe\\2021.parquet",
+      "rows": 208,
+      "sha256": "f34d63d611b300faf59d361cf1e0f7ff3b4891f592165d3b356b40a203ebc9ce"
+    },
+    "2022": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\processed\\experiments\\real-smoke\\universe\\2022.parquet",
+      "rows": 208,
+      "sha256": "383f971c46cac0feb48b8582195222043ed6884c2ce1e3c84c5a5604ed241ce2"
+    },
+    "2023": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\processed\\experiments\\real-smoke\\universe\\2023.parquet",
+      "rows": 208,
+      "sha256": "49484154399d7b85df78e7e8d86ec1e234f98c9b84f7d7e451d5121ea05524e8"
+    },
+    "2024": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\processed\\experiments\\real-smoke\\universe\\2024.parquet",
+      "rows": 208,
+      "sha256": "004bab6d450129ede80fd4393ff9583deb3e3c564ca8e358cc8a2c0da36c5ce5"
+    }
+  },
+  "earnings_schedule_inputs": {
+    "2016": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\earnings_schedule\\2016.parquet",
+      "rows": 0,
+      "sha256": "09e55a6dade7c8d5310cb6d3dc7188fdd464f9fd13684bb956e501f0af9d8115"
+    },
+    "2017": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\earnings_schedule\\2017.parquet",
+      "rows": 0,
+      "sha256": "09e55a6dade7c8d5310cb6d3dc7188fdd464f9fd13684bb956e501f0af9d8115"
+    },
+    "2018": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\earnings_schedule\\2018.parquet",
+      "rows": 0,
+      "sha256": "09e55a6dade7c8d5310cb6d3dc7188fdd464f9fd13684bb956e501f0af9d8115"
+    },
+    "2019": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\earnings_schedule\\2019.parquet",
+      "rows": 0,
+      "sha256": "09e55a6dade7c8d5310cb6d3dc7188fdd464f9fd13684bb956e501f0af9d8115"
+    },
+    "2020": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\earnings_schedule\\2020.parquet",
+      "rows": 0,
+      "sha256": "09e55a6dade7c8d5310cb6d3dc7188fdd464f9fd13684bb956e501f0af9d8115"
+    },
+    "2021": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\earnings_schedule\\2021.parquet",
+      "rows": 0,
+      "sha256": "09e55a6dade7c8d5310cb6d3dc7188fdd464f9fd13684bb956e501f0af9d8115"
+    },
+    "2022": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\earnings_schedule\\2022.parquet",
+      "rows": 0,
+      "sha256": "09e55a6dade7c8d5310cb6d3dc7188fdd464f9fd13684bb956e501f0af9d8115"
+    },
+    "2023": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\earnings_schedule\\2023.parquet",
+      "rows": 0,
+      "sha256": "09e55a6dade7c8d5310cb6d3dc7188fdd464f9fd13684bb956e501f0af9d8115"
+    },
+    "2024": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\earnings_schedule\\2024.parquet",
+      "rows": 0,
+      "sha256": "09e55a6dade7c8d5310cb6d3dc7188fdd464f9fd13684bb956e501f0af9d8115"
+    }
+  },
+  "financial_results_inputs": {
+    "2016": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\financial_results\\2016.parquet",
+      "rows": 0,
+      "sha256": "e4158c75c84ef068e6e5a1344c746346f3897018182ba299fb5a367e4c2bd995"
+    },
+    "2017": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\financial_results\\2017.parquet",
+      "rows": 0,
+      "sha256": "e4158c75c84ef068e6e5a1344c746346f3897018182ba299fb5a367e4c2bd995"
+    },
+    "2018": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\financial_results\\2018.parquet",
+      "rows": 0,
+      "sha256": "e4158c75c84ef068e6e5a1344c746346f3897018182ba299fb5a367e4c2bd995"
+    },
+    "2019": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\financial_results\\2019.parquet",
+      "rows": 0,
+      "sha256": "e4158c75c84ef068e6e5a1344c746346f3897018182ba299fb5a367e4c2bd995"
+    },
+    "2020": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\financial_results\\2020.parquet",
+      "rows": 0,
+      "sha256": "e4158c75c84ef068e6e5a1344c746346f3897018182ba299fb5a367e4c2bd995"
+    },
+    "2021": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\financial_results\\2021.parquet",
+      "rows": 0,
+      "sha256": "e4158c75c84ef068e6e5a1344c746346f3897018182ba299fb5a367e4c2bd995"
+    },
+    "2022": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\financial_results\\2022.parquet",
+      "rows": 0,
+      "sha256": "e4158c75c84ef068e6e5a1344c746346f3897018182ba299fb5a367e4c2bd995"
+    },
+    "2023": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\financial_results\\2023.parquet",
+      "rows": 0,
+      "sha256": "e4158c75c84ef068e6e5a1344c746346f3897018182ba299fb5a367e4c2bd995"
+    },
+    "2024": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\financial_results\\2024.parquet",
+      "rows": 0,
+      "sha256": "e4158c75c84ef068e6e5a1344c746346f3897018182ba299fb5a367e4c2bd995"
+    }
+  },
+  "completed_partitions": [
+    {
+      "year": 2016,
+      "output_rows": 208,
+      "eligible_rows": 208,
+      "scheduled_crossing_rows": 0,
+      "cooldown_rows": 0,
+      "actual_crossing_rows_ex_post": 0,
+      "date_min": "2016-01-04",
+      "date_max": "2016-12-26",
+      "output_sha256": "c6460ab56d6d78324020c6dd1ba45354d8bdb1f8a01ce31e46c15bb8caf269b7"
+    },
+    {
+      "year": 2017,
+      "output_rows": 208,
+      "eligible_rows": 208,
+      "scheduled_crossing_rows": 0,
+      "cooldown_rows": 0,
+      "actual_crossing_rows_ex_post": 0,
+      "date_min": "2017-01-02",
+      "date_max": "2017-12-25",
+      "output_sha256": "f1178bbaeb07f55806f44a403a8950f0a2a43f97304600a70fd3ba01e6a4ae85"
+    },
+    {
+      "year": 2018,
+      "output_rows": 212,
+      "eligible_rows": 212,
+      "scheduled_crossing_rows": 0,
+      "cooldown_rows": 0,
+      "actual_crossing_rows_ex_post": 0,
+      "date_min": "2018-01-01",
+      "date_max": "2018-12-31",
+      "output_sha256": "24d1bfe640258e4ef460ba5a5fc614efc91d11679cc3023b04dae6dcd998ce2b"
+    },
+    {
+      "year": 2019,
+      "output_rows": 208,
+      "eligible_rows": 208,
+      "scheduled_crossing_rows": 0,
+      "cooldown_rows": 0,
+      "actual_crossing_rows_ex_post": 0,
+      "date_min": "2019-01-07",
+      "date_max": "2019-12-30",
+      "output_sha256": "5cbe1aea1a962fef95d1b63afa2fa7b5d82c28b1f816a77be161c9f89b3d63c8"
+    },
+    {
+      "year": 2020,
+      "output_rows": 208,
+      "eligible_rows": 208,
+      "scheduled_crossing_rows": 0,
+      "cooldown_rows": 0,
+      "actual_crossing_rows_ex_post": 0,
+      "date_min": "2020-01-06",
+      "date_max": "2020-12-28",
+      "output_sha256": "fa1506f14137bf0e91e26b67363f8887da156ce425346749200ac5a256711eaa"
+    },
+    {
+      "year": 2021,
+      "output_rows": 208,
+      "eligible_rows": 208,
+      "scheduled_crossing_rows": 0,
+      "cooldown_rows": 0,
+      "actual_crossing_rows_ex_post": 0,
+      "date_min": "2021-01-04",
+      "date_max": "2021-12-27",
+      "output_sha256": "56581a7596f18925f390e2417f16891f8a0a6ba3abed96e63fa88b025b56da7a"
+    },
+    {
+      "year": 2022,
+      "output_rows": 208,
+      "eligible_rows": 208,
+      "scheduled_crossing_rows": 0,
+      "cooldown_rows": 0,
+      "actual_crossing_rows_ex_post": 0,
+      "date_min": "2022-01-03",
+      "date_max": "2022-12-26",
+      "output_sha256": "69c947377d56843009b6844cc26e2df291e0b44cd6089a300e2e8530597eb1c5"
+    },
+    {
+      "year": 2023,
+      "output_rows": 208,
+      "eligible_rows": 208,
+      "scheduled_crossing_rows": 0,
+      "cooldown_rows": 0,
+      "actual_crossing_rows_ex_post": 0,
+      "date_min": "2023-01-02",
+      "date_max": "2023-12-25",
+      "output_sha256": "14704f2f90d975d571a7643bfd22d6415f54489d73f774622cc89500755dba19"
+    },
+    {
+      "year": 2024,
+      "output_rows": 208,
+      "eligible_rows": 208,
+      "scheduled_crossing_rows": 0,
+      "cooldown_rows": 0,
+      "actual_crossing_rows_ex_post": 0,
+      "date_min": "2024-01-01",
+      "date_max": "2024-12-23",
+      "output_sha256": "24bf1b7260781e81c42a88c30b54fc21a4488445424f16c6d14f916c410d2cb4"
+    }
+  ],
+  "current_partition": null,
+  "output_rows": 1876,
+  "eligible_rows": 1876,
+  "scheduled_crossing_rows": 0,
+  "cooldown_rows": 0,
+  "actual_crossing_rows_ex_post": 0,
+  "code_sha256": {
+    "earnings_events.py": "fad9b51a89a7918c819b6894ef0527808119541f629f4ef761854c53bf421ffa",
+    "pyproject.toml": "b08b3a14d35e023bf4425a96853c1d3fe54033d6f0498ac785007bb60afb8f9b"
+  },
+  "versions": {
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "pyarrow": "25.0.1"
+  },
+  "random_seed": null,
+  "limitations": [
+    "The CLI reads only event columns across annual event files; candidate files are processed one year at a time.",
+    "Event-history completeness must be checked against the auxiliary-download manifest.",
+    "Future actual disclosures are ex-post audits and are excluded from is_earnings_eligible."
+  ],
+  "finished_at_utc": "2026-10-13T11:09:26.154927+00:00"
+}

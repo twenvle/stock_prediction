@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "snapshot_id": "aux-001",
+  "provider": "J-Quants",
+  "api_version": "v2",
+  "request": {
+    "start_date": "2016-01-01",
+    "end_date": "2026-12-31"
+  },
+  "totals": {
+    "listed_info_rows": 1
+  },
+  "completed_outputs": [
+    {
+      "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    }
+  ]
+}

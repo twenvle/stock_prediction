@@ -1,0 +1,297 @@
+{
+  "status": "complete",
+  "started_at_utc": "2026-10-13T11:03:39.071524+00:00",
+  "schema_id": "daily-technical-descriptors-v1",
+  "config": {
+    "volatility_ddof": 1,
+    "require_topix": true
+  },
+  "prices_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_real\\test_real_stages_run_end_to_en0\\project\\data\\interim\\experiments\\real-smoke\\prices",
+  "calendar": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_real\\test_real_stages_run_end_to_en0\\project\\data\\raw\\price_snapshot\\trading_calendar.parquet",
+    "sha256": "693084a83e9b7009ccf88a88e46a556c2743238fe7930e78e66e6fb461160fcc"
+  },
+  "topix_supplied": true,
+  "topix": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_real\\test_real_stages_run_end_to_en0\\project\\data\\interim\\experiments\\real-smoke\\topix.parquet",
+    "sha256": "cba0762b70eda15f10acb11dba87b19027f3d7599c2c9e79db2d0d786b36967c"
+  },
+  "inputs": [
+    {
+      "file": "2016.parquet",
+      "rows": 1044,
+      "bytes": 118351,
+      "sha256": "0eba356906efea96c22aa35d5d2b84b8b975c502fab40fb3ca8f72c0d44f09ef"
+    },
+    {
+      "file": "2017.parquet",
+      "rows": 1040,
+      "bytes": 117401,
+      "sha256": "79e23e7f901e795fe0d7d6fc44fe500352a85addfc31168429c792aa983750ef"
+    },
+    {
+      "file": "2018.parquet",
+      "rows": 1044,
+      "bytes": 118904,
+      "sha256": "fc3727bf5aefac0c0abb1da96181a05a884524764bfbb8acc59d732b7d6c5fe5"
+    },
+    {
+      "file": "2019.parquet",
+      "rows": 1044,
+      "bytes": 118903,
+      "sha256": "f381ab8c8db5f0de0d4673f9d422dfbdb731628771c91ea83337fd42c089b6f9"
+    },
+    {
+      "file": "2020.parquet",
+      "rows": 1048,
+      "bytes": 119235,
+      "sha256": "9b63956dc662c49b08e6a9a153e2aa376d5e7eb2c2c1e0e7b1e0f5e316fd9c3d"
+    },
+    {
+      "file": "2021.parquet",
+      "rows": 1044,
+      "bytes": 118905,
+      "sha256": "7f3f69998863b05ff7687e6e7caf574d1f5c45ca92796dc5493c258527132048"
+    },
+    {
+      "file": "2022.parquet",
+      "rows": 1040,
+      "bytes": 117401,
+      "sha256": "40eb8654ce966e45f7e3c88d413a7b7be00f584de21183f3c9a6e49a5d4db13b"
+    },
+    {
+      "file": "2023.parquet",
+      "rows": 1040,
+      "bytes": 117401,
+      "sha256": "c33dae950816b3c34a6d11559462cbf13b26972d0679cf903a5135489a245335"
+    },
+    {
+      "file": "2024.parquet",
+      "rows": 1048,
+      "bytes": 119235,
+      "sha256": "010779fa5811a49f992f00594c725d06cdd496b2b23a6b64852cf37f85a17936"
+    }
+  ],
+  "ignored_files": [],
+  "completed_partitions": [
+    {
+      "year": 2016,
+      "input_rows": 1044,
+      "output_rows": 1044,
+      "output_sha256": "7acc2b4a79fb9e05e36b4ea597578832a3269383e8fa7d1a0d3ffe17145a5b97",
+      "date_min": "2016-01-01",
+      "date_max": "2016-12-30",
+      "securities": 4,
+      "rows_without_price": 0,
+      "feature_missing_rate": {
+        "R_5": 0.019157088122605363,
+        "R_20": 0.07662835249042145,
+        "R_60": 0.22988505747126436,
+        "PriceToSMA_20": 0.07279693486590039,
+        "SMA_5To20": 0.07279693486590039,
+        "Volatility_5To20": 0.07662835249042145,
+        "Volatility_20": 0.07662835249042145,
+        "RangePosition_20": 0.07279693486590039,
+        "VolumeRatio_5To20": 0.07279693486590039,
+        "TurnoverRatio_5To20": 0.07279693486590039,
+        "RelativeTOPIX_20": 0.07662835249042145
+      }
+    },
+    {
+      "year": 2017,
+      "input_rows": 1040,
+      "output_rows": 1040,
+      "output_sha256": "556536e1f78961ad0ac2de15faea2728e8c38b76c49888a8c1b960bfdeb69034",
+      "date_min": "2017-01-02",
+      "date_max": "2017-12-29",
+      "securities": 4,
+      "rows_without_price": 0,
+      "feature_missing_rate": {
+        "R_5": 0.0,
+        "R_20": 0.0,
+        "R_60": 0.0,
+        "PriceToSMA_20": 0.0,
+        "SMA_5To20": 0.0,
+        "Volatility_5To20": 0.0,
+        "Volatility_20": 0.0,
+        "RangePosition_20": 0.0,
+        "VolumeRatio_5To20": 0.0,
+        "TurnoverRatio_5To20": 0.0,
+        "RelativeTOPIX_20": 0.0
+      }
+    },
+    {
+      "year": 2018,
+      "input_rows": 1044,
+      "output_rows": 1044,
+      "output_sha256": "a05bee78c3d43802f644ff6c1c5e0da67638d6b2098642954f425838280fea2c",
+      "date_min": "2018-01-01",
+      "date_max": "2018-12-31",
+      "securities": 4,
+      "rows_without_price": 0,
+      "feature_missing_rate": {
+        "R_5": 0.0,
+        "R_20": 0.0,
+        "R_60": 0.0,
+        "PriceToSMA_20": 0.0,
+        "SMA_5To20": 0.0,
+        "Volatility_5To20": 0.0,
+        "Volatility_20": 0.0,
+        "RangePosition_20": 0.0,
+        "VolumeRatio_5To20": 0.0,
+        "TurnoverRatio_5To20": 0.0,
+        "RelativeTOPIX_20": 0.0
+      }
+    },
+    {
+      "year": 2019,
+      "input_rows": 1044,
+      "output_rows": 1044,
+      "output_sha256": "d5512b355936ee053d4c9c838933e569c95f6d35b924efb8fbb0bf95f7b1aa45",
+      "date_min": "2019-01-01",
+      "date_max": "2019-12-31",
+      "securities": 4,
+      "rows_without_price": 0,
+      "feature_missing_rate": {
+        "R_5": 0.0,
+        "R_20": 0.0,
+        "R_60": 0.0,
+        "PriceToSMA_20": 0.0,
+        "SMA_5To20": 0.0,
+        "Volatility_5To20": 0.0,
+        "Volatility_20": 0.0,
+        "RangePosition_20": 0.0,
+        "VolumeRatio_5To20": 0.0,
+        "TurnoverRatio_5To20": 0.0,
+        "RelativeTOPIX_20": 0.0
+      }
+    },
+    {
+      "year": 2020,
+      "input_rows": 1048,
+      "output_rows": 1048,
+      "output_sha256": "778589d242f6e0591785a0960c7934778815e8dcde83f056fdaba466907cc3d8",
+      "date_min": "2020-01-01",
+      "date_max": "2020-12-31",
+      "securities": 4,
+      "rows_without_price": 0,
+      "feature_missing_rate": {
+        "R_5": 0.0,
+        "R_20": 0.0,
+        "R_60": 0.0,
+        "PriceToSMA_20": 0.0,
+        "SMA_5To20": 0.0,
+        "Volatility_5To20": 0.0,
+        "Volatility_20": 0.0,
+        "RangePosition_20": 0.0,
+        "VolumeRatio_5To20": 0.0,
+        "TurnoverRatio_5To20": 0.0,
+        "RelativeTOPIX_20": 0.0
+      }
+    },
+    {
+      "year": 2021,
+      "input_rows": 1044,
+      "output_rows": 1044,
+      "output_sha256": "3d5281d8c7c25170fb37a7834f2a286b3b0e8bc73477d92239d9408ce4ac4dfa",
+      "date_min": "2021-01-01",
+      "date_max": "2021-12-31",
+      "securities": 4,
+      "rows_without_price": 0,
+      "feature_missing_rate": {
+        "R_5": 0.0,
+        "R_20": 0.0,
+        "R_60": 0.0,
+        "PriceToSMA_20": 0.0,
+        "SMA_5To20": 0.0,
+        "Volatility_5To20": 0.0,
+        "Volatility_20": 0.0,
+        "RangePosition_20": 0.0,
+        "VolumeRatio_5To20": 0.0,
+        "TurnoverRatio_5To20": 0.0,
+        "RelativeTOPIX_20": 0.0
+      }
+    },
+    {
+      "year": 2022,
+      "input_rows": 1040,
+      "output_rows": 1040,
+      "output_sha256": "3713d3f9f684a3a0b6c323a970e591c4b50aaa37dd14f457b6fa71d1f5d9077d",
+      "date_min": "2022-01-03",
+      "date_max": "2022-12-30",
+      "securities": 4,
+      "rows_without_price": 0,
+      "feature_missing_rate": {
+        "R_5": 0.0,
+        "R_20": 0.0,
+        "R_60": 0.0,
+        "PriceToSMA_20": 0.0,
+        "SMA_5To20": 0.0,
+        "Volatility_5To20": 0.0,
+        "Volatility_20": 0.0,
+        "RangePosition_20": 0.0,
+        "VolumeRatio_5To20": 0.0,
+        "TurnoverRatio_5To20": 0.0,
+        "RelativeTOPIX_20": 0.0
+      }
+    },
+    {
+      "year": 2023,
+      "input_rows": 1040,
+      "output_rows": 1040,
+      "output_sha256": "b08505afd454cc2106e86ee674ceb1af75bf4fbf46fbba5a0d820a0e8daa0d9c",
+      "date_min": "2023-01-02",
+      "date_max": "2023-12-29",
+      "securities": 4,
+      "rows_without_price": 0,
+      "feature_missing_rate": {
+        "R_5": 0.0,
+        "R_20": 0.0,
+        "R_60": 0.0,
+        "PriceToSMA_20": 0.0,
+        "SMA_5To20": 0.0,
+        "Volatility_5To20": 0.0,
+        "Volatility_20": 0.0,
+        "RangePosition_20": 0.0,
+        "VolumeRatio_5To20": 0.0,
+        "TurnoverRatio_5To20": 0.0,
+        "RelativeTOPIX_20": 0.0
+      }
+    },
+    {
+      "year": 2024,
+      "input_rows": 1048,
+      "output_rows": 1048,
+      "output_sha256": "ca5c4fb2501cb4287f32e07476c871bce1da3f74d536a6d7b6b3f17f4acb6958",
+      "date_min": "2024-01-01",
+      "date_max": "2024-12-31",
+      "securities": 4,
+      "rows_without_price": 0,
+      "feature_missing_rate": {
+        "R_5": 0.0,
+        "R_20": 0.0,
+        "R_60": 0.0,
+        "PriceToSMA_20": 0.0,
+        "SMA_5To20": 0.0,
+        "Volatility_5To20": 0.0,
+        "Volatility_20": 0.0,
+        "RangePosition_20": 0.0,
+        "VolumeRatio_5To20": 0.0,
+        "TurnoverRatio_5To20": 0.0,
+        "RelativeTOPIX_20": 0.0
+      }
+    }
+  ],
+  "output_rows": 9392,
+  "code_sha256": {
+    "descriptors.py": "1551d88159ccf76d78ec10cf70140cd4b675002e089005794fdec12e86dcd3fc",
+    "pyproject.toml": "b08b3a14d35e023bf4425a96853c1d3fe54033d6f0498ac785007bb60afb8f9b"
+  },
+  "versions": {
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "pyarrow": "25.0.1"
+  },
+  "random_seed": null,
+  "finished_at_utc": "2026-10-13T11:03:40.019482+00:00"
+}

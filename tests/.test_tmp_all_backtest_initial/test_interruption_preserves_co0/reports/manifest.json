@@ -1,0 +1,80 @@
+{
+  "status": "interrupted",
+  "started_at_utc": "2026-10-13T10:21:01.606582+00:00",
+  "schema_id": "earnings-exclusions-v1",
+  "config": {
+    "cooldown_trading_sessions": 25,
+    "earnings_doc_type_prefixes": [
+      "FinancialStatements"
+    ]
+  },
+  "candidates_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_backtest_initial\\test_interruption_preserves_co0\\candidates",
+  "earnings_schedule_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_backtest_initial\\test_interruption_preserves_co0\\earnings_schedule",
+  "financial_results_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_backtest_initial\\test_interruption_preserves_co0\\financial_results",
+  "calendar": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_backtest_initial\\test_interruption_preserves_co0\\calendar.parquet",
+    "sha256": "32abec3f3ca8c7bd02ffa5e6a6f023236db4f49af82c21ff9359fb93d002c171"
+  },
+  "candidate_inputs": {
+    "2023": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_backtest_initial\\test_interruption_preserves_co0\\candidates\\2023.parquet",
+      "rows": 1,
+      "sha256": "f420abbb7b834eb11c15328942a3b79b595fa719d8cf2a9dbf6b3ae34496d352"
+    },
+    "2024": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_backtest_initial\\test_interruption_preserves_co0\\candidates\\2024.parquet",
+      "rows": 1,
+      "sha256": "bffe8951db5f903f1048ae9552f57b9fe12fe6db4d499ac6586da18cefb7a8c1"
+    }
+  },
+  "earnings_schedule_inputs": {
+    "2023": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_backtest_initial\\test_interruption_preserves_co0\\earnings_schedule\\2023.parquet",
+      "rows": 1,
+      "sha256": "b302b4614fdec769799bb60a2bd5bff3d2d975958d08940a914bd53764ba7013"
+    }
+  },
+  "financial_results_inputs": {
+    "2023": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_backtest_initial\\test_interruption_preserves_co0\\financial_results\\2023.parquet",
+      "rows": 1,
+      "sha256": "efdf0b49a92c16e3d37c3e92ff4c30902ad22acf0859a8b14664301aa9f91fb8"
+    }
+  },
+  "completed_partitions": [
+    {
+      "year": 2023,
+      "output_rows": 1,
+      "eligible_rows": 0,
+      "scheduled_crossing_rows": 1,
+      "cooldown_rows": 0,
+      "actual_crossing_rows_ex_post": 0,
+      "date_min": "2023-12-18",
+      "date_max": "2023-12-18",
+      "output_sha256": "5615892c3fdcaf3ab4aec77e939e515bef9261994fe9b841e18e89abd5d41c1c"
+    }
+  ],
+  "current_partition": 2024,
+  "output_rows": 1,
+  "eligible_rows": 0,
+  "scheduled_crossing_rows": 1,
+  "cooldown_rows": 0,
+  "actual_crossing_rows_ex_post": 0,
+  "code_sha256": {
+    "earnings_events.py": "fad9b51a89a7918c819b6894ef0527808119541f629f4ef761854c53bf421ffa",
+    "pyproject.toml": "082392242e731a8ee49e7502f6d92c7ae8b5afc2c79dec7ab7f4bafe9f08cef5"
+  },
+  "versions": {
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "pyarrow": "25.0.1"
+  },
+  "random_seed": null,
+  "limitations": [
+    "The CLI reads only event columns across annual event files; candidate files are processed one year at a time.",
+    "Event-history completeness must be checked against the auxiliary-download manifest.",
+    "Future actual disclosures are ex-post audits and are excluded from is_earnings_eligible."
+  ],
+  "error_type": "KeyboardInterrupt",
+  "finished_at_utc": "2026-10-13T10:21:01.721561+00:00"
+}

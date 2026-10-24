@@ -1,0 +1,10 @@
+{
+  "cooldown_trading_sessions": 25,
+  "earnings_doc_type_prefixes": [
+    "1QFinancialStatements",
+    "2QFinancialStatements",
+    "3QFinancialStatements",
+    "FYFinancialStatements",
+    "OtherPeriodFinancialStatements"
+  ]
+}

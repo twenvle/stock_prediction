@@ -1,0 +1,57 @@
+{
+  "schema_id": "point-in-time-universe-v1",
+  "config": {
+    "domestic_common_product_category": "011",
+    "min_listing_sessions_elapsed": 60,
+    "liquidity_window_sessions": 20,
+    "min_price_formation_days": 15,
+    "min_median_turnover_yen": 100000000.0,
+    "planned_investment_yen": 1000000.0,
+    "max_participation_rate": 0.01
+  },
+  "input_master_rows": 1040,
+  "history_master_rows": 240,
+  "input_price_rows": 1040,
+  "history_price_rows": 240,
+  "output_rows": 208,
+  "signal_dates": 52,
+  "securities": 4,
+  "date_min": "2017-01-02",
+  "date_max": "2017-12-25",
+  "criterion_true_counts": {
+    "is_domestic_common_stock": 208,
+    "has_min_listing_history": 208,
+    "has_full_liquidity_window": 208,
+    "meets_price_formation_days": 208,
+    "meets_median_turnover": 208,
+    "meets_participation_limit": 208,
+    "signal_price_formed": 208,
+    "is_liquid": 208,
+    "is_eligible": 208
+  },
+  "exclusion_reason_counts": {},
+  "schedule_supplied": true,
+  "executable_rows": 208,
+  "master_rows_without_price": 0,
+  "price_rows_not_in_master": 0,
+  "limitations": [
+    "Daily OHLCV and limit flags provide conservative execution proxies, not order-book fill certainty.",
+    "Supervisory/special-treatment designations are unavailable in the current input schema.",
+    "Future entry/exit observations never contribute to is_eligible.",
+    "The initial master snapshot does not reveal earlier listing history; 60 observed sessions are required."
+  ],
+  "master_input": {
+    "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_release\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\listed_info\\2017.parquet",
+    "rows": 1040,
+    "bytes": 10851,
+    "sha256": "e62684cf27df0f7ffa617fdb8b3cca642caff73da0d7dfa81b13eb8e22751ec4"
+  },
+  "price_input": {
+    "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_release\\test_real_stages_run_end_to_en0\\project\\data\\interim\\experiments\\real-smoke\\prices\\2017.parquet",
+    "rows": 1040,
+    "bytes": 117401,
+    "sha256": "79e23e7f901e795fe0d7d6fc44fe500352a85addfc31168429c792aa983750ef"
+  },
+  "output_file": "2017.parquet",
+  "output_sha256": "9e743ac22298cf16a94ffa26440635fd04d4733c5bbd4ae429b767a61d87afac"
+}

@@ -1,0 +1,4 @@
+{
+  "min_trading_sessions_per_week": 4,
+  "require_topix": true
+}

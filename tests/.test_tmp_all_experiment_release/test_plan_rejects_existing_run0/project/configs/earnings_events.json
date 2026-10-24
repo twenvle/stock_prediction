@@ -1,0 +1,6 @@
+{
+  "cooldown_trading_sessions": 25,
+  "earnings_doc_type_prefixes": [
+    "FinancialStatements"
+  ]
+}

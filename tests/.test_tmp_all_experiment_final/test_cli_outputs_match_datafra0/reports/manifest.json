@@ -1,0 +1,378 @@
+{
+  "status": "complete",
+  "started_at_utc": "2026-10-13T11:09:54.777277+00:00",
+  "schema_id": "purged-walk-forward-splits-v1",
+  "config": {
+    "isolation_start_date": "2025-01-01",
+    "isolation_end_date": "2026-12-31",
+    "purge_trading_sessions": 4
+  },
+  "development_period": {
+    "start": "2016-01-01",
+    "end": "2024-12-31"
+  },
+  "validation_years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "input": {
+    "rows": 26,
+    "signal_dates": 13,
+    "codes": 2,
+    "signal_date_min": "2016-06-01",
+    "signal_date_max": "2026-06-01",
+    "exit_date_max": "2026-06-05",
+    "duplicate_primary_keys": 0,
+    "required_null_counts": {
+      "signal_date": 0,
+      "code": 0,
+      "exit_date": 0
+    }
+  },
+  "calendar": {
+    "date_min": "2015-12-01",
+    "date_max": "2027-01-15",
+    "rows": 4064,
+    "sessions": 2904
+  },
+  "maximum_development_label_horizon_sessions": 4,
+  "development": {
+    "rows": 22,
+    "signal_dates": 11,
+    "codes": 2,
+    "signal_date_min": "2016-06-01",
+    "signal_date_max": "2024-06-03",
+    "exit_date_max": "2024-06-07"
+  },
+  "isolation": {
+    "rows": 4,
+    "signal_dates": 2,
+    "codes": 2,
+    "signal_date_min": "2025-06-02",
+    "signal_date_max": "2026-06-01",
+    "exit_date_max": "2026-06-05"
+  },
+  "out_of_scope": {
+    "rows": 0,
+    "signal_dates": 0,
+    "codes": 0,
+    "signal_date_min": null,
+    "signal_date_max": null,
+    "exit_date_max": null,
+    "reason_signal_date_counts": {}
+  },
+  "folds": [
+    {
+      "fold_id": "validation_2020",
+      "validation_year": 2020,
+      "validation_start": "2020-01-03",
+      "purge_cutoff_signal_date": "2019-12-30",
+      "train": {
+        "rows": 8,
+        "signal_dates": 4,
+        "codes": 2,
+        "signal_date_min": "2016-06-01",
+        "signal_date_max": "2019-06-03",
+        "exit_date_max": "2019-06-07"
+      },
+      "validation": {
+        "rows": 4,
+        "signal_dates": 2,
+        "codes": 2,
+        "signal_date_min": "2020-01-03",
+        "signal_date_max": "2020-06-01",
+        "exit_date_max": "2020-06-05"
+      },
+      "purged": {
+        "rows": 2,
+        "signal_dates": 1,
+        "codes": 2,
+        "signal_date_min": "2019-12-31",
+        "signal_date_max": "2019-12-31",
+        "exit_date_max": "2020-01-02"
+      }
+    },
+    {
+      "fold_id": "validation_2021",
+      "validation_year": 2021,
+      "validation_start": "2021-06-01",
+      "purge_cutoff_signal_date": "2021-05-26",
+      "train": {
+        "rows": 14,
+        "signal_dates": 7,
+        "codes": 2,
+        "signal_date_min": "2016-06-01",
+        "signal_date_max": "2020-06-01",
+        "exit_date_max": "2020-06-05"
+      },
+      "validation": {
+        "rows": 2,
+        "signal_dates": 1,
+        "codes": 2,
+        "signal_date_min": "2021-06-01",
+        "signal_date_max": "2021-06-01",
+        "exit_date_max": "2021-06-07"
+      },
+      "purged": {
+        "rows": 0,
+        "signal_dates": 0,
+        "codes": 0,
+        "signal_date_min": null,
+        "signal_date_max": null,
+        "exit_date_max": null
+      }
+    },
+    {
+      "fold_id": "validation_2022",
+      "validation_year": 2022,
+      "validation_start": "2022-06-01",
+      "purge_cutoff_signal_date": "2022-05-26",
+      "train": {
+        "rows": 16,
+        "signal_dates": 8,
+        "codes": 2,
+        "signal_date_min": "2016-06-01",
+        "signal_date_max": "2021-06-01",
+        "exit_date_max": "2021-06-07"
+      },
+      "validation": {
+        "rows": 2,
+        "signal_dates": 1,
+        "codes": 2,
+        "signal_date_min": "2022-06-01",
+        "signal_date_max": "2022-06-01",
+        "exit_date_max": "2022-06-07"
+      },
+      "purged": {
+        "rows": 0,
+        "signal_dates": 0,
+        "codes": 0,
+        "signal_date_min": null,
+        "signal_date_max": null,
+        "exit_date_max": null
+      }
+    },
+    {
+      "fold_id": "validation_2023",
+      "validation_year": 2023,
+      "validation_start": "2023-06-01",
+      "purge_cutoff_signal_date": "2023-05-26",
+      "train": {
+        "rows": 18,
+        "signal_dates": 9,
+        "codes": 2,
+        "signal_date_min": "2016-06-01",
+        "signal_date_max": "2022-06-01",
+        "exit_date_max": "2022-06-07"
+      },
+      "validation": {
+        "rows": 2,
+        "signal_dates": 1,
+        "codes": 2,
+        "signal_date_min": "2023-06-01",
+        "signal_date_max": "2023-06-01",
+        "exit_date_max": "2023-06-07"
+      },
+      "purged": {
+        "rows": 0,
+        "signal_dates": 0,
+        "codes": 0,
+        "signal_date_min": null,
+        "signal_date_max": null,
+        "exit_date_max": null
+      }
+    },
+    {
+      "fold_id": "validation_2024",
+      "validation_year": 2024,
+      "validation_start": "2024-06-03",
+      "purge_cutoff_signal_date": "2024-05-28",
+      "train": {
+        "rows": 20,
+        "signal_dates": 10,
+        "codes": 2,
+        "signal_date_min": "2016-06-01",
+        "signal_date_max": "2023-06-01",
+        "exit_date_max": "2023-06-07"
+      },
+      "validation": {
+        "rows": 2,
+        "signal_dates": 1,
+        "codes": 2,
+        "signal_date_min": "2024-06-03",
+        "signal_date_max": "2024-06-03",
+        "exit_date_max": "2024-06-07"
+      },
+      "purged": {
+        "rows": 0,
+        "signal_dates": 0,
+        "codes": 0,
+        "signal_date_min": null,
+        "signal_date_max": null,
+        "exit_date_max": null
+      }
+    }
+  ],
+  "random_seed": null,
+  "input_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_cli_outputs_match_datafra0\\weekly",
+  "inputs": [
+    {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_cli_outputs_match_datafra0\\weekly\\2016.parquet",
+      "rows": 2,
+      "columns": [
+        "signal_date",
+        "code",
+        "exit_date",
+        "feature"
+      ],
+      "sha256": "b14ed06672ecc10c39c29c69817462636ca018640b7063aeab16efabc026aadd"
+    },
+    {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_cli_outputs_match_datafra0\\weekly\\2017.parquet",
+      "rows": 2,
+      "columns": [
+        "signal_date",
+        "code",
+        "exit_date",
+        "feature"
+      ],
+      "sha256": "c9955a8e536a9b48adf02b81ab35643845003316627e6be3a02c6ccf20d0d5ed"
+    },
+    {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_cli_outputs_match_datafra0\\weekly\\2018.parquet",
+      "rows": 2,
+      "columns": [
+        "signal_date",
+        "code",
+        "exit_date",
+        "feature"
+      ],
+      "sha256": "699c38b3812456a86d0733520faa22fd1ab532dd49f84dd60cd9542731c96c6d"
+    },
+    {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_cli_outputs_match_datafra0\\weekly\\2019.parquet",
+      "rows": 4,
+      "columns": [
+        "signal_date",
+        "code",
+        "exit_date",
+        "feature"
+      ],
+      "sha256": "d1368f6ca68c006914cbceedb301047812ddac649439dfa57e841bc34db6d071"
+    },
+    {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_cli_outputs_match_datafra0\\weekly\\2020.parquet",
+      "rows": 4,
+      "columns": [
+        "signal_date",
+        "code",
+        "exit_date",
+        "feature"
+      ],
+      "sha256": "87e6bc5704def61987892bc624b76f2b87bc732a556fe18bad0b3eed5c9c0664"
+    },
+    {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_cli_outputs_match_datafra0\\weekly\\2021.parquet",
+      "rows": 2,
+      "columns": [
+        "signal_date",
+        "code",
+        "exit_date",
+        "feature"
+      ],
+      "sha256": "070a9970c78bcbdd29559d166a6cf1c30b5d7e1df93d49294170a8049cc31111"
+    },
+    {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_cli_outputs_match_datafra0\\weekly\\2022.parquet",
+      "rows": 2,
+      "columns": [
+        "signal_date",
+        "code",
+        "exit_date",
+        "feature"
+      ],
+      "sha256": "c47a751e6eb1db792bade15bf1cfc77e7065ffacb945000fb8237c60c8851d00"
+    },
+    {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_cli_outputs_match_datafra0\\weekly\\2023.parquet",
+      "rows": 2,
+      "columns": [
+        "signal_date",
+        "code",
+        "exit_date",
+        "feature"
+      ],
+      "sha256": "a12bf545a3422b27af488019e5138c213068ad356c83cbe090b6b71cc6ab886a"
+    },
+    {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_cli_outputs_match_datafra0\\weekly\\2024.parquet",
+      "rows": 2,
+      "columns": [
+        "signal_date",
+        "code",
+        "exit_date",
+        "feature"
+      ],
+      "sha256": "414e81aa5d2b76afcd218090e9dfbb570026550f8cf3ab71cb17f37757c15513"
+    },
+    {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_cli_outputs_match_datafra0\\weekly\\2025.parquet",
+      "rows": 2,
+      "columns": [
+        "signal_date",
+        "code",
+        "exit_date",
+        "feature"
+      ],
+      "sha256": "8f0dc1338196395a31e532975d1eb0429889f6b6f3624d80e47e125e1ffcca80"
+    },
+    {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_cli_outputs_match_datafra0\\weekly\\2026.parquet",
+      "rows": 2,
+      "columns": [
+        "signal_date",
+        "code",
+        "exit_date",
+        "feature"
+      ],
+      "sha256": "a9c63ae6ad8e6b51653ed1e0756e7d926ea27f1f2b452fce8f15b9b8fe3b0717"
+    }
+  ],
+  "calendar_file": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_cli_outputs_match_datafra0\\calendar.parquet",
+    "sha256": "4325964f1b34b8dde665be0fb8f9a02b01d8e8c89500073076c1e58b37f1bddd"
+  },
+  "output_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_cli_outputs_match_datafra0\\output",
+  "report_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_cli_outputs_match_datafra0\\reports",
+  "completed_outputs": [
+    {
+      "name": "folds",
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_cli_outputs_match_datafra0\\output\\folds.parquet",
+      "rows": 45,
+      "sha256": "5dda15f1835556d78e683a8f7be8a48216f346ad9fb9fb66fb102c01f15b86f0"
+    },
+    {
+      "name": "isolated",
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_cli_outputs_match_datafra0\\output\\isolated.parquet",
+      "rows": 2,
+      "sha256": "49b72137ce84d3ab2663df8410725f89cd75fbf164e98882ae4297102b6eefb2"
+    },
+    {
+      "name": "out_of_scope",
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment_final\\test_cli_outputs_match_datafra0\\output\\out_of_scope.parquet",
+      "rows": 0,
+      "sha256": "4d24b47fb818d95b610210dd8a7b0e39135cec7654dc942672363131e789ffac"
+    }
+  ],
+  "code_sha256": "856d68cf04a1f6f2421ced2b320e5b1bab187bf8f262febfd1e1a0c39fe8796e",
+  "versions": {
+    "python": "3.11.9",
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "pyarrow": "25.0.1"
+  },
+  "finished_at_utc": "2026-10-13T11:09:54.808590+00:00"
+}

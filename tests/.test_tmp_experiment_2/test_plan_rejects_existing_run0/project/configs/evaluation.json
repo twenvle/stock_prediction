@@ -1,0 +1,7 @@
+{
+  "top_n": 10,
+  "industry_date_column": "Date",
+  "industry_security_column": "Code",
+  "industry_code_column": "S33",
+  "industry_name_column": "S33Nm"
+}

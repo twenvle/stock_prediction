@@ -1,0 +1,68 @@
+{
+  "status": "complete",
+  "started_at_utc": "2026-10-21T02:54:34.088735+00:00",
+  "schema_id": "jquants-v2-daily-bars-base-16-with-known-optional-columns",
+  "config": {
+    "start_date": null,
+    "end_date": null,
+    "abnormal_return_threshold": 0.5,
+    "allow_unverified_calendar": true
+  },
+  "inputs": [
+    {
+      "file": "2024.parquet",
+      "sha256": "7efb0dc294c44d7c3ba587b65d7d9f0f43fbc11334fab84a9d5717e88757617c",
+      "bytes": 8956,
+      "raw_rows": 2,
+      "date_min": "2024-12-27",
+      "date_max": "2024-12-30",
+      "schema": {
+        "Date": "date32[day]",
+        "Code": "large_string",
+        "O": "double",
+        "H": "double",
+        "L": "double",
+        "C": "double",
+        "UL": "large_string",
+        "LL": "large_string",
+        "Vo": "double",
+        "Va": "double",
+        "AdjFactor": "double",
+        "AdjO": "double",
+        "AdjH": "double",
+        "AdjL": "double",
+        "AdjC": "double",
+        "AdjVo": "double"
+      },
+      "api_acquired_at": null,
+      "api_version": null
+    }
+  ],
+  "ignored_files": [],
+  "calendar": null,
+  "code_sha256": {
+    "preprocessing.py": "6e9f7279b4ed8bab426c2b214ae12808f936b0fafdfc50588beb46932a7e2070",
+    "__init__.py": "ce337f2bb2744475fc1bee10ffb932a2769cc5e0a896ba022b6eeb6a09f88766",
+    "pyproject.toml": "b08b3a14d35e023bf4425a96853c1d3fe54033d6f0498ac785007bb60afb8f9b"
+  },
+  "git_revision": null,
+  "random_seed": null,
+  "versions": {
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "pyarrow": "25.0.1"
+  },
+  "completed_partitions": [
+    {
+      "year": 2024,
+      "output_rows": 2,
+      "quarantined_rows": 0,
+      "output_sha256": "33769641becea145a2b8992c77431dfc16b906e40726a9d6d12256f86b146924",
+      "quarantine_sha256": "9ac319fca222c6e31cd96b181a472b3073a72768c549e543d5b9442abc538906"
+    }
+  ],
+  "output_rows": 2,
+  "quarantined_rows": 0,
+  "api_metadata_note": "Acquisition timestamps/API version were not supplied; file mtime is not acquisition time.",
+  "finished_at_utc": "2026-10-21T02:54:34.230065+00:00"
+}

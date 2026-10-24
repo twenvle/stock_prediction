@@ -1,0 +1,55 @@
+{
+  "api_base_url": "https://api.jquants.com/v2",
+  "api_version": "v2",
+  "calendar": {
+    "date_max": "2025-01-05",
+    "date_min": "2025-01-04",
+    "duplicate_dates": 0,
+    "holiday_division_counts": {
+      "0": 2
+    },
+    "missing_rate": {
+      "Date": 0.0,
+      "HolDiv": 0.0
+    },
+    "path": "trading_calendar.parquet",
+    "rows": 2,
+    "sha256": "c4fb174d137658d6b28112d4818af93f320093aa4a072fa4aa7fdc2d08c3cd7d",
+    "tse_trading_days": 0
+  },
+  "completed_at_utc": "2026-10-13T11:05:06.586409Z",
+  "completed_partitions": [],
+  "credential_persisted": false,
+  "current_partition": null,
+  "endpoints": {
+    "daily_prices": "/equities/bars/daily",
+    "trading_calendar": "/markets/calendar"
+  },
+  "manifest_schema_version": 1,
+  "provider": "J-Quants API",
+  "request": {
+    "end_date": "2025-01-05",
+    "max_retries": 3,
+    "rate_limit_wait_seconds": 65.0,
+    "requests_per_minute": 5.0,
+    "start_date": "2025-01-04",
+    "timeout_seconds": 30.0
+  },
+  "snapshot_id": "weekend",
+  "software": {
+    "module_sha256": "0fb35dacd44a70d5e1630a5dc3d833752c5ae6da4ffcab80e74e5fa9e7d279e5",
+    "pandas": "3.0.6",
+    "pyarrow": "25.0.1",
+    "python": "3.11.9",
+    "requests": "2.34.2"
+  },
+  "started_at_utc": "2026-10-13T11:05:06.560257Z",
+  "status": "completed",
+  "totals": {
+    "completed_trading_dates": 0,
+    "completed_years": 0,
+    "price_rows": 0,
+    "requested_trading_dates": 0
+  },
+  "updated_at_utc": "2026-10-13T11:05:06.586409Z"
+}

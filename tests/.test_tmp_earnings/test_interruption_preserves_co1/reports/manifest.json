@@ -1,0 +1,226 @@
+{
+  "status": "interrupted",
+  "started_at_utc": "2026-10-21T03:54:14.951632+00:00",
+  "schema_id": "weekly-research-dataset-v2",
+  "config": {
+    "min_trading_sessions_per_week": 4,
+    "require_topix": true,
+    "signal_start_date": null
+  },
+  "prices_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_interruption_preserves_co1\\prices",
+  "descriptors_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_interruption_preserves_co1\\descriptors",
+  "universe_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_interruption_preserves_co1\\universe",
+  "earnings_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_interruption_preserves_co1\\earnings",
+  "calendar": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_interruption_preserves_co1\\calendar.parquet",
+    "sha256": "edc52d84eb2fdc29a2764d44ab62dd5c17990dd081b09495ffe79b37b814def1"
+  },
+  "topix": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_interruption_preserves_co1\\topix.parquet",
+    "sha256": "ae248d6cd45322533cf91191901cdbef56e6606bba54432dffd0a165792e3e61"
+  },
+  "schedule": {
+    "schema_id": "weekly-trading-schedule-v2",
+    "config": {
+      "min_trading_sessions_per_week": 4,
+      "require_topix": true,
+      "signal_start_date": null
+    },
+    "calendar_date_min": "2023-12-25",
+    "calendar_date_max": "2024-01-07",
+    "calendar_rows": 14,
+    "calendar_sessions": 9,
+    "configured_signal_start_date": null,
+    "calendar_weeks": 2,
+    "included_weeks": 2,
+    "excluded_weeks": 0,
+    "exclusion_reason_counts": {},
+    "signal_date_min": "2023-12-25",
+    "signal_date_max": "2024-01-02"
+  },
+  "price_inputs": {
+    "2023": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_interruption_preserves_co1\\prices\\2023.parquet",
+      "bytes": 3265,
+      "rows": 2,
+      "columns": [
+        "date",
+        "code",
+        "adjusted_close",
+        "has_price",
+        "calendar_verified"
+      ],
+      "sha256": "6c84a9d553c2b62580bd6dbaf9e2a4c507b01d7e530f0047658e0d4b8c0cb44b"
+    },
+    "2024": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_interruption_preserves_co1\\prices\\2024.parquet",
+      "bytes": 3265,
+      "rows": 2,
+      "columns": [
+        "date",
+        "code",
+        "adjusted_close",
+        "has_price",
+        "calendar_verified"
+      ],
+      "sha256": "f1c57fd2a8cd3f05b1737064ec43b5367337aecf173a6e9cba1203fa5efae9a6"
+    }
+  },
+  "descriptor_inputs": {
+    "2023": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_interruption_preserves_co1\\descriptors\\2023.parquet",
+      "bytes": 8205,
+      "rows": 1,
+      "columns": [
+        "date",
+        "code",
+        "R_5",
+        "R_20",
+        "R_60",
+        "PriceToSMA_20",
+        "SMA_5To20",
+        "Volatility_5To20",
+        "Volatility_20",
+        "RangePosition_20",
+        "VolumeRatio_5To20",
+        "TurnoverRatio_5To20",
+        "RelativeTOPIX_20"
+      ],
+      "sha256": "519901d7082aaa723787ea13d59e234bef71f1f0bc6f6dc942c5a08292b7a7f5"
+    },
+    "2024": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_interruption_preserves_co1\\descriptors\\2024.parquet",
+      "bytes": 8205,
+      "rows": 1,
+      "columns": [
+        "date",
+        "code",
+        "R_5",
+        "R_20",
+        "R_60",
+        "PriceToSMA_20",
+        "SMA_5To20",
+        "Volatility_5To20",
+        "Volatility_20",
+        "RangePosition_20",
+        "VolumeRatio_5To20",
+        "TurnoverRatio_5To20",
+        "RelativeTOPIX_20"
+      ],
+      "sha256": "fe62659f539094071679a763a2c18b9fda0ed3b84aacd7e5907a4102cd9654fd"
+    }
+  },
+  "universe_inputs": {
+    "2023": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_interruption_preserves_co1\\universe\\2023.parquet",
+      "bytes": 4293,
+      "rows": 1,
+      "columns": [
+        "signal_date",
+        "code",
+        "entry_date",
+        "exit_date",
+        "is_eligible",
+        "exclusion_reasons",
+        "is_executable"
+      ],
+      "sha256": "e19b9d7dba4d28aeddd53a75c3df16e82adc4991d09ba0fb8fa23ae3fca8e368"
+    },
+    "2024": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_interruption_preserves_co1\\universe\\2024.parquet",
+      "bytes": 4293,
+      "rows": 1,
+      "columns": [
+        "signal_date",
+        "code",
+        "entry_date",
+        "exit_date",
+        "is_eligible",
+        "exclusion_reasons",
+        "is_executable"
+      ],
+      "sha256": "a3052ed4a2207636b12ea9be39b5b1e9f1f415cb08388379acb0372aa06c7676"
+    }
+  },
+  "earnings_inputs": {
+    "2023": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_interruption_preserves_co1\\earnings\\2023.parquet",
+      "bytes": 11334,
+      "rows": 1,
+      "columns": [
+        "signal_date",
+        "code",
+        "scheduled_earnings_during_holding",
+        "scheduled_earnings_count",
+        "first_scheduled_earnings_date",
+        "active_schedule_date_missing",
+        "actual_earnings_during_holding",
+        "actual_earnings_count",
+        "first_actual_earnings_date",
+        "last_known_earnings_date",
+        "trading_sessions_since_last_earnings",
+        "is_in_post_earnings_cooldown",
+        "is_earnings_eligible_without_cooldown",
+        "is_earnings_eligible",
+        "is_earnings_eligible_ex_post",
+        "earnings_exclusion_reasons",
+        "earnings_ex_post_exclusion_reasons"
+      ],
+      "sha256": "98b4bdb33b128d9de7d63c792ed75a47c4ac58382533c95d96b299d52e9ce9e5"
+    },
+    "2024": {
+      "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_interruption_preserves_co1\\earnings\\2024.parquet",
+      "bytes": 11334,
+      "rows": 1,
+      "columns": [
+        "signal_date",
+        "code",
+        "scheduled_earnings_during_holding",
+        "scheduled_earnings_count",
+        "first_scheduled_earnings_date",
+        "active_schedule_date_missing",
+        "actual_earnings_during_holding",
+        "actual_earnings_count",
+        "first_actual_earnings_date",
+        "last_known_earnings_date",
+        "trading_sessions_since_last_earnings",
+        "is_in_post_earnings_cooldown",
+        "is_earnings_eligible_without_cooldown",
+        "is_earnings_eligible",
+        "is_earnings_eligible_ex_post",
+        "earnings_exclusion_reasons",
+        "earnings_ex_post_exclusion_reasons"
+      ],
+      "sha256": "1c4d4aff132f2b45e0ba48e3e6a3815043ce993be7b9fae8d0997b263bff765f"
+    }
+  },
+  "output_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_interruption_preserves_co1\\output",
+  "report_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_earnings\\test_interruption_preserves_co1\\reports",
+  "completed_partitions": [
+    {
+      "year": 2023,
+      "output_rows": 1,
+      "signal_dates": 1,
+      "signal_eligible_rows": 1,
+      "target_return_sample_rows": 1,
+      "target_excess_return_sample_rows": 1,
+      "output_sha256": "d839718563a17f56a48cf16bdbcbabf80b92b887db3952b7bfa51121169f1ed3"
+    }
+  ],
+  "current_partition": 2024,
+  "output_rows": 1,
+  "signal_eligible_rows": 1,
+  "target_return_sample_rows": 1,
+  "target_excess_return_sample_rows": 1,
+  "code_sha256": "3ec8261927f0213bcef640aa85e836355e7fe68d42a8e2ea0cb7f0df68d780a1",
+  "versions": {
+    "python": "3.11.9",
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "pyarrow": "25.0.1"
+  },
+  "random_seed": null,
+  "error_type": "KeyboardInterrupt",
+  "error_message": "test interruption",
+  "finished_at_utc": "2026-10-21T03:54:15.107187+00:00"
+}

@@ -1,0 +1,95 @@
+{
+  "status": "complete",
+  "started_at_utc": "2026-10-13T10:21:22.727063+00:00",
+  "schema_id": "point-in-time-universe-v1",
+  "config": {
+    "domestic_common_product_category": "011",
+    "min_listing_sessions_elapsed": 60,
+    "liquidity_window_sessions": 20,
+    "min_price_formation_days": 15,
+    "min_median_turnover_yen": 100000000.0,
+    "planned_investment_yen": 1000000.0,
+    "max_participation_rate": 0.01
+  },
+  "listed_info_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_backtest_initial\\test_partitioned_cli_preserves1\\listed_info",
+  "prices_dir": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_backtest_initial\\test_partitioned_cli_preserves1\\prices",
+  "calendar": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_backtest_initial\\test_partitioned_cli_preserves1\\calendar.parquet",
+    "sha256": "ec1306e56b5bbb460c1ed19d3c364c8ae5fa36b38c3d66cec87370f5380e3808"
+  },
+  "schedule": null,
+  "master_inputs": {
+    "2023": {
+      "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_backtest_initial\\test_partitioned_cli_preserves1\\listed_info\\2023.parquet",
+      "rows": 130,
+      "bytes": 4374,
+      "sha256": "14f25a7023856a0f96e975b8b69ce0e0c4b78763f673c6c38652eff6902113c7"
+    },
+    "2024": {
+      "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_backtest_initial\\test_partitioned_cli_preserves1\\listed_info\\2024.parquet",
+      "rows": 50,
+      "bytes": 3968,
+      "sha256": "c4668ca0c0760691ae3109774b4ef79bc6956ea2a7927949de16b80ad17380d5"
+    }
+  },
+  "price_inputs": {
+    "2023": {
+      "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_backtest_initial\\test_partitioned_cli_preserves1\\prices\\2023.parquet",
+      "rows": 130,
+      "bytes": 7367,
+      "sha256": "937ad15e6cc3b2fe3fcc888c88c70eb96993734c00d1ede3bc5e2be56c9d9217"
+    },
+    "2024": {
+      "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_backtest_initial\\test_partitioned_cli_preserves1\\prices\\2024.parquet",
+      "rows": 50,
+      "bytes": 6464,
+      "sha256": "66b42407f6ffd1ef67ee81a26644b291188aa14e5d11926b82e5131f3059d879"
+    }
+  },
+  "completed_partitions": [
+    {
+      "year": 2023,
+      "output_rows": 130,
+      "eligible_rows": 5,
+      "signal_dates": 65,
+      "date_min": "2023-10-02",
+      "date_max": "2023-12-29",
+      "exclusion_reason_counts": {
+        "insufficient_price_formation_days": 28,
+        "liquidity_history_under_20_sessions": 38,
+        "listing_history_under_60_sessions": 120,
+        "not_domestic_common_stock": 65
+      },
+      "output_sha256": "6f6dfc4636df5bcb5223b05872dad4a333bd9df999957f2b366727d73f73afcf"
+    },
+    {
+      "year": 2024,
+      "output_rows": 50,
+      "eligible_rows": 25,
+      "signal_dates": 25,
+      "date_min": "2024-01-01",
+      "date_max": "2024-02-02",
+      "exclusion_reason_counts": {
+        "not_domestic_common_stock": 25
+      },
+      "output_sha256": "eaa0fc0618df5156287bc4f2ebda5154a48210d9389b0b770073ccf100e79b2e"
+    }
+  ],
+  "output_rows": 180,
+  "eligible_rows": 30,
+  "code_sha256": {
+    "universe.py": "5741bc20020f72e6c729173b625c3af3c4b3376e3c0a635095b8a97b1a514ee1",
+    "pyproject.toml": "082392242e731a8ee49e7502f6d92c7ae8b5afc2c79dec7ab7f4bafe9f08cef5"
+  },
+  "versions": {
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "pyarrow": "25.0.1"
+  },
+  "random_seed": null,
+  "limitations": [
+    "Execution columns are ex-post conservative proxies and are excluded from is_eligible.",
+    "Supervisory/special-treatment designations and order-book fills are not available."
+  ],
+  "finished_at_utc": "2026-10-13T10:21:23.055590+00:00"
+}

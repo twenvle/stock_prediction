@@ -1,0 +1,57 @@
+{
+  "schema_id": "daily-technical-descriptors-v1",
+  "config": {
+    "volatility_ddof": 1,
+    "require_topix": true
+  },
+  "input_rows": 1040,
+  "history_rows": 240,
+  "output_rows": 1040,
+  "securities": 4,
+  "date_min": "2023-01-02",
+  "date_max": "2023-12-29",
+  "duplicate_keys": 0,
+  "rows_without_price": 0,
+  "feature_missing_rate": {
+    "R_5": 0.0,
+    "R_20": 0.0,
+    "R_60": 0.0,
+    "PriceToSMA_20": 0.0,
+    "SMA_5To20": 0.0,
+    "Volatility_5To20": 0.0,
+    "Volatility_20": 0.0,
+    "RangePosition_20": 0.0,
+    "VolumeRatio_5To20": 0.0,
+    "TurnoverRatio_5To20": 0.0,
+    "RelativeTOPIX_20": 0.0
+  },
+  "feature_available_rows": {
+    "R_5": 1040,
+    "R_20": 1040,
+    "R_60": 1040,
+    "PriceToSMA_20": 1040,
+    "SMA_5To20": 1040,
+    "Volatility_5To20": 1040,
+    "Volatility_20": 1040,
+    "RangePosition_20": 1040,
+    "VolumeRatio_5To20": 1040,
+    "TurnoverRatio_5To20": 1040,
+    "RelativeTOPIX_20": 1040
+  },
+  "complete_non_topix_feature_rows": 1040,
+  "complete_feature_rows": 1040,
+  "topix_supplied": true,
+  "topix_rows": 2415,
+  "calendar_date_min": "2015-11-01",
+  "calendar_date_max": "2025-01-31",
+  "calendar_rows": 3380,
+  "calendar_sessions": 2415,
+  "input": {
+    "file": "2023.parquet",
+    "rows": 1040,
+    "bytes": 117401,
+    "sha256": "c33dae950816b3c34a6d11559462cbf13b26972d0679cf903a5135489a245335"
+  },
+  "output_file": "2023.parquet",
+  "output_sha256": "b08505afd454cc2106e86ee674ceb1af75bf4fbf46fbba5a0d820a0e8daa0d9c"
+}

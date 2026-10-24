@@ -1,0 +1,69 @@
+{
+  "status": "completed",
+  "snapshot_id": "synthetic-price",
+  "provider": "synthetic-test",
+  "api_version": "v2-shape",
+  "request": {
+    "start_date": "2016-01-01",
+    "end_date": "2024-12-31"
+  },
+  "totals": {
+    "price_rows": 9392
+  },
+  "completed_partitions": [
+    {
+      "year": 2016,
+      "path": "prices/2016.parquet",
+      "rows": 1044,
+      "sha256": "1e49028adcdc4bf1b068e6bb92745418194720635f24ee5f7695ed1ac28bf87a"
+    },
+    {
+      "year": 2017,
+      "path": "prices/2017.parquet",
+      "rows": 1040,
+      "sha256": "3c0df91e7f22bc9fa58dc4e3eb7c119cbbaca5c7972641e41ed55e620686195c"
+    },
+    {
+      "year": 2018,
+      "path": "prices/2018.parquet",
+      "rows": 1044,
+      "sha256": "06ce39fe5dd81b23fd334656193ba9b95b83bb87423e6a0c4221908c072bfca0"
+    },
+    {
+      "year": 2019,
+      "path": "prices/2019.parquet",
+      "rows": 1044,
+      "sha256": "d32ef930b0d84a2068741d7466d5cf790a60f7ec3e5771b3271e027e04e49360"
+    },
+    {
+      "year": 2020,
+      "path": "prices/2020.parquet",
+      "rows": 1048,
+      "sha256": "329c81d907b4e4b1682408033574cf60331b5cfa19e239a3c079b6ea6ffec886"
+    },
+    {
+      "year": 2021,
+      "path": "prices/2021.parquet",
+      "rows": 1044,
+      "sha256": "cefa590508691c0413a1ae16a3011c4c050ceddd2f9090c2f33827c5d9666f50"
+    },
+    {
+      "year": 2022,
+      "path": "prices/2022.parquet",
+      "rows": 1040,
+      "sha256": "f11e196556fee3f0f05d3bccaf8c05ece2c97928f347895cb11d3d41f1ff0bb2"
+    },
+    {
+      "year": 2023,
+      "path": "prices/2023.parquet",
+      "rows": 1040,
+      "sha256": "edbf900c81636871fb6f1c1570f363b0faa30e972a61ad8d56eab657efff122e"
+    },
+    {
+      "year": 2024,
+      "path": "prices/2024.parquet",
+      "rows": 1048,
+      "sha256": "97867bffe132b82cc35f76d46e74ed08241300b161757082fa878ca10986be15"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema_id": "earnings-exclusions-v1",
+  "config": {
+    "cooldown_trading_sessions": 25,
+    "earnings_doc_type_prefixes": [
+      "FinancialStatements"
+    ]
+  },
+  "candidate_rows": 208,
+  "signal_dates": 52,
+  "securities": 4,
+  "date_min": "2022-01-03",
+  "date_max": "2022-12-26",
+  "earnings_schedule_rows": 0,
+  "schedule_publication_date_min": null,
+  "schedule_publication_date_max": null,
+  "schedule_missing_date_rows": 0,
+  "financial_result_rows": 0,
+  "actual_earnings_event_rows": 0,
+  "financial_doc_type_counts": {},
+  "scheduled_crossing_rows": 0,
+  "actual_crossing_rows_ex_post": 0,
+  "cooldown_rows": 0,
+  "eligible_without_cooldown_rows": 208,
+  "eligible_rows": 208,
+  "eligible_rows_ex_post": 208,
+  "active_schedule_date_missing_rows": 0,
+  "limitations": [
+    "Scheduled dates have no announcement time, so signal-date events are conservatively included.",
+    "Same-day disclosures at/before the historical TSE close are cooldown day 0; later or missing times are ex-post events.",
+    "Actual holding-period disclosures never affect is_earnings_eligible.",
+    "Input event-history completeness must be established from the immutable source snapshot manifest."
+  ],
+  "candidate_input": {
+    "path": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_all_experiment\\test_real_stages_run_end_to_en0\\project\\data\\processed\\experiments\\real-smoke\\universe\\2022.parquet",
+    "rows": 208,
+    "sha256": "383f971c46cac0feb48b8582195222043ed6884c2ce1e3c84c5a5604ed241ce2"
+  },
+  "output_file": "2022.parquet",
+  "output_sha256": "69c947377d56843009b6844cc26e2df291e0b44cd6089a300e2e8530597eb1c5"
+}

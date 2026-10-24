@@ -1,0 +1,57 @@
+{
+  "schema_id": "point-in-time-universe-v1",
+  "config": {
+    "domestic_common_product_category": "011",
+    "min_listing_sessions_elapsed": 60,
+    "liquidity_window_sessions": 20,
+    "min_price_formation_days": 15,
+    "min_median_turnover_yen": 100000000.0,
+    "planned_investment_yen": 1000000.0,
+    "max_participation_rate": 0.01
+  },
+  "input_master_rows": 1044,
+  "history_master_rows": 240,
+  "input_price_rows": 1044,
+  "history_price_rows": 240,
+  "output_rows": 208,
+  "signal_dates": 52,
+  "securities": 4,
+  "date_min": "2021-01-04",
+  "date_max": "2021-12-27",
+  "criterion_true_counts": {
+    "is_domestic_common_stock": 208,
+    "has_min_listing_history": 208,
+    "has_full_liquidity_window": 208,
+    "meets_price_formation_days": 208,
+    "meets_median_turnover": 208,
+    "meets_participation_limit": 208,
+    "signal_price_formed": 208,
+    "is_liquid": 208,
+    "is_eligible": 208
+  },
+  "exclusion_reason_counts": {},
+  "schedule_supplied": true,
+  "executable_rows": 208,
+  "master_rows_without_price": 0,
+  "price_rows_not_in_master": 0,
+  "limitations": [
+    "Daily OHLCV and limit flags provide conservative execution proxies, not order-book fill certainty.",
+    "Supervisory/special-treatment designations are unavailable in the current input schema.",
+    "Future entry/exit observations never contribute to is_eligible.",
+    "The initial master snapshot does not reveal earlier listing history; 60 observed sessions are required."
+  ],
+  "master_input": {
+    "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\raw\\aux_snapshot\\listed_info\\2021.parquet",
+    "rows": 1044,
+    "bytes": 10877,
+    "sha256": "9460b698a37fd5013b4be1b58f470e018ca0fa67eeffa3fbe4f1a496e17c37c0"
+  },
+  "price_input": {
+    "file": "C:\\Users\\kyoma\\Desktop\\hobby\\stock_prediction\\.test_tmp_experiment_final\\test_real_stages_run_end_to_en0\\project\\data\\interim\\experiments\\real-smoke\\prices\\2021.parquet",
+    "rows": 1044,
+    "bytes": 118905,
+    "sha256": "7f3f69998863b05ff7687e6e7caf574d1f5c45ca92796dc5493c258527132048"
+  },
+  "output_file": "2021.parquet",
+  "output_sha256": "f34d63d611b300faf59d361cf1e0f7ff3b4891f592165d3b356b40a203ebc9ce"
+}

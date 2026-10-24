@@ -1,0 +1,18 @@
+{
+  "model_name": "linear",
+  "target_column": "target_excess_return",
+  "eligibility_column": "is_signal_eligible",
+  "liquidity_column": "median_turnover_value_20",
+  "lot_size_column": "lot_size",
+  "initial_cash_yen": 10000000.0,
+  "top_n": 10,
+  "default_lot_size": 100,
+  "max_participation_rate": 0.01,
+  "commission_bps": 5.0,
+  "half_spread_bps": 5.0,
+  "slippage_bps": 10.0,
+  "exit_price_mode": "evaluation_close",
+  "max_exit_wait_sessions": 20,
+  "unresolved_delisting_policy": "error",
+  "annualization_sessions": 252
+}
